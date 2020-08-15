@@ -1,0 +1,72 @@
+html {background-color: rgb(41, 41, 41);color: #fff;min-width: 590px;font-family: "Open Sans", Arial, Tahoma, sans-serif;}
+body {margin: 0;overflow: auto;}
+footer {min-height: 20vh;background-color: rgb(5, 5, 5);}
+
+header {width: 98%;height: auto;padding: 0 1%;background-color: #181818;display: flex;}
+header > h1 {margin: 0;font-family: Agency FB;min-width: 270px;font-size: 3rem;margin-right: 10px;line-height: auto;}
+.nav ul {margin: 0; padding: 0; list-style: none;}
+.nav {position: absolute; right: 0; top: 1px; min-width: 490px;}
+.nav li {font-size: 20px;line-height: 3.5rem; font-family: "Myriad Pro";text-align: center;}
+.nav li:hover {background-color: #0d0d0d; border-bottom: 0.2rem solid #fff; line-height: 3.2rem;}
+.dawnMenu {position: absolute;background-color: #414141;min-width: 490px;right: 0;}
+.dawnMenu li {padding: 0 1%;}
+.dawnMenu li:hover {background-color: #252525;padding: 0;border: 0;line-height: 3.5rem;}
+
+#noneMenu1 {display: none;}
+#noneMenu2 {display: none;}
+#noneMenu3 {display: none;}
+.nav > ul > div {display: inline-block;width: 32%;}
+
+.phoneMenu .menuBox {width: 100%;background-color: #191919;height: 100vh;right: auto;position: absolute;}
+
+.bb {border-bottom: 1px solid rgba(255, 255, 255, .3);}
+.menuBox .li {text-align: left;border-bottom: 1px solid rgba(255, 255, 255, .3);display: flex;background-color: #191919;}
+.menuBox .li a {font-size: 6vw;margin: 0;padding: 4% 0 4% 4%;width: 85%;color: #a6a6a6;}
+
+.closeMenu {width: 90px;margin-left: calc(100% - 5% - 80px);padding: 2% 2%;}
+.closeMenu::before {content: '\2715';font-size: 62px;display: block;text-align: center;margin-left: calc(100% - 15% - 80px);color: #a6a6a6;}
+
+.li p {margin: 0;}
+.underMenu ul {margin: 0;background-color: rgba(255,255,255,.025);padding: 0;}
+.underMenu li {list-style: none;font-size: 4.5vw;padding: 2% 0 2% 10%;}
+
+.bottunMenu {height: 3.5rem;width: 3.5rem;position: absolute;right: 1px;}
+.phoneMenu {position: fixed;width: 100vw;height: 100vh;color: #fff;top: 0;overflow: auto;background-color: auto;font-size: auto;}
+.burger {width: 8%;padding: 3%;font-size: 7.5vw;text-align: center;color: #a6a6a6;}
+
+.bottunA {width: 50%;}
+.phoneMenu a,a:active,a:visited {color: #a6a6a6;text-decoration: none;}
+.phoneMenu a:hover {color:#fff;text-decoration: none;}
+header a,a:active,a:visited{color: #fff;text-decoration: none;}
+header a:hover{color:#a6a6a6;text-decoration: none;}
+/* a, a:active, a:visited {color: #fff;text-decoration: none;}
+a:hover{color:#a6a6a6;text-decoration: none;} */
+
+
+.positionUser {width: 100%;background-color: #111;margin-top: -4px;padding: 0.8% 0;}
+.positionUser p {text-align: center;margin: 0;font-size: 1vw;font-family: 'Rubik', sans-serif;}
+
+
+main h2 {font-weight: bold;font-size: 3vw;font-family: "Myriad Pro";text-align: center;}
+main .wrapper > p {font-size: 1.2vw;font-family: 'Rubik', sans-serif;margin: 0 7%;width: 86%;}
+
+main .wrapper > h3 {font-size: 2vw;text-align: center;font-family: "Myriad Pro";font-weight: bold;}
+
+.bottom {text-align: center;background-color: #181818;font-size: 1.5vw;margin: 1% 0;height: 40px;line-height: 40px;color: #ababab;padding: 2% 0;}
+.bottom:hover {background-color: #ababab;color: #181818;}
+.bottom > p {margin: 3% 0%;font-weight: bold;}
+.bottoms {display: block;margin-top: 3%;}
+.outerWrapper {display: grid;}
+.wrapper {width: 100%;}
+
+/* ********* ********* ********* ********* */
+.gridbox {display: flex;flex-wrap: wrap;justify-content: space-between;padding: 2% 4%;}
+article{background-color: #3f3f3f;width: 23%;margin-bottom: 30px;}
+.at{width: 96%;height: 400px;margin-top: 2%;background-position-x: center;background-size: cover;}
+.cont{background-color: #151515;width: 100%;display: flex;flex-wrap: wrap;justify-content: center;}
+.buttons{width: 100%;display: flex;}
+.button{width: 100%;padding: 10px 0;justify-content: center;display: flex;border-bottom: solid #0000;background-color: #0f0f0f;}
+.button:hover{background-color: #202020;border-bottom: solid #a3a3a3;}
+.button img{height: 1.5vw;}
+.name{color: rgba(255,255,255,.8);font-size: 1.5vw;margin: 2%;text-align: center;}
+/* ********* ********* ********* ********* */
