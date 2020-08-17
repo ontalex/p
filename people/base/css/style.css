@@ -60,19 +60,21 @@ a:active {color: #fff;text-decoration: none;}
 /* .PImgRight {width: 72%;float: left;} */
 .infoBox {width: 36%;display: flex;justify-content: center;flex-wrap: wrap;align-items: center;max-height: 1100px;}
 .infoBox p {font-size: 1.1vw;margin: 2% 0%;text-align: center;width: 100%;}
-.button {width: 90%;background-color: #131313;/*! margin: 3% 0; */font-size: 1.5vw;text-align: center;padding: 2% 0;}
+.button {width: 90%;background-color: #131313;margin: 3% 0;font-size: 1.5vw;text-align: center;padding: 2% 0;}
 .line {width: 100%;height: 2px;background-color: #fff;}
 .galery {display: flex;justify-content: center;margin: 1% 0 0 0;flex-wrap: inherit;}
 .textBox1 {width: 60%;/*! padding-left: 2%; */}
-.textBox2 {width: 100%;margin-top: 3%;}
+.textBox2 {width: 100%;margin-top: 0;}
 .textBox2 ul {padding-left: 2vw;}
 .textBox2 li {font-family: 'Rubik', sans-serif;font-size: 1.2vw;list-style-type: circle;margin: 0 0 30px 0;}
 .textBox p {font-size: 1.1vw;margin: 0;}
-.textBox h3 {font-size: 2vw;text-align: center;margin: 2% 0;}
+.textBox h3 {font-size: 2vw;text-align: center;margin: 1% 0;}
 .textBox h4 {font-size: 1.5vw;text-align: center;margin: 1% 0;}
 .flex-table {display: flex;justify-content: space-evenly;}
 .sec {width: 45%;}
 .textMBox {width: 80%;margin: 0 auto;}
-
+.sec-1 {width: 70%;}
+.sec-1_inner {display: flex;justify-content: space-between;align-items: center;}
+.sec-2 {width: 20%;}
 /* .wrapper .send, .send:active, .send:visited {}
 .wrapper .send:hover {} */
