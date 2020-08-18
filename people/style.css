@@ -39,8 +39,6 @@ header > h1 {margin: 0;font-family: Agency FB;min-width: 270px;font-size: 3rem;m
 .phoneMenu a:hover {color:#fff;text-decoration: none;}
 header a,a:active,a:visited{color: #fff;text-decoration: none;}
 header a:hover{color:#a6a6a6;text-decoration: none;}
-/* a, a:active, a:visited {color: #fff;text-decoration: none;}
-a:hover{color:#a6a6a6;text-decoration: none;} */
 
 
 .positionUser {width: 100%;background-color: #111;margin-top: -4px;padding: 0.8% 0;}
@@ -59,7 +57,7 @@ main .wrapper > h3 {font-size: 2vw;text-align: center;font-family: "Myriad Pro";
 .outerWrapper {display: grid;}
 .wrapper {width: 100%;}
 
-/* ********* ********* ********* ********* */
+
 .gridbox {display: flex;flex-wrap: wrap;justify-content: space-between;padding: 2% 4%;}
 article{background-color: #3f3f3f;width: 23%;margin-bottom: 30px;}
 .at{width: 96%;height: 400px;margin-top: 2%;background-position-x: center;background-size: cover;}
@@ -69,4 +67,3 @@ article{background-color: #3f3f3f;width: 23%;margin-bottom: 30px;}
 .button:hover{background-color: #202020;border-bottom: solid #a3a3a3;}
 .button img{height: 1.5vw;}
 .name{color: rgba(255,255,255,.8);font-size: 1.5vw;margin: 2%;text-align: center;}
-/* ********* ********* ********* ********* */
