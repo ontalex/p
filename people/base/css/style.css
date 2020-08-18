@@ -10,7 +10,7 @@ footer {min-height: 20vh;background-color: rgb(5, 5, 5);margin-top: 1%;padding: 
 header {width: 98%;height: auto;padding: 0 1%;background-color: #181818;display: flex;}
 header > h1 {margin: 0;font-family: Agency FB;min-width: 270px;font-size: 3rem;margin-right: 10px;line-height: auto;}
 .nav ul {margin: 0; padding: 0; list-style: none;}
-.nav {position: absolute; right: 0; top: 1px; min-width: 490px;}
+.nav {position: absolute; right: 0; top: 1px; }
 .nav li {font-size: 20px;line-height: 3.5rem; font-family: "Myriad Pro";text-align: center;}
 .nav li:hover {background-color: #0d0d0d; border-bottom: 0.2rem solid #fff; line-height: 3.2rem;}
 .dawnMenu {position: absolute;background-color: #414141;min-width: 490px;right: 0;}
@@ -20,7 +20,7 @@ header > h1 {margin: 0;font-family: Agency FB;min-width: 270px;font-size: 3rem;m
 #noneMenu1 {display: none;}
 #noneMenu2 {display: none;}
 #noneMenu3 {display: none;}
-.nav > ul > div {display: inline-block;width: 32%;}
+.nav > ul > div {display: inline-block;width: 200px;}
 
 .phoneMenu .menuBox {width: 100%;background-color: #191919;height: 100vh;right: auto;position: absolute;}
 
