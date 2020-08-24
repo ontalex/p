@@ -35,9 +35,11 @@ header > h1 {margin: 0;font-family: Agency FB;min-width: 270px;font-size: 3rem;m
 .burger {width: 8%;padding: 3%;font-size: 7.5vw;text-align: center;color: #a6a6a6;}
 
 .bottunA {width: 50%;}
-.phoneMenu a,a:active,a:visited {color: #a6a6a6;text-decoration: none;}
+.phoneMenu a,a:active/*,a:visited*/ {color: #a6a6a6;text-decoration: none;}
+.phoneMenu a:visited {color:#a6a6a6; text-decoration: rgba(65, 45, 45, 0);}
 .phoneMenu a:hover {color:#fff;text-decoration: none;}
-header a, a:active, a:visited {color: #fff;text-decoration: none;}
+header a, a:active/*, a:visited*/ {color: #fff;text-decoration: none;}
+header a:visited {color: #fff;text-decoration: #0000;}
 header a:hover{color:#a6a6a6;text-decoration: none;}
 
 
