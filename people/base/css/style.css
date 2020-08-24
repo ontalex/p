@@ -59,7 +59,8 @@ a:active {color: #fff;text-decoration: none;}
 .borderBox2 img {width: 100%;}
 .infoBox {width: 36%;display: flex;justify-content: center;flex-wrap: wrap;align-items: center;}
 .infoBox p {font-size: 1.1vw;margin: 2% 0%;text-align: center;width: 100%;}
-.button {width: 90%;background-color: #131313;margin: 3% 0;font-size: 1.5vw;text-align: center;padding: 2% 0;}
+.button {width: 90%;background-color: #131313;margin: 3% 0;font-size: 1.5vw;text-align: center;padding: 2% 0;display: flex;justify-content: center;}
+.g-b{height: 1.5vw;}
 .line {width: 100%;height: 2px;background-color: #fff;}
 .galery {display: flex;justify-content: center;margin: 1% 0 0 0;flex-wrap: inherit;}
 .textBox1 {width: 60%;}
