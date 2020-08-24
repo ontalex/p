@@ -24,7 +24,6 @@
     .flex-table {display: block;}
     .sec {width: 100%;}
     .textMBox {width: 100%;}
-    .sec-1_inner {display: block;}
 }
 @media only screen and (min-width: 1000px) and (max-width: 1282px) { /*tablet*/
     .nav {display: none;}
