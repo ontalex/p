@@ -55,7 +55,7 @@ a:active {color: #fff;text-decoration: none;}
 .avatar-radius {height: 3.5rem;}
 .borderBox1 {background-color: #3f3f3f;padding: 2%;width: 96%;}
 .borderBox1 img {width: 100%;}
-.borderBox2 {background-color: #3f3f3f;padding: 0.5%;height: 250px;margin: 0 0 20px 2%;}
+.borderBox2 {background-color: #3f3f3f;width:auto;height:250px;padding: 0.5%;margin: 0 0 20px 2%;}
 .borderBox2 img {width: 100%;}
 .infoBox {width: 36%;display: flex;justify-content: center;flex-wrap: wrap;align-items: center;}
 .infoBox p {font-size: 1.1vw;margin: 2% 0%;text-align: center;width: 100%;}

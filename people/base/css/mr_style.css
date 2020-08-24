@@ -18,7 +18,7 @@
     .textBox p {font-size: 4vw;margin: 3%;}
     .textBox h3 {font-size: 5vw;}
     .textBox h4 {font-size: 4.5vw;}
-    .borderBox2 {height: 400px;padding: 1.25%;margin: 0 0 20px 0;}
+    .borderBox2 {width:70%;height:auto;padding: 1.25%;margin: 0 0 20px 0;}
     .textBox2 ul {padding-left: 8vw;}
     .textBox2 li {font-size: 4vw;}
     .flex-table {display: block;}
