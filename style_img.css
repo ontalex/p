@@ -1,26 +1,9 @@
 /*Стили блоков с изображениями*/
-.avatar-radius {
-    height: 3.5rem;
-}
+.avatar-radius {height: 3.5rem;}
 
-.banerHeros {
-    width: 100%;
-    height: 40vh;
-    background-image: url("base/Imgs/Heros.webp");
-    background-size: cover;
-    background-position: top;
-}
-.imgBeginBook {
-    background-size: cover;
-    height: 420px;
-    background-position-y: top;
-    transition: cubic-bezier(.77,0,.18,1) 0.2s;
-    background-position-x: center;
-}
-.imgBeginBook:hover {
-    background-position-y: 40%;
-    transition: cubic-bezier(.77,0,.18,1) 0.5s;
-}
+.banerHeros {width: 100%;height: 300px;background-image: url("base/Imgs/Heros.webp");background-size: cover;background-position: top;}
+.imgBeginBook {background-size: cover;height: 420px;background-position-y: top;transition: cubic-bezier(.77,0,.18,1) 0.2s;background-position-x: center;}
+.imgBeginBook:hover {background-position-y: 40%;transition: cubic-bezier(.77,0,.18,1) 0.5s;}
 .imgBeginBook01{background-image: url("base/Imgs/begin-book01.webp");}
 .imgBeginBook02{background-image: url("base/Imgs/begin-book02.webp");}
 .imgBeginBook03{background-image: url("base/Imgs/begin-book03.webp");}
@@ -50,6 +33,4 @@
 .imgBeginBook27{background-image: url("base/Imgs/begin-book27.webp");}
 .imgBeginBook28{background-image: url("base/Imgs/begin-book28.webp");}
 
-.block > img {
-    width: 100%;
-}
+.block > img {width: 100%;}

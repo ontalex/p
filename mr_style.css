@@ -1,122 +1,40 @@
 @media only screen and (max-width: 1000px) { /*Phones*/
-    .block {
-        width: 86%;
-        margin-left: 7%;
-    }
-    .block h3 {
-        font-size: 6.5vw;
-    }
-    .imgBeginBook {
-        height: 100vw;
-    }
-    .nav {
-        display: none;
-    }
-    .bottom {
-        font-size: 5vw;
-        line-height: 8vw;
-        height: 8vw;
-    }
-    .banerHeros {
-        height: 20vh;
-    }
-    .avatar-radius {
-        height: 7rem;
-        margin: 1.5rem 0;
-    }
-    header > h1 {
-        line-height: 10rem;
-    }
-    .positionUser p {
-        font-size: 3vw;
-    }
-    main h2 {
-        font-size: 6vw;
-    }
-    main .wrapper > p {
-        font-size: 4vw;
-    }
-    main .wrapper > h3 {
-        font-size: 7vw;
-    }
-    .bottunMenu {
-        width: 7rem;
-        height: 7rem;
-        margin: 1.5rem;
-    }
-    .li > p {
-        font-size: 5.5vw;
-    }
+    .block {width: 86%;margin-left: 7%;}
+    .block h3 {font-size: 6.5vw;}
+    .imgBeginBook {height: 100vw;}
+    .nav {display: none;}
+    .bottom {font-size: 5vw;line-height: 8vw;height: 8vw;}
+    .banerHeros {height: 400px;}
+    .avatar-radius {height: 7rem;margin: 1.5rem 0;}
+    header > h1 {line-height: 10rem;}
+    .positionUser p {font-size: 3vw;}
+    main h2 {font-size: 6vw;}
+    main .wrapper > p {font-size: 4vw;}
+    main .wrapper > h3 {font-size: 7vw;}
+    .bottunMenu {width: 7rem;height: 7rem;margin: 1.5rem;}
+    .li > p {font-size: 5.5vw;}
 }
 @media only screen and (min-width: 1000px) and (max-width: 1282px) { /*tablet*/
-    .block {
-        width: 29%;
-        margin-left: 2.5%;
-    }
-    .block h3 {
-        font-size: 3vw;
-    }
-    .nav {
-        display: none;
-    }
-    header > h1 {
-        line-height: 6rem;
-    }
-    .avatar-radius {
-        height: 5.6rem;
-        margin: 0.2rem 0;
-    }
-    .bottunMenu {
-        width: 4rem;
-        height: 4rem;
-        margin: 1rem;
-    }
-    .wrapper {
-        width: 100%;
-    }
-    .imgBeginBook {
-        height: 60vh;
-    } 
-    .positionUser p {
-        font-size: 2vw;
-    }
-    main h2 {
-        font-size: 6vw;
-    }
-    main .wrapper > p {
-        font-size: 2vw;
-    }
-    main .wrapper > h3 {
-        font-size: 5vw;
-    }
-    .phoneMenu .menuBox {
-        width: 40%;
-        right: 0;
-        position: absolute;
-    }
-    .menuBox .li {
-        font-size: 2vw;
-        background-color: #191919;
-    }
-    .underMenu li {
-        font-size: 1.5vw;
-    }
-    .shadowBox {
-        display: block;
-    }
+    .block {width: 29%;margin-left: 2.5%;}
+    .block h3 {font-size: 3vw;}
+    .nav {display: none;}
+    header > h1 {line-height: 6rem;}
+    .avatar-radius {height: 5.6rem;margin: 0.2rem 0;}
+    .bottunMenu {width: 4rem;height: 4rem;margin: 1rem;}
+    .wrapper {width: 100%;}
+    .imgBeginBook {height: 60vh;} 
+    .positionUser p {font-size: 2vw;}
+    main h2 {font-size: 6vw;}
+    main .wrapper > p {font-size: 2vw;}
+    main .wrapper > h3 {font-size: 5vw;}
+    .phoneMenu .menuBox {width: 40%;right: 0;position: absolute;}
+    .menuBox .li {font-size: 2vw;background-color: #191919;}
+    .underMenu li {font-size: 1.5vw;}
+    .shadowBox {display: block;}
 }
 @media only screen and (min-width: 1282px) { /*PC*/
-    .block {
-        width: 20%;
-        margin-left:4%;
-    }
-    .wrapper {
-        width: 100%;
-    }
-    .bottunMenu {
-        display: none;
-    }
-    .block h3 {
-        font-size: 2vw;
-    }
+    .block {width: 20%;margin-left:4%;}
+    .wrapper {width: 100%;}
+    .bottunMenu {display: none;}
+    .block h3 {font-size: 2vw;}
 }

@@ -48,7 +48,7 @@ a:active {color: #fff;text-decoration: none;}
 
 /* header and menu end */
 
-.banerHeros {background-image: url("../../../base/Imgs/Heros.webp");background-repeat: no-repeat;background-size: cover;background-position: center;height: 20vw;}
+.banerHeros {background-image: url("../../../base/Imgs/Heros.webp");background-repeat: no-repeat;background-size: cover;background-position: center;height: 300px;}
 .content {display: inline-flex;justify-content: space-around;}
 .wrapper h2 {font-size: 3vw;text-align: center;}
 .wrapper {width: 80%;margin: 0 10%;display: flex;flex-wrap: wrap;justify-content: center;}
