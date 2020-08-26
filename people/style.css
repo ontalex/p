@@ -42,6 +42,7 @@ header a, a:active/*, a:visited*/ {color: #fff;text-decoration: none;}
 header a:visited {color: #fff;text-decoration: #0000;}
 header a:hover{color:#a6a6a6;text-decoration: none;}
 .positionUser a {color: #fff; text-decoration: none;}
+.positionUser a:hover {color: #a6a6a6;}
 
 .positionUser {width: 100%;background-color: #111;margin-top: -4px;padding: 0.8% 0;}
 .positionUser p {text-align: center;margin: 0;font-size: 1vw;font-family: 'Rubik', sans-serif;}
