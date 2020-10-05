@@ -58,6 +58,9 @@ h3 {
 .project:hover {
     box-shadow: inset 0px 0px 200px rgb(5, 5, 5);
 }
+.linkProject {
+    display: block;
+}
 footer {
     width: 100%;
     min-height: 200px;
