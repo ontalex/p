@@ -1,11 +1,54 @@
-body {margin: 0;}
-header {}
-.avatar {}
-.img {}
-.nickname {}
-h3 {}
-main {}
-.project {}
-.hoverBox_Ef1 {}
-span {}
-footer {}
+body {
+    margin: 0;
+    background-color: #222222;
+}
+header {
+    display:flex;
+    background-color: #313131; 
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 200px;
+}
+.boxBegin {
+    position: absolute;
+    top: 10%;
+}
+.avatar {
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    height: 100px;
+    margin: 0 auto;
+}
+.img {
+    background-image: url("img/avatar.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.nickname {
+    font-size: 35px;
+    color: #fafafa;
+    margin-top: 30px;
+}
+h3 {
+    margin: 10px 0;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 80px 0 0 0;
+}
+.project {
+    width: 100%;
+    height: 50vw;
+    box-sizing: border-box;
+}
+.project:hover {
+    box-shadow: inset 0px 0px 80px rgb(32, 32, 32);
+}
