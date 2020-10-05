@@ -5,21 +5,21 @@ body {
 header {
     background-image: url("img/back_ico.png");
     display:flex;
-    background-color: #313131; 
+    background-color: #3e3e3e7d; 
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     flex-wrap: wrap;
     justify-content: center;
-    height: 200px;
-}
-.boxBegin {
-    position: absolute;
-    top: 10%;
+    height: 150px;
+    position: relative;
 }
 .avatar {
+    position: absolute;
+    bottom: 10px;
+
     width: 100px;
     border-radius: 50%;
-    border: 3px solid #ffffff;
+    border: 5px solid #ffffff;
     height: 100px;
     margin: 0 auto;
 }
@@ -32,24 +32,56 @@ header {
     border-radius: 50%;
 }
 .nickname {
+
     font-size: 35px;
     color: #fafafa;
-    margin-top: 30px;
+    margin: 0 auto;
+    text-align: center;
 }
 h3 {
     margin: 10px 0;
 }
 .projects {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
     width: 100%;
-    margin: 80px 0 0 0;
+    margin: 15px 0 0 0;
 }
 .project {
     width: 100%;
     height: 50vw;
     box-sizing: border-box;
+    transition: linear .3s box-shadow;
+    display: flex;
+    justify-content: center;
+}
+.project_1 {
+    background-color: #5f0073;
+}
+.project_2 {
+    background-color: #464646;
+}
+.project_3 {
+    background-color: #015353;
 }
 .project:hover {
-    box-shadow: inset 0px 0px 80px rgb(32, 32, 32);
+    box-shadow: inset 0px 0px 200px rgb(5, 5, 5);
+}
+footer {
+    width: 100%;
+    min-height: 300px;
+    background-color: #111111;
+}
+
+@media only screen and (min-width: 1000px) {
+    .projects {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .project {
+        height: 20vw;
+    }
+    .avatar {
+        width: 100px;
+        height: 100px;
+    }
 }
