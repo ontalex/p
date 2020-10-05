@@ -3,6 +3,7 @@ body {
     background-color: #222222;
 }
 header {
+    background-image: url("img/back_ico.png");
     display:flex;
     background-color: #313131; 
     border-bottom-left-radius: 50%;
