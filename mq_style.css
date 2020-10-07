@@ -22,14 +22,12 @@
         font-size: 90px;
         width: max-content;
     }
-    .contacts {
-        display: block;
-    }
+    .contacts {}
     .link-contact {
-        font-size: 40px;
-        padding: 10px;
-        text-align: center;
-        display: block;
+        padding: 1px;
+    }
+    .ico {
+        width: 64px;
     }
     .about {
         padding: 2% 10% 8%;

@@ -16,13 +16,16 @@ nav {
     justify-content: right;
 }
 .link-nav {
-
     min-width: 150px;
     color: #e99600;
     font-size: 20px;
     text-decoration: none;
     text-align: center;
     padding: 1% 1%;
+    transition: linear .1s border-bottom;
+}
+.link-nav:hover {
+    border-bottom: 2px solid #ff8a00;
 }
 .avatar {
     width: 100%;
@@ -71,12 +74,12 @@ nav {
 }
 .link-contact {
     color: #262626;
-    font-size: 20px;
     text-decoration: none;
-    font-weight: bold;
-    padding: 5px 0;
-    text-align: left;
-    display: inline;
+    padding: 2px 0;
+    display: inline-flex;
+}
+.ico {
+    width: 25px;
 }
 
 main {
