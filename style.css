@@ -28,7 +28,7 @@ nav {
     width: 100%;
     position: absolute;
     bottom: 10%;
-    min-height: 55%;
+    min-height: 65%;
     display: inline-grid;
 }
 .img {
@@ -43,6 +43,7 @@ nav {
     border: 3px solid #fff;
     background-image: url("img/avatar.png");
     background-size: cover;
+    padding: 0;
 }
 .box-name {
 
@@ -59,6 +60,9 @@ nav {
     font-weight: bold;
     border-top: 1px solid #fff;
 }
+.name {
+
+}
 .surname {
     font-size: 45px;
 }
@@ -74,6 +78,8 @@ nav {
     text-decoration: none;
     font-weight: bold;
     padding: 5px 0;
+    text-align: left;
+    display: inline;
 }
 
 main {
@@ -111,7 +117,7 @@ h3 {
     color: #ff8a00;
     font-weight: bold;
     width: min-content;
-    margin: 0 auto;
+    margin: 20px auto;
     border-bottom: 2px solid #fff;
     font-size: 25px;
 }
@@ -126,11 +132,14 @@ p {
     display: flex;
     justify-content: space-evenly;
     padding: 3% 0 5%;
+    flex-wrap: nowrap;
 }
 article {
 
     width: 25%;
-    background-color: #1f1f1f;
+    background-color: #151515;
+    margin: 0 0 0;
+    border-bottom-left-radius: 30px;
 }
 .line-top {
 
@@ -191,4 +200,9 @@ article {
     border-radius: 10px;
 }
 
-footer {min-height: 250px;background-color: #000;color: #fff;padding: 1% 5% 0%;}
+footer {
+    min-height: 250px;
+    background-color: #000;
+    color: #fff;
+    padding: 1% 5% 0%;
+}

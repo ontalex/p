@@ -1,0 +1,77 @@
+@media only screen and (max-width: 1000px) {
+    header {}
+    nav {
+        justify-content: space-evenly;
+    }
+    .link-nav {
+        font-size: 40px;
+        width: 250px;
+    }
+    .avatar {}
+    .img {
+        width: 40vw;
+        height: 40vw;
+        border: 5px solid #fff;
+    }
+    .box-name {
+        font-size: 100px;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        padding: 15px 0;
+    }
+    .surname {
+        font-size: 90px;
+        width: max-content;
+    }
+    .contacts {
+        display: block;
+    }
+    .link-contact {
+        font-size: 40px;
+        padding: 10px;
+        text-align: center;
+        display: block;
+    }
+    .about {
+        padding: 2% 10% 8%;
+    }
+    .addTexts {
+        display: block;
+    }
+    h2 {
+        font-size: 70px;
+        margin: 20px auto;
+    }
+    h3 {
+        font-size: 50px;
+    }
+    p {
+        font-size: 45px;
+    }
+    .skills {
+        flex-wrap: wrap;
+    }
+    article {
+        width: 75%;
+        margin: 0 0 10%;
+    }
+    .line-top {
+        height: 15px;
+    }
+    .circle {
+        width: 100px;
+        height: 100px;
+        margin: 40px;
+    }
+    .projects {
+        background: linear-gradient(75deg, #ff7800 50%, #ffa800 50%);
+    }
+    .table {
+        grid-template-columns: 1fr;
+        padding: 0 10%;
+    }
+    .td {
+        line-height: 400px;
+    }
+
+}
