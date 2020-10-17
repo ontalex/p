@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class="conteiner">
+		<div class="section">
+			<div class="content">
+				<h2>Title</h2>
+				<p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Repellendus magni perspiciatis neque unde officia praesentium obcaecati illo voluptas corporis, excepturi? Eligendi a eum omnis porro error accusamus vel officia ab. ipsum dolor sit, amet consectetur, adipisicing elit. Repellendus magni perspiciatis neque unde officia praesentium obcaecati illo voluptas corporis, excepturi? Eligendi a eum omnis porro error accusamus vel officia ab.</p>
+			</div>
+		</div>
+		<div class="section">
+			<div class="content">
+				<h2>Title</h2>
+				<p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Repellendus magni perspiciatis neque unde officia praesentium obcaecati illo voluptas corporis, excepturi? Eligendi a eum omnis porro error accusamus vel officia ab.</p>
+			</div>
+		</div>
+		<div class="section">
+			<div class="content">
+				<h2>Title</h2>
+				<p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Repellendus magni perspiciatis neque unde officia praesentium obcaecati illo voluptas corporis, excepturi? Eligendi a eum omnis porro error accusamus vel officia ab.</p>
+			</div>
+		</div>
+		<div class="section">
+			<div class="content">
+				<h2>Title</h2>
+				<p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Repellendus magni perspiciatis neque unde officia praesentium obcaecati illo voluptas corporis, excepturi? Eligendi a eum omnis porro error accusamus vel officia ab.</p>
+			</div>
+		</div>
+		<div class="section">
+			<div class="content">
+				<h2>Title</h2>
+				<p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Repellendus magni perspiciatis neque unde officia praesentium obcaecati illo voluptas corporis, excepturi? Eligendi a eum omnis porro error accusamus vel officia ab.</p>
+			</div>
+		</div>
+	</div>
+</body>
+<style>
+body {
+	margin:0;
+	padding:0;
+	background-color: #fff;
+	color:#282828;
+}
+.conteiner {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	scroll-snap-type: y mandatory;
+}
+.section {
+	position: relative;
+	background-blend-mode: multiply;
+	height: 100%;
+	scroll-snap-align: start;
+	display: flex;
+	justify-content: left;
+	align-items: end;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.section:nth-child(1) {
+	background-image: url("http://fotorecurso.com/images/2016/05/22/TECLADO_MAC_MACBOOK_COMPUTADORA_LETRAS_NUMEROS_SIGNOS_TECLA_TECNOLOGIA_OBJETOS_PANTALLAS_COMANDOS_FOTORECURSO.md.jpg");
+	background-color: #f00;
+	background-position-x:center;
+}
+.section:nth-child(2) {
+	background-image: url("https://jooinn.com/images450_/flower-background-22.jpg");
+	background-color: #0f0;
+	background-position-x:right;
+}
+.section:nth-child(3) {
+	background-image: url("https://mcdn.wallpapersafari.com/medium/30/76/IOg6jk.jpg");
+	background-position-x:right;
+	background-color: #00f;
+}
+.section:nth-child(4) {
+	background-image: url("https://st2.depositphotos.com/1683796/11667/i/950/depositphotos_116670412-stock-photo-cosmetic-brushes-on-wooden-background.jpg");
+	background-color: #0ff;
+}
+.section:nth-child(5) {
+	background-image: url("https://1rpu.ru/wp-content/uploads/2018/07/kompas2.jpg");
+	background-color: #ff0;
+	background-position-x:center;
+}
+.content {
+	width: 1200px;
+	margin: 20px;
+	font-size: 2rem;
+}
+.content * {
+	background: #fff;
+	padding: 20px;
+	display: inline-block;
+}
+</style>
+</html>
