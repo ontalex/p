@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #191919;
+    color: rgb(255, 255, 255);
+}
+
+.slider {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto 0;
+    /* Чтобы во время перетаскивания слайда ничего не выделить внутри него */
+    user-select: none;
+    /* Чтобы запретить скролл страницы, если мы начали двигать слайдер по оси X */
+    touch-action: pan-y;
+}
+
+/* Если где-то внутри слайдера будут изображения,
+    то нужно задать им pointer-events: none,
+    чтобы они не перетаскивались мышью */
+
+.slider img {
+    poiner-events: none;
+}
+
+.slider-list {
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+}
+
+.slider-list.grab {
+    cursor: grab;
+}
+
+.slider-list.grabbing {
+    cursor: grabbing;
+}
+
+.slider-track {
+    display: flex;
+}
+
+.slide {
+    width: 200px;
+    height: 200px;
+    /* Чтобы слайды не сжимались */
+    flex-shrink: 0;
+    /* Увеличиваем и центрируем цифру внутри слайда */
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+.slider-arrows {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.button {
+    color: #ffffff;
+}
+
+.next, .prev {
+    background: none;
+    border: none;
+    margin: 0 10px;
+    font-size: 30px;
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+.next.disabled, .prev.disabled {
+    opacity: .25;
+    pointer-events: none;
+}
