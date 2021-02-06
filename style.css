@@ -8,8 +8,10 @@ body {
 
 div {
     position: relative;
-    box-sizing: border-box;
-    padding: 5px 10px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 900px;
 }
 
 p {
@@ -23,6 +25,7 @@ p::before {
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 p::after {
     content: close-quote;
     font-size: 30px;
@@ -31,8 +34,7 @@ p::after {
 
 span {
     position: absolute;
-    right: 0;
+    right: 20px;
     font-style: italic;
-
     font-family: 'Times New Roman', serif;
 }
