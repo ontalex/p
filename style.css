@@ -1,80 +1,38 @@
 body {
     margin: 0;
-    padding: 0;
-    background-color: #191919;
-    color: rgb(255, 255, 255);
-}
-
-.slider {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 50px auto 0;
-    /* Чтобы во время перетаскивания слайда ничего не выделить внутри него */
-    user-select: none;
-    /* Чтобы запретить скролл страницы, если мы начали двигать слайдер по оси X */
-    touch-action: pan-y;
-}
-
-/* Если где-то внутри слайдера будут изображения,
-    то нужно задать им pointer-events: none,
-    чтобы они не перетаскивались мышью */
-
-.slider img {
-    poiner-events: none;
-}
-
-.slider-list {
-    width: inherit;
-    height: inherit;
-    overflow: hidden;
-}
-
-.slider-list.grab {
-    cursor: grab;
-}
-
-.slider-list.grabbing {
-    cursor: grabbing;
-}
-
-.slider-track {
     display: flex;
-}
-
-.slide {
-    width: 200px;
-    height: 200px;
-    /* Чтобы слайды не сжимались */
-    flex-shrink: 0;
-    /* Увеличиваем и центрируем цифру внутри слайда */
-    font-size: 50px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    border: 1px solid rgb(255, 255, 255);
+    background-color: #333;
+    color: white;
+}
+
+div {
+    position: relative;
     box-sizing: border-box;
+    padding: 5px 10px;
 }
 
-.slider-arrows {
-    margin-top: 15px;
-    text-align: center;
+p {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-.button {
-    color: #ffffff;
-}
-
-.next, .prev {
-    background: none;
-    border: none;
-    margin: 0 10px;
+p::before {
+    content: open-quote;
     font-size: 30px;
-    cursor: pointer;
-    filter: invert(100%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p::after {
+    content: close-quote;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.next.disabled, .prev.disabled {
-    opacity: .25;
-    pointer-events: none;
+span {
+    position: absolute;
+    right: 0;
+    font-style: italic;
+
+    font-family: 'Times New Roman', serif;
 }
