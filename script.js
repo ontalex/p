@@ -1,7 +1,19 @@
 let nav = document.querySelector("nav");
-nav.style.height = document.body.outerHTML + "px";
+if (window.innerWidth <= 1000) {
 
-let wrepper = document.querySelector(".wrepper");
+    nav.style.top = (window.innerHeight - 36) / 2 + "px";
+    nav.style.height = 36 + "px";
+    nav.style.borderTopRightRadius = "5px";
+    nav.style.borderBottomRightRadius = "5px";
+}else {
+    true
+}
+
+
+let cell = document.querySelectorAll(".cell");
+for (let i = 0; i < cell.length; i++) {
+    cell[i].style.height = (window.innerHeight / 2).toFixed(0) - 20 + "px";
+}
 
 
 let box = document.querySelectorAll(".box");

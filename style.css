@@ -3,10 +3,11 @@ body {
     background-color: #333;
     color: white;
     display: grid;
-    grid-template-columns: minmax(100px, 300px) auto;
+    grid-template-columns: minmax(80px, 180px) auto;
 }
 
 nav {
+    position: relative;
     box-sizing: border-box;
     background-color: #171717;
     padding: 30px 10px;
@@ -29,7 +30,7 @@ main {
 }
 
 .pointMenu span {
-    font-size: 25px;
+    font-size: 20px;
     position: relative;
 }
 
@@ -72,7 +73,6 @@ main {
 .box {
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 20px 0;
 }
 
@@ -90,7 +90,7 @@ main {
 }
 
 .tolk {
-    font-size: 30px;
+    font-size: 18px;
     padding: 10px 35px;
     display: flex;
     align-items: center;
@@ -102,8 +102,8 @@ main {
 }
 
 .about {
-    font-size: 30px;
-    width: 90%;
+    font-size: 22px;
+    width: 70%;
     text-align: center;
     margin: 0 auto;
 }
@@ -165,7 +165,7 @@ main {
 }
 
 .cell p {
-    font-size: 22px;
+    font-size: 16px;
     text-align: center;
 }
 
