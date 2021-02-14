@@ -90,7 +90,7 @@ main {
 }
 
 .tolk {
-    font-size: 18px;
+    font-size: 22px;
     padding: 10px 35px;
     display: flex;
     align-items: center;
@@ -99,6 +99,7 @@ main {
 
 .tolk p {
     margin: 10px 0;
+    text-align: center;
 }
 
 .about {
@@ -165,7 +166,7 @@ main {
 }
 
 .cell p {
-    font-size: 16px;
+    font-size: 25px;
     text-align: center;
 }
 

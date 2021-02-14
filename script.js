@@ -1,6 +1,5 @@
 let nav = document.querySelector("nav");
 if (window.innerWidth <= 1000) {
-
     nav.style.top = (window.innerHeight - 36) / 2 + "px";
     nav.style.height = 36 + "px";
     nav.style.borderTopRightRadius = "5px";
