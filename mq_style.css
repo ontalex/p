@@ -1,57 +1,11 @@
 @media (max-width: 1000px) {
-    body {
-        grid-template-columns: auto;
+    .logo {
+        margin: 25px auto;
     }
-    main {
-        display: flex;
-        justify-content: center;
-        flex-flow: wrap;
+    .logo_img {
+        width: 80px;
     }
-    .begin {
-        grid-template-columns: auto;
-        display: flex;
-        justify-content: center;
-        flex-flow: wrap;
-    }
-    nav {
-        position: fixed;
-        right: calc(100% - 15px);
-        background-color: #0f0f0f;
-        color: #00000000;
-    }
-    .box {
-        flex-flow: wrap;
-    }
-    .begin img {
-        width: 150px;
-    }
-    .next {
-        position: static;
-        display: none;
-    }
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
-        min-height: inherit;
-        grid-gap: 20px;
-    }
-    
-    .grup {
-        height: auto;
-        grid-column: span 2;
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    
-    .grup:nth-last-child(2) {
-        grid-column: span 2;
-    }
-    
-    .grup:nth-last-child(1) {
-        grid-column: span 2;
-    }
-    .tolk, .about, .cell p {
-        font-size: 18px;
+    h1 {
+        font-size: 40px;
     }
 }
