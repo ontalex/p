@@ -60,7 +60,18 @@ h1 {
     display: flex;
     flex-flow: wrap;
     align-items: center;
+
+    background-blend-mode: multiply;
 }
+
+.slide1 {
+    background-image: url("works.svg");
+}
+.slide2 {
+    background-image: url("notes.svg");
+}
+.slide3 {}
+.slide4 {}
 
 .name {
     font-size: xxx-large;
