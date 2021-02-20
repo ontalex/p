@@ -12,7 +12,6 @@ let widthSlide = widthCard + margin * 2;
 let countElem = (window.innerWidth <= 1000) ? 1 : 2; // слайдов на view box
 
 
-
 let sLine = 0;
 /* **************************************************************** */
 
