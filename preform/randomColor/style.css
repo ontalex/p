@@ -1,0 +1,25 @@
+body {
+    background-color: #333333;
+    margin: 0;
+}
+
+.grid {
+    max-width: 1260px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    margin: 5px 5px;
+}
+
+.textCell {
+    font-size: 32px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
