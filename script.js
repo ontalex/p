@@ -1,23 +1,21 @@
-let line = document.getElementsByClassName("slider_line");
-let butPrev = document.querySelector(".prev");
-let butNext = document.querySelector(".next");
-let wVBox = document.getElementsByClassName("slider_box")[0];
-let slide = document.querySelectorAll(".slide"); // записывает как NodeList (arrey)
-let butts = document.querySelector(".buttons");
-let colors = [];
-
-let widthCard = 450; // ширина карточки
-let margin = 20; // отступ от карточки
-let widthSlide = widthCard + margin * 2;
-let countElem = (window.innerWidth <= 1000) ? 1 : 2; // слайдов на view box
-
-
-let sLine = 0;
+let 
+    line = document.getElementsByClassName("slider_line"),
+    butPrev = document.querySelector(".prev"),
+    butNext = document.querySelector(".next"),
+    wVBox = document.getElementsByClassName("slider_box")[0],
+    slide = document.querySelectorAll(".slide"), // записывает как NodeList (arrey)
+    butts = document.querySelector(".buttons"),
+    colors = [],
+    widthCard = 450, // ширина карточки
+    margin = 20, // отступ от карточки
+    widthSlide = widthCard + margin * 2,
+    countElem = (window.innerWidth <= 1000) ? 1 : 2, // слайдов на view box
+    sLine = 0;
 /* **************************************************************** */
 
+// BEACON
+
 /* ------------------- RANDOM BACKGROUND-COLOR -------------------- */
-
-
 
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
