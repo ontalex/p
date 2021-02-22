@@ -5,7 +5,7 @@ let
   closeMenu = document.querySelector(".close"),
   menuBotton = document.querySelector(".menuBotton");
 
-menubox.style.height = window.innerHeight + "px";
+menubox.style.height = window.innerHeight + 100 + "px";
 
 function menuF() {
   if (countMenu == 0) {
