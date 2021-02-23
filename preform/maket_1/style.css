@@ -72,6 +72,8 @@ span {
   position: relative;
   left: -100%;
   top: 0;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 .menubox {
