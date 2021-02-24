@@ -3,13 +3,14 @@ body {
     justify-content: center;
     margin: 0;
     background-color: #333333;
-    padding: 50px 30px;
+    padding: 40px 30px;
 }
 ul {
     padding: 0;
     width: 100%;
     list-style: none;
     max-width: 1100px;
+    margin: 0;
 }
 li {
     display: flex;
@@ -24,13 +25,20 @@ li {
 .item_under {
     background-color: #00000000;
     padding: 0 0 0 30px;
+    display: none;
+}
+
+a {
     display: block;
+    text-decoration: none;
 }
 
 .item_under li {
     margin: 10px 0 10px 5%;
     background-color: #222222;
 }
+
+.buttOpen {transform: rotate(90deg);}
 
 span {
     font-size: 20px;
