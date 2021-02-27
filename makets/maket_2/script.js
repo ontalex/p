@@ -1,12 +1,12 @@
-let header = document.getElementsByTagName("header")[0];
-
-let itemsMenu = document.querySelector(".itemsMenu");
-let buttMenu = document.querySelector(".buttMenu");
-let menu = document.querySelector(".menu");
-let itemMenu = document.querySelectorAll(".itemMenu");
-
-let buttMess = document.querySelector(".buttOpenMess");
-let windMess = document.querySelector(".windMess");
+let
+    header = document.getElementsByTagName("header")[0],
+    itemsMenu = document.querySelector(".itemsMenu"),
+    buttMenu = document.querySelector(".buttMenu"),
+    menu = document.querySelector(".menu"),
+    itemMenu = document.querySelectorAll(".itemMenu"),
+    formMess = document.querySelector(".formMess"),
+    buttMess = document.querySelector(".buttOpenMess"),
+    windMess = document.querySelector(".windMess");
 
 header.style.paddingLeft = (window.innerWidth - 1200) / 2 + "px";
 
