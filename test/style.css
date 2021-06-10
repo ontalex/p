@@ -8,6 +8,10 @@ html {
 }
 
 body {
+    
+}
+
+.wrepper {
     display: flex;
     justify-content: center;
 }
