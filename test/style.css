@@ -7,34 +7,50 @@ html {
     background-color: #333;
 }
 
-body {
-    
-}
+body {}
 
 .wrepper {
     display: flex;
     justify-content: center;
 }
 
+.alert {
+    background-color: rgba(185, 141, 29, 0.123);
+    border: 2px solid goldenrod;
+    box-shadow: 0px 0px 10px rgba(185, 141, 29, 0.896);
+    color: goldenrod;
+}
+
+.info {
+    background-color: rgba(50, 174, 206, 0.123);
+    border: 2px solid rgb(50, 174, 206);
+    box-shadow: 0px 0px 10px rgba(50, 174, 206, 0.895);
+    color: rgb(50, 174, 206);
+}
+.alert:hover {
+    box-shadow: 0px 0px 25px rgba(185, 141, 29, 0.896);
+    background-color: rgba(185, 141, 29, 0.185);
+}
+.info:hover {
+    background-color: rgba(50, 174, 206, 0.185);
+    box-shadow: 0px 0px 25px rgba(50, 174, 206, 0.895);
+    color: rgb(50, 174, 206);
+}
+
 .box_notify {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(185, 141, 29, 0.123);
     max-width: 95%;
-    border: 2px solid goldenrod;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(185, 141, 29, 0.896) inset;
-    box-shadow: 0px 0px 10px rgba(185, 141, 29, 0.896);
     padding: 5px 45px;
-    margin: 100px;
-    transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+    margin: 20px;
+    transition-property: box-shadow, background-color;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
 }
 
 .box_notify:hover {
-    box-shadow: 0px 0px 25px rgba(185, 141, 29, 0.896) inset;
-    box-shadow: 0px 0px 25px rgba(185, 141, 29, 0.896);
-    background-color: rgba(185, 141, 29, 0.185);
+    
 }
 
 .ico {
@@ -50,7 +66,7 @@ body {
 
 .text {
     font-size: 30px;
-    color: goldenrod;
+    
     font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
     padding: 20px 30px;
 }
