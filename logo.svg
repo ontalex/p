@@ -2,9 +2,9 @@
 <!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 599 599" style="enable-background:new 0 0 599 599;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#1A1A1A;}
-	.st1{fill:#FFFFFF;}
+<!-- <style type="text/css">
+	.st0{fill:#efa10ae8;}
+	.st1{fill:#222222;}
 </style>
 <g id="Слой_3">
 	<path class="st0" d="M511.73,600H88.27C39.52,600,0,560.48,0,511.73V88.27C0,39.52,39.52,0,88.27,0h423.46
@@ -27,5 +27,16 @@
 		l112.54-139.26c1.87-2.32,5.41-2.32,7.29,0l112.54,139.26C419.51,423.66,426.36,419.21,423.78,414.2z"/>
 	<path class="st1" d="M338.51,338.87l-37.42,72.96c-0.54,1.06-2.06,1.06-2.6,0l-37.42-72.96c-0.8-1.57,1.33-2.96,2.44-1.59
 		l35.14,43.49c0.59,0.72,1.69,0.72,2.28,0l35.14-43.49C337.18,335.92,339.32,337.31,338.51,338.87z"/>
+</g> -->
+<style type="text/css">
+	.st0 {fill:#efa10a;}
+	.r1 {fill:#222222;}
+</style>
+<g id="Page 1">
+	<path class="st0" d="M511.73,600H88.27C39.52,600,0,560.48,0,511.73V88.27C0,39.52,39.52,0,88.27,0h423.46
+		C560.48,0,600,39.52,600,88.27v423.46C600,560.48,560.48,600,511.73,600z"/>
+</g>
+<g id="Page 2">
+	<ellipse rx="200" ry="200" cx="300" cy="300"/>
 </g>
 </svg>
