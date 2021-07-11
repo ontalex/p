@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@font-face {
+  font-family: "Post No Bills Jaffna";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Post No Bills Jaffna"), url("fonts/PostNoBillsJaffna700.ttf");
+}
+html {
+  background-color: #000;
+  color: white;
+}
+.contener {
+  width: 1110px;
+  max-width: 1110px;
+  margin: 0 auto;
+  height: inherit;
+}
+.head-menu,
+.head-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+.head-info {
+  padding: 0 20px;
+}
+.head-menu .contener {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo span {
+  font-family: "Post No Bills Jaffna";
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+  display: block;
+}
+.nav {
+  display: flex;
+}
+.nav div {
+  padding: 18px 12px;
+  transition-property: background-color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+}
+.nav div:hover {
+  background-color: #1f1f1f;
+}
+.nav span {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+}
+.nav img {
+  height: 18px;
+}
+.info,
+.inUp {
+  display: flex;
+  align-items: center;
+}
+.info img,
+.inUp img {
+  width: 16px;
+  height: 16px;
+  margin: 0 15px;
+}
+.info span,
+.inUp span {
+  color: gray;
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+.head-menu {
+  background-color: #0f0f0f;
+}
+.head-menu ul {
+  display: flex;
+}
+.big-banner {
+  height: 810px;
+  background-image: url("img/Rectangle_3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.big-banner .contener {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  height: 100%;
+  max-width: 730px;
+}
+.boxSity {
+  margin: 0 auto;
+  width: 320px;
+  height: 320px;
+  max-width: 320px;
+  max-height: 320px;
+  border: 4px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textlogo .name {
+  font-family: "Post No Bills Jaffna";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 86px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fff;
+}
+.textlogo .sity {
+  font-family: "PT Sans";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.descript {
+  margin-top: 80px;
+  text-transform: uppercase;
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.new {
+  display: grid;
+  grid-template-columns: minmax(200px, 1040px) minmax(380px, auto);
+  height: 730px;
+}
+.new-season {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  flex-flow: column;
+}
+.new-season h2 {
+  font-family: "Playfair Display";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.new-season .line,
+.new-collection .line,
+.new-price .line {
+  width: 120px;
+  border-bottom: 1px solid #fff;
+  margin: 40px auto;
+}
+.new-season-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  list-style: none;
+}
+.new-season-grid .product-img {
+  width: 260px;
+  height: 325px;
+  background-color: #191b1c;
+  background-image: url("img/62050_1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.new-season-grid .name {
+  font-family: "Playfair Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.new-season-grid .price {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.new-collection {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 80px;
+  background-image: url("img/Rectangle_8.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: max-content;
+}
+.new-collection .wrepper {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  width: 376px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.new-collection h2 {
+  font-family: "Playfair Display";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0 auto;
+}
+.new-collection .but {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding: 22px;
+  border: 1px solid #fff;
+  width: min-content;
+  margin: 0 auto;
+}
+.collection_2018 {
+  display: grid;
+  grid-template-columns: minmax(380px, auto) minmax(200px, 1040px);
+  height: 600px;
+}
+.collection_2018 .collection-img {
+  display: block;
+  background-image: url("img/Rectangle_9.png");
+  background-size: cover;
+  background-position: center;
+}
+.collection_2018 .collection-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background-color: #000;
+}
+.collection_2018 h3 {
+  text-transform: uppercase;
+  margin: 0 auto;
+  font-family: "Playfair Display";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.collection_2018 .line {
+  margin: 40px auto;
+  border-bottom: 1px solid #fff;
+  width: 120px;
+}
+.collection_2018 p {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  max-width: 470px;
+}
+.collection_2018 .but {
+  padding: 10px;
+  border: 1px solid #fff;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.new-price {
+  padding-bottom: 150px;
+}
+.new-price h2 {
+  margin-top: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.new-price-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 24px;
+  padding: 0ch;
+}
+.new-price-grid li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+.new-price-grid .product-img {
+  width: 260px;
+  height: 325px;
+  background-color: #191b1c;
+  background-image: url("img/62050_1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.new-price-grid .name {
+  font-family: "Playfair Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.new-price-grid .price {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.brands {
+  width: 100%;
+  height: 370px;
+  background-color: #0f0f0f;
+}
+.brands .contener {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.brands h2 {
+  font-family: "Playfair Display";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.brands .line {
+  width: 120px;
+  border-bottom: 1px solid #fff;
+  margin: 40px auto;
+}
+.brands .brands-grid {
+  display: flex;
+  justify-content: center;
+}
+.brands-grid img {
+  width: 255px;
+}
+.min-info {
+  width: 100%;
+  background-image: url("img/Rectangle_15.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.min-info-grid {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: minmax(100px, 350px) minmax(100px, 350px) minmax(
+      100px,
+      350px
+    );
+  grid-gap: 25px;
+}
+.min-info-grid h3 {
+  font-family: "Playfair Display";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.min-info-grid p {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.categories {
+}
+.flex-box {
+  height: min-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+.catergor {
+  width: max-content;
+  padding: 10px 20px;
+  margin: 5px;
+  text-transform: uppercase;
+
+  background-color: #0f0f0f;
+  color: #d0d0d0;
+
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  display: block;
+  height: max-content;
+}
+
+.formMail {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: auto min-content;
+}
+.formMail input {
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 0px;
+  color: rgba(255, 255, 255, 0.729);
+  padding: auto 10px;
+}
+.formMail button {
+  background-color: #0f0f0f;
+  padding: 10px 20px;
+
+  border: 0px;
+}
+.formMail button:hover {
+  border: 0px;
+}
+.formMail span {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1600px) {
+  .new {
+    display: block;
+    height: auto;
+  }
+  .new-collection {
+    height: 640px;
+  }
+  .collection_2018 {
+    display: block;
+    height: min-content;
+    padding: 40px 0;
+    background-size: cover;
+  }
+  .collection_2018 .collection-img {
+    display: none;
+  }
+  .collection_2018 .collection-text {
+    background-color: #000;
+  }
+  .new-price-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px;
+  }
+  .head-menu {
+    padding: 0 25px;
+  }
+}
