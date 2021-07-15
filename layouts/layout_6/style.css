@@ -375,6 +375,9 @@ footer .contaner {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
     }
+    .nav_box .nav {
+        display:none;
+    }
     .box_t2 {
         grid-template-columns: auto 300px;
     }
