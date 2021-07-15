@@ -144,6 +144,10 @@ main {
     padding: 40px;
 }
 
+.grup_box p {
+    color:rgba(47, 34, 34, 0.56);
+}
+
 .box_t2 {
     display: grid;
     grid-template-columns: auto 320px;
