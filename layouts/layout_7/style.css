@@ -1,0 +1,90 @@
+.flex-c-c {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-items: center;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 50px auto;
+}
+
+.block {
+    height: 200px;
+    background-color: gray;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.wrepper {
+    width: 1300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    background-color: #1b1b24;
+}
+
+.boxMenu {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: min-content auto max-content;
+}
+
+.menu {
+    width: 32px;
+    height: 32px;
+    margin: 9px;
+    background-color: #40404D;
+    border-radius: 5px;
+    border: 0;
+}
+
+.f1 {
+    fill: #F3F3F3;
+}
+
+.name {
+    position: absolute;
+    visibility: hidden;
+}
+
+.itemMenu {
+    width: 32px;
+    height: 32px;
+    background-color: #262633;
+    margin: 9px;
+    border-radius: 5px;
+}
+
+.info {
+    position: absolute;
+    visibility: hidden;
+}
+
+.accont {
+    width: 32px;
+    height: 32px;
+    background-color: #40404d;
+    border-radius: 5px;
+    margin: 9px;
+    display: flex;
+}
+
+.exit {
+    border: 0;
+    background-color: #0000;
+}
