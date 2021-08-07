@@ -1,10 +1,18 @@
 .flex-c-c {
     display: flex;
     justify-content: center;
-    justify-items: center;
-    align-items: center;
     align-items: center;
 }
+.full_hiden {
+    position: absolute;
+    visibility: hidden;
+}
+.icon_size {
+    width: 32px;
+    height: 32px;
+    margin: 9px;
+}
+
 
 body {
     display: grid;
@@ -45,9 +53,6 @@ main {
 }
 
 .menu {
-    width: 32px;
-    height: 32px;
-    margin: 9px;
     background-color: #40404D;
     border-radius: 5px;
     border: 0;
@@ -57,30 +62,22 @@ main {
     fill: #F3F3F3;
 }
 
-.name {
-    position: absolute;
-    visibility: hidden;
-}
+.name {}
 
 .itemMenu {
-    width: 32px;
-    height: 32px;
     background-color: #262633;
-    margin: 9px;
     border-radius: 5px;
 }
 
-.info {
-    position: absolute;
-    visibility: hidden;
+.itemMenu:hover {
+    background-color: #333344;
 }
+
+.info {}
 
 .accont {
-    width: 32px;
-    height: 32px;
     background-color: #40404d;
     border-radius: 5px;
-    margin: 9px;
     display: flex;
 }
 
