@@ -48,5 +48,6 @@ span {
 @media (max-width: 760px) {
     .wrepper {
         flex-direction: column;
+        text-align: center;
     }
 }
