@@ -19,21 +19,22 @@ body {
 }
 
 img {
-    width: 480px;
+    max-width: 480px;
+    width: 90vw;
 }
 
 h1 {
     text-transform: uppercase;
     font-family: "Balsamiq Sans", cursive;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 42px;
 }
 
 p {
     margin: 6px 0;
     font-family: "Comfortaa", cursive;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 span {
@@ -41,7 +42,7 @@ span {
     font-family: "Open Sans Condensed", sans-serif;
     font-weight: 300;
     margin-top: 16px;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 @media (max-width: 760px) {
