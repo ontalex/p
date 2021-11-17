@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+:root {
+    --mr: 50px;
+}
+html {
+ background-color: #aaa;
+ color: rgb(13, 14, 20);
+}
+body {
+    margin: var(--mr) var(--mr) 0px 20px;
+    font-size: 24px;
+}
+li {
+    margin: 15px 0px;
+    font: 400 24px "Balsomiq Sans", cursive;
+}
