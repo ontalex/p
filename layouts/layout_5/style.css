@@ -219,7 +219,7 @@ html {
   background-image: url("img/Rectangle_8.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: max-content;
+  /* height: max-content; неправильное отображение на Cromium */
 }
 .new-collection .wrepper {
   display: flex;
