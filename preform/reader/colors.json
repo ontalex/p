@@ -1,0 +1,41 @@
+{
+  "DARK": {
+    "C_DARK_BGC": "",
+    "C_DARK_P": "",
+    "C_DARK_H1": "",
+    "C_DARK_H2": "",
+    "C_DARK_BTN_MENU": "",
+    "C_DARK_MENU_BGC": "",
+    "C_DARK_MENU_COLOR": "",
+    "C_DARK_SHADOW": "",
+    "C_DARK_INPUT_POINT": "",
+    "C_DARK_INPUT_LINE": "",
+    "C_DARK_INPUT_BEFORE_LINE": ""
+  },
+  "LIGHT": {
+    "C_LIGHT_BGC": "",
+    "C_LIGHT_P": "",
+    "C_LIGHT_H1": "",
+    "C_LIGHT_H2": "",
+    "C_LIGHT_BTN_MENU": "",
+    "C_LIGHT_MENU_BGC": "",
+    "C_LIGHT_MENU_COLOR": "",
+    "C_LIGHT_SHADOW": "",
+    "C_LIGHT_INPUT_POINT": "",
+    "C_LIGHT_INPUT_LINE": "",
+    "C_LIGHT_INPUT_BEFORE_LINE": ""
+  },
+  "HISTORY": {
+    "C_HISTORY_BGC": "",
+    "C_HISTORY_P": "",
+    "C_HISTORY_H1": "",
+    "C_HISTORY_H2": "",
+    "C_HISTORY_BTN_MENU": "",
+    "C_HISTORY_MENU_BGC": "",
+    "C_HISTORY_MENU_COLOR": "",
+    "C_HISTORY_SHADOW": "",
+    "C_HISTORY_INPUT_POINT": "",
+    "C_HISTORY_INPUT_LINE": "",
+    "C_HISTORY_INPUT_BEFORE_LINE": ""
+  }
+}

@@ -1,64 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+
+:root {
+    --def_fontSize_p: 16px;
+    --def_fontSize_h1: 32px;
+    --def_fontSize_h2: 24px;
+
+    --font_size: 5;
+    --margin_mainText: 5;
+    --line_height_p: 5;
+
+    --h_menu_btn: 28px;
+    --w_menu_btn: 162px;
+    --h_menu_body: 520px;
+    --w_menu_body: 700px;
+    --size_theme_btn: 48px;
+    --font_family_menu: 'Roboto', sans-serif;
+
+    /*
+    
+    */
+}
+
 html {
-    background-color: #eee;
+    background-color: rgba(0, 0, 9, 1);
+    color: rgba(255, 255, 255, 0.65);
 }
-.progress {
-    display: flex;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    background-color: #eee;
-    height: 10px;
-}
-.progress_bar {
-    width: 90%;
-    height: 2px;
-    margin: auto;
-    background-color: #cacaca;
-    border-radius: 1px;
-}
-.progress_bar .line_progress {
-    height: 100%;
-    min-width: 1%;
-    width: 1%;
-    border-radius: inherit;
-    background-color: gray;
-}
+
 main {
-    max-width: 90%;
-    margin: 0 auto;
-    padding-bottom: 32px;
+    margin: 0 calc(var(--margin_mainText) * 25px);
+    font-family: var(--font_family_menu);
+    padding-bottom: var(--h_menu_btn);
+    line-height: calc(2px + var(--line_height_p)/3 * var(--def_fontSize_p));
 }
-main h2 {
-    font-size: 21px;
+
+p {
+    font-size: calc(var(--font_size)/3 * var(--def_fontSize_p));
+    font-weight: 400;
+    text-align: justify;
 }
-main p {
-    font-size: 16px;
+
+h1 {
+    font-size: calc(var(--font_size)/3 * var(--def_fontSize_h1));
+    font-weight: 900;
+    text-align: center;
 }
-.buttons {
-    display: flex;
+
+h2 {
+    font-size: calc(var(--font_size)/3 * var(--def_fontSize_h2));
+    font-weight: 900;
+    text-align: center;
+
+}
+
+.menu {
+    display: grid;
     position: fixed;
+    /* bottom: calc(var(--h_menu_body) / -1); */ 
+    /*
+    ! Дописать способ showing меню
+    */
     bottom: 0px;
-    width: 100vw;
-    background-color: #eee;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu_body {
+    height: var(--h_menu_body);
+    width: var(--w_menu_body);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    align-content: center;
+
+    background: #161A2C;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.btn_menu {
+    border: 0;
+    height: var(--h_menu_btn);
+    width: var(--w_menu_btn);
+    margin: 0 auto;
+    filter: drop-shadow(2px 0px 6px rgba(0, 0, 0, 0.36));
+
+    background: #262A3C;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+
+    z-index: -1;
+}
+
+.btn_menu svg {
+    transform:rotate(180deg);
+}
+
+.control {
+    display: flex;
+    margin: 27px 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
     justify-content: center;
-    column-gap: 10px;
-    height: 32px;
     align-items: center;
 }
-.buttons svg {
-    width: 10px;
-    height: 10px;
-    margin: auto;
-    fill: #1e1e1e;
+
+.name_controle {
+    font-family: var(--font_family_menu);
+    color: #fff;
+    font-size: 24px;
+    font-weight: 900;
 }
-.buttons .but {
-    display: flex;
-    width: 80px;
-    height: 21px;
-    background-color: #dadada;
-    border-radius: 9px;
+
+.control_themes {
+    display: grid;
+    grid-template-columns: repeat(3, 64px);
+    width: 90%;
+    margin: 0 5%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.theme {
+    border-radius: 50%;
+    width: var(--size_theme_btn);
+    height: var(--size_theme_btn);
+}
+
+.theme_dark {
+    background: #262526;
+    border: 2px solid #6A6A6A;
+    box-sizing: border-box;
+}
+
+.theme_light {
+    background: #FFFFFF;
+    border: 2px solid #909090;
+    box-sizing: border-box;
+}
+
+.theme_history {
+    background: #F2DABA;
+    border: 2px solid #9A5700;
+    box-sizing: border-box;
+}
+
+.inputNumber {
+    width: 64px;
+    height: 44px;
+
+    font-family: var(--font_family_menu);
+    font-weight: 500;
+    color: white;
+    text-align: center;
+
     border: 0;
+    border-radius: 9px;
+    display: grid;
+    background-color: rgba(196, 196, 196, 0.3);
 }
-.buttons .but:hover {
-    background-color: #b6b6b6;
+
+.inputNumber span {
+    margin: auto;
 }
+
+.range {
+    margin: 0 48px;
+    width: 340px;
+}
+
+.range {}
+
+.control_fs {}
+
+.range_fs {}
+
+.input_fs {}
+
+.control_m {}
+
+.range_m {}
+
+.input_m {}
+
+.control_lh {}
+
+.range_lh {}
+
+.input_lh {}
