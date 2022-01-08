@@ -1,0 +1,22 @@
+:root {
+    --main_bgc: rgba(0, 0, 9, 1);
+    --main_color: rgba(255, 255, 255, 0.65);
+
+    --menu_bgc: #161A2C;
+
+    --menu_btn_bgc: #262A3C;
+    --menu_btn_color: #fff;
+
+    --menu_name_controle_color: #fff;
+    --menu_inputNumber_bgc: rgba(196, 196, 196, 0.3); 
+    --menu_inputNumber_color: #fff; 
+
+    --theme_dark_bgc: #262526;
+    --theme_dark_border: #6A6A6A;
+
+    --theme_light_bgc: #FFFFFF;
+    --theme_light_border: #909090;
+    
+    --theme_history_bgc: #F2DABA;
+    --theme_history_border: #9A5700;
+}

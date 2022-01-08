@@ -15,15 +15,11 @@
     --w_menu_body: 700px;
     --size_theme_btn: 48px;
     --font_family_menu: 'Roboto', sans-serif;
-
-    /*
-    
-    */
 }
 
 html {
-    background-color: rgba(0, 0, 9, 1);
-    color: rgba(255, 255, 255, 0.65);
+    background-color: var(--main_bgc);
+    color: var(--main_color);
 }
 
 main {
@@ -55,11 +51,7 @@ h2 {
 .menu {
     display: grid;
     position: fixed;
-    /* bottom: calc(var(--h_menu_body) / -1); */ 
-    /*
-    ! Дописать способ showing меню
-    */
-    bottom: 0px;
+    bottom: calc(var(--h_menu_body) / -1); 
     left: 50%;
     transform: translateX(-50%);
 }
@@ -73,7 +65,7 @@ h2 {
     justify-content: space-around;
     align-content: center;
 
-    background: #161A2C;
+    background: var(--menu_bgc);
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -84,8 +76,8 @@ h2 {
     margin: 0 auto;
     filter: drop-shadow(2px 0px 6px rgba(0, 0, 0, 0.36));
 
-    background: #262A3C;
-    color: white;
+    background: var(--menu_btn_bgc);
+    color: var(--menu_btn_color);
     border-radius: 10px 10px 0px 0px;
 
     z-index: -1;
@@ -107,7 +99,7 @@ h2 {
 
 .name_controle {
     font-family: var(--font_family_menu);
-    color: #fff;
+    color: var(--menu_name_controle_color);
     font-size: 24px;
     font-weight: 900;
 }
@@ -130,20 +122,20 @@ h2 {
 }
 
 .theme_dark {
-    background: #262526;
-    border: 2px solid #6A6A6A;
+    background: var(--theme_dark_bgc);
+    border: 2px solid var(--theme_dark_border);
     box-sizing: border-box;
 }
 
 .theme_light {
-    background: #FFFFFF;
-    border: 2px solid #909090;
+    background: var(--theme_light_bgc);
+    border: 2px solid var(--theme_light_border);
     box-sizing: border-box;
 }
 
 .theme_history {
-    background: #F2DABA;
-    border: 2px solid #9A5700;
+    background: var(--theme_history_bgc);
+    border: 2px solid var(--theme_history_border);
     box-sizing: border-box;
 }
 
@@ -153,13 +145,13 @@ h2 {
 
     font-family: var(--font_family_menu);
     font-weight: 500;
-    color: white;
+    color: var(--menu_inputNumber_color);
     text-align: center;
 
     border: 0;
     border-radius: 9px;
     display: grid;
-    background-color: rgba(196, 196, 196, 0.3);
+    background-color: var(menu_inputNumber_);
 }
 
 .inputNumber span {
