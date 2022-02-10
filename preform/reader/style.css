@@ -51,9 +51,10 @@ h2 {
 .menu {
     display: grid;
     position: fixed;
-    bottom: calc(var(--h_menu_body) / -1); 
+    bottom: calc(var(--h_menu_body) / -1);
     left: 50%;
     transform: translateX(-50%);
+    transition: bottom .5s;
 }
 
 .menu_body {

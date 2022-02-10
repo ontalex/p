@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;0,600;0,800;1,500;1,600;1,800&display=swap');
+
+:root {
+    --def-color_font: rgb(246, 247, 251);
+    --bgc-button: #2e3957e3;
+    --w-button: 320px;
+    --h-button: 64px;
+    --mt-t: 16px;
+}
+
+html {
+    background: radial-gradient(#0b0946,#07052c);
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+main {
+    display: grid;
+    margin: auto auto;
+    max-width: 90%;
+}
+
+main > * {
+    margin: var(--mt-t) auto;
+}
+
+h1 {
+    color: var(--def-color_font);
+    font-weight: 800;
+    font-size: 48px;
+    position: relative;
+    z-index: 1000;
+}
+
+.first {
+    position: relative;
+}
+.first::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #2e39576e;
+    position: absolute;
+    border-radius: 10%;
+    top: 5px;
+    left: -15px;
+    z-index: 999;
+    opacity: 90%;
+}
+
+p {
+    color: var(--def-color_font);
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: calc( - var(--mt-t) / 2);
+    text-align: center;
+    color: rgb(246, 247, 251, 0.8);
+}
+
+.link {
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-self: center;
+    width: var(--w-button);
+    height: var(--h-button);
+    border-radius: calc(var(--w-button) * 0.02);
+    background-color: var(--bgc-button);
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.link::after {
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    content: "";
+    background-color: #2e39579f;
+    width: 32px;
+    height: 32px;
+    border-radius: calc(var(--w-button) * 0.02);
+    opacity: 80%;
+}
+.link::before {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    content: "";
+    background-color: #2e39579f;
+    width: 32px;
+    height: 32px;
+    border-radius: calc(var(--w-button) * 0.02);
+    opacity: 80%;
+}
+
+.link_text {
+    width: fit-content;
+    color: var(--def-color_font);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: calc(var(--w-button) / 10);
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+}
