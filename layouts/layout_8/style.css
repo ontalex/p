@@ -116,3 +116,7 @@ p {
 .link_dl {
     filter: invert(20%);
 }
+
+svg {
+    margin-right: 10px;
+}
