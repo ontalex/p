@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;0,600;0,800;1,500;1,600;1,800&display=swap');
+
+:root {
+    --def-color_font: rgb(246, 247, 251);
+    --bgc-button: #2e3957e3;
+    --w-button: 320px;
+    --h-button: 64px;
+    --mt-t: 16px;
+    --fs-password: 32px;
+    --padding-alert: 8px;
+    --fs-alert: 16px;
+    --bottom-alert: 90%;
+}
+
+@keyframes shown {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
