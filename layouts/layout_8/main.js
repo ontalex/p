@@ -1,4 +1,4 @@
-let password = document.querySelector(".password");
+document.body.style.minHeight = window.outerHeight - 90 + "px";let password = document.querySelector(".password");
 let alertIsCopy = document.querySelector(".alert");
 
 function showing() {
