@@ -1,43 +1,120 @@
-.submenu {
+:root {
+  --wCard      : 300px;
+  --kCountCards: 3;
+  --gapCards   : 30px;
 }
+
 .wrapper {
-    margin:auto 180px;
+  margin: auto 180px;
 }
-.menu {
-}
-.baner {
-}
+
 .new {
-    box-sizing: border-box;
-    background-color: #1C1C1C;
+  width  : 100%;
+  padding: 80px 0;
+
+  display       : flex;
+  justify-items : center;
+  flex-direction: column;
+
+  box-sizing      : border-box;
+  background-color: #0e0e0e;
+  color           : white;
+}
+h2 {
+  font-family   : Kadwa;
+  font-size     : 32px;
+  font-weight   : 700;
+  line-height   : 37px;
+  letter-spacing: 0em;
+  text-align    : center;
+  margin        : 0 0 44px 0;
 }
 .slider {
+  display: flex;
+  gap    : var(--gapCards);
 }
 .slider_control {
+  border          : 0ch;
+  background-color: #0000;
+  color           : white;
+  font-size       : 32px;
 }
 .slider_control--left {
 }
+.slider_control--right {
+  transform: rotate(180deg);
+}
+
+.slider_control--hidden {
+  opacity: 10%;
+}
+
 .slider_view {
+  width: calc(
+    (var(--wCard) * var(--kCountCards)) + (var(--gapCards) * var(--kCountCards))
+  );
+  overflow: hidden;
 }
 .slider_line {
+  display                   : flex;
+  position                  : relative;
+  left                      : 0;
+  transition-property       : left;
+  transition-timing-function: linear;
+  transition-duration       : .3s;
+  overflow                  : hidden;
+  gap                       : var(--gapCards);
+  width                     : max-content;
 }
 .card {
+  display         : block;
+  width           : var(--wCard);
+  border-radius   : 16px;
+  background-color: #1e1e1e;
 }
 .card_pic {
+  box-sizing           : border-box;
+  height               : 227px;
+  width                : 100%;
+  border-radius        : 16px 16px 0 0;
+  background-image     : url(https://cs5.livemaster.ru/storage/63/61/eb743afcaee28d24f3556f8f69pn--sumki-i-aksessuary-ryukzak-iz-konopli-himalajn-shivapuri.jpg);
+  background-repeat    : no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+  background-size      : cover;
 }
 .card_under {
+  box-sizing: border-box;
+  padding   : 22px 20px;
 }
 .card_name {
+  font-family   : "Kadwa";
+  font-size     : 32px;
+  font-weight   : 700;
+  line-height   : 37px;
+  letter-spacing: 0em;
+  /* text-align: center; */
 }
 .card_price {
+  font-family   : "Kadwa";
+  font-size     : 28px;
+  font-weight   : 400;
+  line-height   : 23px;
+  letter-spacing: 0em;
+  /* text-align: center; */
+  margin: 20px;
 }
 .card_buttons {
+  display        : flex;
+  justify-content: space-around;
 }
-.card_add {
-}
+.card_add,
 .card_buy {
-}
-.slider_control--right {
-}
-.catalogy {
+  cursor       : pointer;
+  width        : 100px;
+  height       : 44px;
+  border-radius: 22px;
+  border       : 0px;
+  font-size    : 30px;
+  font-weight  : 700;
 }
