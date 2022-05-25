@@ -29,16 +29,12 @@ function makePoints(steps) {
     underSection.append(copePoint);
   }
 }
+makePoints(maxStep);
 
 function getElementIndex(elem) {
   elem = elem.tagName ? elem : document.querySelector(elem); // можно добавить еще проверок
   return [].indexOf.call(elem.parentNode.children, elem);
 }
-
-function stopToRight() {}
-function stopToLeft() {}
-
-makePoints(maxStep);
 
 window.addEventListener(
   "resize",
@@ -57,7 +53,7 @@ window.addEventListener(
   true
 );
 
-button_right.addEventListener("click", function () {
+button_right.addEventListener("click", () => {
   if (maxRight == false) {
     if (maxStep - 2 <= indexView) {
       maxRight = true;
@@ -73,7 +69,6 @@ button_right.addEventListener("click", function () {
       "slider_point--checked"
     );
   } else {
-    // бавить отдельную функцию
     indexView = indexView;
     maxRight = true;
   }
@@ -82,7 +77,7 @@ button_right.addEventListener("click", function () {
   }
 });
 
-button_left.addEventListener("click", function () {
+button_left.addEventListener("click", () => {
   if (maxLeft == false && indexView != 0) {
     indexView--;
     slider_line.style.left = `-${
