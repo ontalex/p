@@ -23,20 +23,20 @@ let point = document.querySelector(".slider_point");
 let underSection = document.querySelector(".slider_underSection");
 
 function makePoints(steps) {
-  // Обновлять количесво элементов через создание определённого количества точек
-  for (let i = steps-1; i > 0; i--) {
+  for (let i = steps - 1; i > 0; i--) {
     let copePoint = document.createElement("div");
     copePoint.classList = "slider_point";
     underSection.append(copePoint);
-    console.log("append point");
   }
-//   underSection.children[0].classList.add(".slider_point--checked");
 }
 
 function getElementIndex(elem) {
-    elem = elem.tagName ? elem : document.querySelector(elem) // можно добавить еще проверок
-    return [].indexOf.call(elem.parentNode.children, elem)
+  elem = elem.tagName ? elem : document.querySelector(elem); // можно добавить еще проверок
+  return [].indexOf.call(elem.parentNode.children, elem);
 }
+
+function stopToRight() {}
+function stopToLeft() {}
 
 makePoints(maxStep);
 
@@ -58,60 +58,77 @@ window.addEventListener(
 );
 
 button_right.addEventListener("click", function () {
-  console.log("click br");
   if (maxRight == false) {
     if (maxStep - 2 <= indexView) {
       maxRight = true;
     }
     indexView++;
-    slider_line.style.left = `-${indexView * ((widthCard + gapCard) * valueCardView)}px`;
+    slider_line.style.left = `-${
+      indexView * ((widthCard + gapCard) * valueCardView)
+    }px`;
     maxLeft = false;
     button_left.classList.remove("slider_control--hidden");
     underSection.children[indexView].classList.toggle("slider_point--checked");
-    underSection.children[indexView-1].classList.toggle("slider_point--checked");
-
-  } else { // бавить отдельную функцию
+    underSection.children[indexView - 1].classList.toggle(
+      "slider_point--checked"
+    );
+  } else {
+    // бавить отдельную функцию
     indexView = indexView;
     maxRight = true;
-    console.log("stop - max right");
   }
   if (indexView >= maxStep - 1) {
     button_right.classList.add("slider_control--hidden");
-    console.log("Hide the right button");
   }
 });
 
-
 button_left.addEventListener("click", function () {
-  console.log("click bl");
   if (maxLeft == false && indexView != 0) {
     indexView--;
-    slider_line.style.left = `-${indexView * ((widthCard + gapCard) * valueCardView)}px`;
+    slider_line.style.left = `-${
+      indexView * ((widthCard + gapCard) * valueCardView)
+    }px`;
     button_right.classList.remove("slider_control--hidden");
     maxRight = false;
     underSection.children[indexView].classList.toggle("slider_point--checked");
-    underSection.children[indexView+1].classList.toggle("slider_point--checked");
-  } else if (indexView == 0) { // бавить отдельную функцию
+    underSection.children[indexView + 1].classList.toggle(
+      "slider_point--checked"
+    );
+  } else if (indexView == 0) {
     indexView = 0;
     maxLeft = true;
-    console.log("stop - max left");
-    
   }
   if (indexView == 0) {
     button_left.classList.add("slider_control--hidden");
-    console.log("Hide the left button");
   }
 });
 
-underSection.addEventListener("click", (e)=>{
-    if(e.target.classList == "slider_point") {
-        let toPoint = getElementIndex(e.target);
-        underSection.children[indexView].classList.remove("slider_point--checked");
-        indexView=toPoint;
-        underSection.children[indexView].classList.add("slider_point--checked");
-        slider_line.style.left = `-${indexView * ((widthCard + gapCard) * valueCardView)}px`;
+underSection.addEventListener("click", (e) => {
+  if (e.target.classList == "slider_point") {
+    let toPoint = getElementIndex(e.target);
+    underSection.children[indexView].classList.remove("slider_point--checked");
+    indexView = toPoint;
+    underSection.children[indexView].classList.add("slider_point--checked");
+    slider_line.style.left = `-${
+      indexView * ((widthCard + gapCard) * valueCardView)
+    }px`;
 
-        // вставить вызов функции конца и начала слайдера в зависимости от порядкового номера элемента
-        // проверка на первый и последний элемент для скрытия кнопок
+    if (toPoint != 0 && toPoint != maxStep) {
+      maxLeft = 0;
+      maxRight = 0;
+      button_left.classList.remove("slider_control--hidden");
+      button_right.classList.remove("slider_control--hidden");
     }
+
+    if (indexView == maxStep - 1) {
+      indexView = indexView;
+      maxRight = true;
+      button_right.classList.add("slider_control--hidden");
+    } else if (toPoint == 0) {
+      indexView = 0;
+      maxLeft = true;
+      button_right.classList.remove("slider_control--hidden");
+      button_left.classList.add("slider_control--hidden");
+    }
+  }
 });
