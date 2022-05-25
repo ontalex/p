@@ -1,3 +1,9 @@
+/*
+NOTE:
+Задать размер окна просмотра как минимальное значение (ширина)
+Поднять из класса slider_points на уровень вверх
+*/
+
 :root {
   --wCard      : 300px;
   --kCountCards: 3;
@@ -29,12 +35,12 @@ h2 {
   text-align    : center;
   margin        : 0 0 44px 0;
 }
-.slider {
+.slider_topSection {
   display: flex;
   gap    : var(--gapCards);
 }
 .slider_control {
-  border          : 0ch;
+  border          : 0px;
   background-color: #0000;
   color           : white;
   font-size       : 32px;
@@ -66,6 +72,27 @@ h2 {
   gap                       : var(--gapCards);
   width                     : max-content;
 }
+
+.slider_topSection {
+  display: flex;
+}
+.slider_underSection {
+  display      : flex;
+  justify-items: center;
+  gap          : 10px;
+}
+.slider_point {
+  width  : 15px;
+  height : 15px;
+  opacity: 25%;
+  background-color: white;
+  border-radius: 50%;
+  transition: opacity .3s linear;
+}
+.slider_point--checked {
+  opacity: 100% !important;
+}
+
 .card {
   display         : block;
   width           : var(--wCard);

@@ -14,11 +14,25 @@ let gapCard       = parseInt(variablesCSS.getPropertyValue("--gapCards").match(/
 let valueCardView = parseInt(variablesCSS.getPropertyValue("--kCountCards").match(/\d+/));
 let maxStep       = document.getElementsByClassName("card").length / valueCardView;
 
+let points = document.querySelectorAll(".slider_point");
+let point = document.querySelector(".slider_point");
+let underSection = document.querySelector(".slider_underSection");
+
+function makePoints() {
+    
+
+
+}
+
+// Добавить переименование класса в зависимости от происмотра
+
 window.addEventListener("resize", ()=>{
     widthCard     = parseInt(variablesCSS.getPropertyValue("--wCard").match(/\d+/));
     gapCard       = parseInt(variablesCSS.getPropertyValue("--gapCards").match(/\d+/));
     valueCardView = parseInt(variablesCSS.getPropertyValue("--kCountCards").match(/\d+/));
     maxStep       = document.getElementsByClassName("card").length / valueCardView;
+
+
 }, true);
 
 button_right.addEventListener('click', function () {
@@ -34,9 +48,11 @@ button_right.addEventListener('click', function () {
     } else {
         indexView = indexView;
         maxRight  = true;
+        console.log("stop - max right");
     }
     if(indexView >= maxStep-1){
         button_right.classList.add("slider_control--hidden");
+        console.log("Hide the right button");
     }
 });
 button_left.addEventListener('click', function () {
@@ -49,8 +65,10 @@ button_left.addEventListener('click', function () {
     } else if (indexView==0){
         indexView = 0;
         maxLeft   = true;
+        console.log("stop - max left");
     }
     if(indexView == 0){
         button_left.classList.add("slider_control--hidden");
+        console.log("Hide the left button");
     }
 });
