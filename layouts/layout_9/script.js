@@ -32,7 +32,7 @@ function makePoints(steps) {
 makePoints(maxStep);
 
 function getElementIndex(elem) {
-  elem = elem.tagName ? elem : document.querySelector(elem); // можно добавить еще проверок
+  elem = elem.tagName ? elem : document.querySelector(elem);
   return [].indexOf.call(elem.parentNode.children, elem);
 }
 
