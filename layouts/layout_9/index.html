@@ -5,19 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BackAndPack</title>
-    <link rel="stylesheet" href="/general_lib/normaliz.css">
+    <link
+      rel="stylesheet"
+      href="https://ontalex.github.io/p/general_lib/normaliz.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <!-- https://www.figma.com/file/5hbI9Sn5UELmFsAak67eNa/BackAndPack?node-id=0%3A1 -->
   </head>
+
   <body>
     <header>
-      <div class="submenu">
-        <div class="wrapper"></div>
-      </div>
       <div class="menu">
-        <div class="wrapper"></div>
+        <div class="wrapper">
+          <div class="menu_logo"><h1>Back&Pack</h1></div>
+          <div class="menu_inner">
+            <ul class="menu_list">
+              <li class="menu_item menu_account">
+                <a href="#"><span>Личный кабинет</span></a>
+              </li>
+              <li class="menu_item menu_buy">
+                <button>
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.38281 7.6875H8.1875L12.3906 24.6016H32.2109L37.6172 11.2969L9.09375 11.1953" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11.0938 32.3125C12.3666 32.3125 13.3984 31.2807 13.3984 30.0078C13.3984 28.735 12.3666 27.7031 11.0938 27.7031C9.82091 27.7031 8.78906 28.735 8.78906 30.0078C8.78906 31.2807 9.82091 32.3125 11.0938 32.3125Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M31.9062 32.3125C33.1791 32.3125 34.2109 31.2807 34.2109 30.0078C34.2109 28.735 33.1791 27.7031 31.9062 27.7031C30.6334 27.7031 29.6016 28.735 29.6016 30.0078C29.6016 31.2807 30.6334 32.3125 31.9062 32.3125Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+                </button>
+              </li>
+              <li class="menu_item menu_search"><button>
+                <svg
+                  width="24"
+                  height="26"
+                  viewBox="0 0 24 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.80159 18.9375C14.2 18.9375 17.7656 15.2233 17.7656 10.6416C17.7656 6.0599 14.2 2.3457 9.80159 2.3457C5.40316 2.3457 1.83752 6.0599 1.83752 10.6416C1.83752 15.2233 5.40316 18.9375 9.80159 18.9375Z"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.8438 17.0674L22.1672 23.6543"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="baner"></div>
+      <div class="baner">
+        <div class="baner_logo">
+          <span>Back<br />&<br />Pack</span>
+        </div>
+        <span class="baner_text">Lorem ipsum dolor sit amet consectetur.</span>
+      </div>
     </header>
     <main>
       <div class="new">
@@ -25,10 +77,14 @@
           <h2>Новинки сезона</h2>
           <div class="slider">
             <div class="slider_topSection">
-              <button class="slider_control slider_control--left slider_control--hidden">&#5130;</button>
+              <button
+                class="slider_control slider_control--left slider_control--hidden"
+              >
+                &#5130;
+              </button>
               <div class="slider_view">
                 <div class="slider_line">
-                  <div class="card">
+                  <div class="slider_card card">
                     <div class="card_pic"></div>
                     <div class="card_under">
                       <div class="card_name">
@@ -39,21 +95,46 @@
                       </div>
                       <div class="card_buttons">
                         <button class="card_add">
-                          <span>
-                            &#43;
-                          </span>
+                          <span> &#43; </span>
                         </button>
                         <button class="card_buy">
-                          <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                          
+                          <svg
+                            width="40"
+                            height="41"
+                            viewBox="0 0 40 41"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
                         </button>
                       </div>
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="slider_card card">
                     <div class="card_pic"></div>
                     <div class="card_under">
                       <div class="card_name">
@@ -64,21 +145,46 @@
                       </div>
                       <div class="card_buttons">
                         <button class="card_add">
-                          <span>
-                            &#43;
-                          </span>
+                          <span> &#43; </span>
                         </button>
                         <button class="card_buy">
-                          <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                          
+                          <svg
+                            width="40"
+                            height="41"
+                            viewBox="0 0 40 41"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
                         </button>
                       </div>
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="slider_card card">
                     <div class="card_pic"></div>
                     <div class="card_under">
                       <div class="card_name">
@@ -89,21 +195,46 @@
                       </div>
                       <div class="card_buttons">
                         <button class="card_add">
-                          <span>
-                            &#43;
-                          </span>
+                          <span> &#43; </span>
                         </button>
                         <button class="card_buy">
-                          <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                          
+                          <svg
+                            width="40"
+                            height="41"
+                            viewBox="0 0 40 41"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
                         </button>
                       </div>
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="slider_card card">
                     <div class="card_pic"></div>
                     <div class="card_under">
                       <div class="card_name">
@@ -114,21 +245,46 @@
                       </div>
                       <div class="card_buttons">
                         <button class="card_add">
-                          <span>
-                            &#43;
-                          </span>
+                          <span> &#43; </span>
                         </button>
                         <button class="card_buy">
-                          <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                          
+                          <svg
+                            width="40"
+                            height="41"
+                            viewBox="0 0 40 41"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
                         </button>
                       </div>
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="slider_card card">
                     <div class="card_pic"></div>
                     <div class="card_under">
                       <div class="card_name">
@@ -139,21 +295,46 @@
                       </div>
                       <div class="card_buttons">
                         <button class="card_add">
-                          <span>
-                            &#43;
-                          </span>
+                          <span> &#43; </span>
                         </button>
                         <button class="card_buy">
-                          <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                          
+                          <svg
+                            width="40"
+                            height="41"
+                            viewBox="0 0 40 41"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
                         </button>
                       </div>
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="slider_card card">
                     <div class="card_pic"></div>
                     <div class="card_under">
                       <div class="card_name">
@@ -164,21 +345,46 @@
                       </div>
                       <div class="card_buttons">
                         <button class="card_add">
-                          <span>
-                            &#43;
-                          </span>
+                          <span> &#43; </span>
                         </button>
                         <button class="card_buy">
-                          <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                          
+                          <svg
+                            width="40"
+                            height="41"
+                            viewBox="0 0 40 41"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
                         </button>
                       </div>
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="slider_card card">
                     <div class="card_pic"></div>
                     <div class="card_under">
                       <div class="card_name">
@@ -189,21 +395,46 @@
                       </div>
                       <div class="card_buttons">
                         <button class="card_add">
-                          <span>
-                            &#43;
-                          </span>
+                          <span> &#43; </span>
                         </button>
                         <button class="card_buy">
-                          <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                          
+                          <svg
+                            width="40"
+                            height="41"
+                            viewBox="0 0 40 41"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
                         </button>
                       </div>
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="slider_card card">
                     <div class="card_pic"></div>
                     <div class="card_under">
                       <div class="card_name">
@@ -214,21 +445,46 @@
                       </div>
                       <div class="card_buttons">
                         <button class="card_add">
-                          <span>
-                            &#43;
-                          </span>
+                          <span> &#43; </span>
                         </button>
                         <button class="card_buy">
-                          <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                          
+                          <svg
+                            width="40"
+                            height="41"
+                            viewBox="0 0 40 41"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
                         </button>
                       </div>
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="slider_card card">
                     <div class="card_pic"></div>
                     <div class="card_under">
                       <div class="card_name">
@@ -239,98 +495,50 @@
                       </div>
                       <div class="card_buttons">
                         <button class="card_add">
-                          <span>
-                            &#43;
-                          </span>
+                          <span> &#43; </span>
                         </button>
                         <button class="card_buy">
-                          <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                          
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card_pic"></div>
-                    <div class="card_under">
-                      <div class="card_name">
-                        <span>BPCase One</span>
-                      </div>
-                      <div class="card_price">
-                        <span>1000 &#8381;</span>
-                      </div>
-                      <div class="card_buttons">
-                        <button class="card_add">
-                          <span>
-                            &#43;
-                          </span>
-                        </button>
-                        <button class="card_buy">
-                          <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                          
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card_pic"></div>
-                    <div class="card_under">
-                      <div class="card_name">
-                        <span>BPCase One</span>
-                      </div>
-                      <div class="card_price">
-                        <span>1000 &#8381;</span>
-                      </div>
-                      <div class="card_buttons">
-                        <button class="card_add">
-                          <span>
-                            &#43;
-                          </span>
-                        </button>
-                        <button class="card_buy">
-                          <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                          
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card_pic"></div>
-                    <div class="card_under">
-                      <div class="card_name">
-                        <span>BPCase One</span>
-                      </div>
-                      <div class="card_price">
-                        <span>1000 &#8381;</span>
-                      </div>
-                      <div class="card_buttons">
-                        <button class="card_add">
-                          <span>
-                            &#43;
-                          </span>
-                        </button>
-                        <button class="card_buy">
-                          <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z" stroke="#1C1C1C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                          
+                          <svg
+                            width="40"
+                            height="41"
+                            viewBox="0 0 40 41"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z"
+                              stroke="#1C1C1C"
+                              stroke-width="3"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <button class="slider_control slider_control--right">&#5130;</button>
+              <button class="slider_control slider_control--right">
+                &#5130;
+              </button>
             </div>
             <div class="slider_underSection">
               <div class="slider_point slider_point--checked"></div>
@@ -338,8 +546,329 @@
           </div>
         </div>
       </div>
-      <div class="catalogy">
-        <div class="wrapper"></div>
+      <div class="catalog">
+        <div class="wrapper">
+          <h2>Каталог</h2>
+          <div class="catalogy_filter">
+            <button class="catalog_button catalog_man">
+              <span>Мужские</span>
+            </button>
+            <button class="catalog_button catalog_woman">
+              <span>Женские</span>
+            </button>
+            <button class="catalog_button catalog_backpack">
+              <span>Рюкзаки</span>
+            </button>
+            <button class="catalog_button catalog_back">
+              <span>Сумки</span>
+            </button>
+          </div>
+          <div class="catalog_things">
+            <div class="card">
+              <div class="card_pic"></div>
+              <div class="card_under">
+                <div class="card_name">
+                  <span>BPCase One</span>
+                </div>
+                <div class="card_price">
+                  <span>1000 &#8381;</span>
+                </div>
+                <div class="card_buttons">
+                  <button class="card_add">
+                    <span> &#43; </span>
+                  </button>
+                  <button class="card_buy">
+                    <svg
+                      width="40"
+                      height="41"
+                      viewBox="0 0 40 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953"
+                        stroke="#1C1C1C"
+                        stroke-width="3"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z"
+                        stroke="#1C1C1C"
+                        stroke-width="3"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z"
+                        stroke="#1C1C1C"
+                        stroke-width="3"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_pic"></div>
+              <div class="card_under">
+                <div class="card_name">
+                  <span>BPCase One</span>
+                </div>
+                <div class="card_price">
+                  <span>1000 &#8381;</span>
+                </div>
+                <div class="card_buttons">
+                  <button class="card_add">
+                    <span> &#43; </span>
+                  </button>
+                  <button class="card_buy">
+                    <svg
+                      width="40"
+                      height="41"
+                      viewBox="0 0 40 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953"
+                        stroke="#1C1C1C"
+                        stroke-width="3"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z"
+                        stroke="#1C1C1C"
+                        stroke-width="3"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z"
+                        stroke="#1C1C1C"
+                        stroke-width="3"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_pic"></div>
+              <div class="card_under">
+                <div class="card_name">
+                  <span>BPCase One</span>
+                </div>
+                <div class="card_price">
+                  <span>1000 &#8381;</span>
+                </div>
+                <div class="card_buttons">
+                  <button class="card_add">
+                    <span> &#43; </span>
+                  </button>
+                  <button class="card_buy">
+                    <svg
+                      width="40"
+                      height="41"
+                      viewBox="0 0 40 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953"
+                        stroke="#1C1C1C"
+                        stroke-width="3"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z"
+                        stroke="#1C1C1C"
+                        stroke-width="3"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z"
+                        stroke="#1C1C1C"
+                        stroke-width="3"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_pic"></div>
+              <div class="card_under">
+                <div class="card_name">
+                  <span>BPCase One</span>
+                </div>
+                <div class="card_price">
+                  <span>1000 &#8381;</span>
+                </div>
+                <div class="card_buttons">
+                  <button class="card_add">
+                    <span> &#43; </span>
+                  </button>
+                  <button class="card_buy">
+                    <svg
+                      width="40"
+                      height="41"
+                      viewBox="0 0 40 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953"
+                        stroke="#1C1C1C"
+                        stroke-width="3"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z"
+                        stroke="#1C1C1C"
+                        stroke-width="3"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z"
+                        stroke="#1C1C1C"
+                        stroke-width="3"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_pic"></div>
+              <div class="card_under">
+                <div class="card_name">
+                  <span>BPCase One</span>
+                </div>
+                <div class="card_price">
+                  <span>1000 &#8381;</span>
+                </div>
+                <div class="card_buttons">
+                  <button class="card_add">
+                    <span> &#43; </span>
+                  </button>
+                  <button class="card_buy">
+                    <svg
+                      width="40"
+                      height="41"
+                      viewBox="0 0 40 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953"
+                        stroke="#1C1C1C"
+                        stroke-width="3"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z"
+                        stroke="#1C1C1C"
+                        stroke-width="3"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z"
+                        stroke="#1C1C1C"
+                        stroke-width="3"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_pic"></div>
+              <div class="card_under">
+                <div class="card_name">
+                  <span>BPCase One</span>
+                </div>
+                <div class="card_price">
+                  <span>1000 &#8381;</span>
+                </div>
+                <div class="card_buttons">
+                  <button class="card_add">
+                    <span> &#43; </span>
+                  </button>
+                  <button class="card_buy">
+                    <svg
+                      width="40"
+                      height="41"
+                      viewBox="0 0 40 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.38281 8.1875H8.1875L12.3906 25.1016H32.2109L37.6172 11.7969L9.09375 11.6953"
+                        stroke="#1C1C1C"
+                        stroke-width="3"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M11.0938 32.8125C12.3666 32.8125 13.3984 31.7807 13.3984 30.5078C13.3984 29.235 12.3666 28.2031 11.0938 28.2031C9.82091 28.2031 8.78906 29.235 8.78906 30.5078C8.78906 31.7807 9.82091 32.8125 11.0938 32.8125Z"
+                        stroke="#1C1C1C"
+                        stroke-width="3"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M31.9062 32.8125C33.1791 32.8125 34.2109 31.7807 34.2109 30.5078C34.2109 29.235 33.1791 28.2031 31.9062 28.2031C30.6334 28.2031 29.6016 29.235 29.6016 30.5078C29.6016 31.7807 30.6334 32.8125 31.9062 32.8125Z"
+                        stroke="#1C1C1C"
+                        stroke-width="3"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="catalog_button catalog_showMore">
+            <span>Показать больше</span>
+          </button>
+        </div>
       </div>
     </main>
     <footer>

@@ -4,45 +4,132 @@ NOTE:
 */
 
 :root {
-  --wCard      : 300px;
+  --wCard: 300px;
   --kCountCards: 3;
-  --gapCards   : 30px;
+  --gapCards: 30px;
 }
 
 .wrapper {
   margin: auto 180px;
 }
 
+.menu {
+  background-color: #0E0E0E;
+  color: white;
+}
+
+.menu .wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu_logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+.menu_logo h1 {
+  margin: 0%;
+}
+
+.menu_list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu_account:hover {
+  background: #ffffff30;
+
+}
+.menu_buy:hover, .menu_search:hover {
+  background-color: #252525;
+}
+.menu_account {
+  background: #ffffff10;
+}
+
+.menu_account, .menu_account a, .menu_account a:focus {
+  font-size: 16px;
+  color: white;
+}
+.menu_buy button, .menu_search button {
+  background-color: #0000;
+  border: 0px;
+}
+
+.menu_item {
+  height: 80px;
+}
+
+.menu_item button, .menu_item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0px 30px;
+}
+
+.baner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 860px;
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.25)), url("pexels-suliman-sallehi-1540969.jpg");
+  background-size: 150%;
+  background-position: center;
+}
+.baner_logo {
+  display: flex;
+  justify-content: center;
+  border: 2px solid white;
+  padding: 20px;
+  font-size: 48px;
+  color: white;
+  width: 240px;
+  height: 240px;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  margin: 0 auto;
+}
+.baner_text {
+  color: white;
+margin-top: 5%;font-size: 32px;}
 .new {
-  width  : 100%;
+  width: 100%;
   padding: 80px 0;
 
-  display       : flex;
-  justify-items : center;
+  display: flex;
+  justify-items: center;
   flex-direction: column;
 
-  box-sizing      : border-box;
+  box-sizing: border-box;
   background-color: #0e0e0e;
-  color           : white;
+  color: white;
 }
 h2 {
-  font-family   : Kadwa;
-  font-size     : 32px;
-  font-weight   : 700;
-  line-height   : 37px;
+  font-family: Kadwa;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 37px;
   letter-spacing: 0em;
-  text-align    : center;
-  margin        : 0 0 44px 0;
+  text-align: center;
+  margin: 0 0 44px 0;
 }
 .slider_topSection {
   display: flex;
-  gap    : var(--gapCards);
-}
+  gap: var(--gapCards);
+justify-content: center;}
 .slider_control {
-  border          : 0px;
+  border: 0px;
   background-color: #0000;
-  color           : white;
-  font-size       : 32px;
+  color: white;
+  font-size: 32px;
 }
 .slider_control--left {
 }
@@ -61,110 +148,169 @@ h2 {
   overflow: hidden;
 }
 .slider_line {
-  display                   : flex;
-  position                  : relative;
-  left                      : 0;
-  transition-property       : left;
+  display: flex;
+  position: relative;
+  left: 0;
+  transition-property: left;
   transition-timing-function: linear;
-  transition-duration       : 1s;
+  transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  overflow                  : hidden;
-  gap                       : var(--gapCards);
-  width                     : max-content;
+  overflow: hidden;
+  gap: var(--gapCards);
+  width: max-content;
 }
 
 .slider_topSection {
-  display: flex;
+  
 }
 .slider_underSection {
-  display        : flex;
-  justify-items  : center;
+  display: flex;
+  justify-items: center;
   justify-content: center;
-  gap            : 10px;
-  margin         : 44px auto ;
+  gap: 10px;
+  margin: 44px auto;
 }
 .slider_point {
-  width           : 15px;
-  height          : 15px;
-  opacity         : 25%;
+  width: 15px;
+  height: 15px;
+  opacity: 25%;
   background-color: white;
-  border-radius   : 50%;
-  transition      : opacity .3s cubic-bezier(0.19, 1, 0.22, 1);
+  border-radius: 50%;
+  transition: opacity 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .slider_point--checked {
   opacity: 100% !important;
 }
 
+.slider_card {
+}
+
 .card {
-  display         : block;
-  width           : var(--wCard);
-  border-radius   : 16px;
+  display: block;
+  width: var(--wCard);
+  border-radius: 16px;
   background-color: #1e1e1e;
 }
 .card_pic {
-  box-sizing           : border-box;
-  height               : 227px;
-  width                : 100%;
-  border-radius        : 16px 16px 0 0;
-  background-image     : url(https://cs5.livemaster.ru/storage/63/61/eb743afcaee28d24f3556f8f69pn--sumki-i-aksessuary-ryukzak-iz-konopli-himalajn-shivapuri.jpg);
-  background-repeat    : no-repeat;
+  box-sizing: border-box;
+  height: 227px;
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  background-image: url(https://cs5.livemaster.ru/storage/63/61/eb743afcaee28d24f3556f8f69pn--sumki-i-aksessuary-ryukzak-iz-konopli-himalajn-shivapuri.jpg);
+  background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: top;
-  background-size      : cover;
+  background-size: cover;
 }
 .card_under {
   box-sizing: border-box;
-  padding   : 22px 20px;
+  padding: 22px 20px;
 }
 .card_name {
-  font-family   : "Kadwa";
-  font-size     : 32px;
-  font-weight   : 700;
-  line-height   : 37px;
+  font-family: "Kadwa";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 37px;
   letter-spacing: 0em;
 }
 .card_price {
-  font-family   : "Kadwa";
-  font-size     : 28px;
-  font-weight   : 400;
-  line-height   : 23px;
+  font-family: "Kadwa";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 23px;
   letter-spacing: 0em;
-  margin        : 20px;
+  margin: 20px;
 }
 .card_buttons {
-  display        : flex;
+  display: flex;
   justify-content: space-around;
 }
 .card_add,
 .card_buy {
   background-color: white;
-  cursor       : pointer;
-  width        : 100px;
-  height       : 44px;
+  cursor: pointer;
+  width: 100px;
+  height: 44px;
   border-radius: 22px;
-  border       : 0px;
-  font-size    : 30px;
-  font-weight  : 700;
-  transition: backgroundColor .6s;
+  border: 0px;
+  font-size: 30px;
+  font-weight: 700;
+  transition: backgroundColor 0.6s;
 }
 
-.card_add:hover,.card_buy:hover {
- background-color: rgb(188, 188, 188);
+.card_add:hover,
+.card_buy:hover {
+  background-color: rgb(188, 188, 188);
+}
+
+.catalog {
+  background-color: #151515;
+  color: white;
+  padding: 60px;
+}
+
+.catalog .wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+align-items: center;}
+
+.catalogy_filter {
+  /* height: 50px; */
+  margin-bottom: 58px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.catalog_things {
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  gap: 30px;
+}
+.catalog_button {
+  font-size: 20px;
+  border: 2px solid white;
+  color: white;
+  background-color: #0000;
+  transition: all 0.3s linear;
+}
+.catalog_button:hover {
+  color: black;
+  background-color: white;
+}
+.catalog_button span {
+  display: block;
+  margin: 16px 64px;
+}
+.catalog_man {
+}
+.catalog_woman {
+}
+.catalog_backpack {
+}
+.catalog_man {
+}
+.catalog_showMore {
+  margin: 64px auto;
+  text-align: center;
+}
+
+footer {
+  background-color: #252525;
+  min-height: 320px;
 }
 
 @media screen and (max-width: 1200px) {
   .wrapper {
     margin: auto auto;
-    
   }
   :root {
-    --wCard      : 300px;
+    --wCard: 300px;
     --kCountCards: 2;
-    --gapCards   : 30px;
+    --gapCards: 30px;
   }
 }
 
 @media screen and (max-width: 900px) {
-
-  
 }

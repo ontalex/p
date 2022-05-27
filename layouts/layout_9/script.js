@@ -1,7 +1,7 @@
 "use strict";
 
 let variablesCSS = getComputedStyle(document.body);
-let card = document.querySelector(".card");
+let card = document.querySelector(".slider_card");
 let slider_line = document.querySelector(".slider_line");
 let button_left = document.querySelector(".slider_control--left");
 let button_right = document.querySelector(".slider_control--right");
@@ -16,7 +16,7 @@ let gapCard = parseInt(
 let valueCardView = parseInt(
   variablesCSS.getPropertyValue("--kCountCards").match(/\d+/)
 );
-let maxStep = document.getElementsByClassName("card").length / valueCardView;
+let maxStep = document.getElementsByClassName("slider_card").length / valueCardView;
 
 let points = document.querySelectorAll(".slider_point");
 let point = document.querySelector(".slider_point");
@@ -46,7 +46,7 @@ window.addEventListener(
     valueCardView = parseInt(
       variablesCSS.getPropertyValue("--kCountCards").match(/\d+/)
     );
-    maxStep = document.getElementsByClassName("card").length / valueCardView;
+    maxStep = document.getElementsByClassName("slider_card").length / valueCardView;
 
     makePoints(maxStep);
   },
