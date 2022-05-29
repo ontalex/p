@@ -5,10 +5,15 @@ body {
     background: #323232;
     color: white;
     font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 main {
   height: calc(100vh - 32px);
-  width: 100vw;
+  width: 300px;
   display: flex;
   align-items: center;
   justify-items: center;
