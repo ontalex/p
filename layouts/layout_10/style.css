@@ -1,0 +1,88 @@
+body {
+    background-color: #0f0f0f;
+    margin: 0%;
+    color: aliceblue;
+}
+
+.logo {
+}
+.hero {
+}
+.hero_logo {
+}
+.hero_info {
+}
+.feedback {
+}
+.feedback_info {
+}
+.feedback_avatar {
+}
+.legends {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.legends h2 {
+    text-align: center;
+}
+
+.legends_cards {
+
+}
+.legends_person {
+    width: 1200px;
+
+    margin-bottom: 16px;
+}
+.legends_name {
+    display: block;
+    padding: 10px 15px;
+    border: 2px solid white;
+
+    color: white;
+    cursor: pointer;
+
+    transition: background-color .1s ease-in;
+}
+
+.legends_name:hover {
+    background-color: darkred;
+}
+
+.legends_input {
+    width: 0;
+    height: 0;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    position: absolute;
+}
+
+.legends_input:checked + .legends_info {
+    display: block;
+}
+
+.legends_info {
+    display: none;
+}
+.legends_general {
+}
+.legends_avatar {
+}
+.legends_text {
+}
+.legends_profession {
+}
+.legends_about {
+}
+.legends_wins {
+}
+.footer_logo {
+}
+.footer_map {
+}
+.footer_contacts {
+}
