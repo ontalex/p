@@ -6,6 +6,10 @@ body {
 
 header {
 }
+
+
+
+
 .hero {
     display: flex;
     height: 720px;
@@ -30,6 +34,14 @@ header {
     }
 }
 
+
+
+
+
+
+
+
+
 .feedback {
   display: flex;
   height: 720px;
@@ -53,6 +65,47 @@ header {
   height: 100%;
   width: 45%;
 }
+
+.feedback_info span {
+  font-size: 32px;
+  font-style: italic;
+  color: #be1a1a;
+  font-weight: bold;
+}
+
+.feedback_text {
+  position: relative;
+  width: 600px;
+  font-size: 36px;
+  margin-bottom: 96px;
+}
+
+.feedback_text:after,
+.feedback_text:before {
+  display: block;
+  content: "\FF02";
+  color: #be1a1a;
+  font-size: 96px;
+  position: absolute;
+}
+.feedback_text:after {
+  top: -48px;
+  left: -96px;
+}
+.feedback_text:before {
+  right: 0px;
+  bottom: -96px;
+}
+
+
+
+
+
+
+
+
+
+
 .legends {
   display: flex;
   flex-direction: column;
@@ -61,6 +114,7 @@ header {
 
 .legends h2 {
   text-align: center;
+  margin: 64px 0; 
 }
 
 .legends_cards {
@@ -103,36 +157,19 @@ header {
   display: none;
 }
 
-.feedback_info span {
-  font-size: 32px;
-  font-style: italic;
-  color: #be1a1a;
-  font-weight: bold;
-}
 
-.feedback_text {
-  position: relative;
-  width: 600px;
-  font-size: 36px;
-  margin-bottom: 96px;
-}
 
-.feedback_text:after,
-.feedback_text:before {
-  display: block;
-  content: "\FF02";
-  color: #be1a1a;
-  font-size: 96px;
-  position: absolute;
-}
-.feedback_text:after {
-  top: -48px;
-  left: -96px;
-}
-.feedback_text:before {
-  right: 0px;
-  bottom: -96px;
-}
+
+
+
+
+
+
+
+
+
+
+
 
 .legends_info p {
   font-size: 36px;
@@ -150,6 +187,11 @@ header {
 }
 .legends_wins {
 }
+
+
+
+
+
 .footer_logo {
 }
 .footer_map {
