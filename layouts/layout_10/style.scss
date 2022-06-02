@@ -1,0 +1,158 @@
+body {
+  background-color: #0f0f0f;
+  margin: 0%;
+  color: aliceblue;
+}
+
+header {
+}
+.hero {
+    display: flex;
+    height: 720px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#000c, #000c), url("c81fc180a7f7e991fda45fc7994a41fa.webp");
+    background-position: center;
+    background-size: cover;
+    padding: 0 160px;
+}
+.hero_logo {
+    width: 250px;
+    margin: 0px 160px;
+}
+.hero_info {
+  text-align: center;
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 24px;
+    }
+}
+
+.feedback {
+  display: flex;
+  height: 720px;
+  width: 100%;
+
+  background-color: #0b0b0b;
+}
+.feedback_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55%;
+  align-items: flex-end;
+}
+.feedback_avatar {
+  background-image: url("010622.png");
+
+  background-repeat: no-repeat;
+  background-position-x: 40%;
+  background-position-y: bottom;
+  height: 100%;
+  width: 45%;
+}
+.legends {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.legends h2 {
+  text-align: center;
+}
+
+.legends_cards {
+}
+.legends_person {
+  width: 1200px;
+
+  margin-bottom: 16px;
+}
+.legends_name {
+  display: block;
+  padding: 10px 15px;
+  border: 2px solid white;
+
+  color: white;
+  cursor: pointer;
+
+  transition: background-color 0.1s ease-in;
+}
+
+.legends_name:hover {
+  background-color: darkred;
+}
+
+.legends_input {
+  width: 0;
+  height: 0;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  position: absolute;
+}
+
+.legends_input:checked + .legends_info {
+  display: block;
+}
+
+.legends_info {
+  display: none;
+}
+
+.feedback_info span {
+  font-size: 32px;
+  font-style: italic;
+  color: #be1a1a;
+  font-weight: bold;
+}
+
+.feedback_text {
+  position: relative;
+  width: 600px;
+  font-size: 36px;
+  margin-bottom: 96px;
+}
+
+.feedback_text:after,
+.feedback_text:before {
+  display: block;
+  content: "\FF02";
+  color: #be1a1a;
+  font-size: 96px;
+  position: absolute;
+}
+.feedback_text:after {
+  top: -48px;
+  left: -96px;
+}
+.feedback_text:before {
+  right: 0px;
+  bottom: -96px;
+}
+
+.legends_info p {
+  font-size: 36px;
+}
+
+.legends_general {
+}
+.legends_avatar {
+}
+.legends_text {
+}
+.legends_profession {
+}
+.legends_about {
+}
+.legends_wins {
+}
+.footer_logo {
+}
+.footer_map {
+}
+.footer_contacts {
+}
