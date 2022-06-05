@@ -88,8 +88,7 @@ header {
   margin-bottom: 96px;
 }
 
-.feedback_text:after,
-.feedback_text:before {
+.feedback_text:after {
   display: block;
   content: "\FF02";
   color: #be1a1a;
@@ -99,10 +98,6 @@ header {
 .feedback_text:after {
   top: -48px;
   left: -96px;
-}
-.feedback_text:before {
-  right: 0px;
-  bottom: -96px;
 }
 
 
@@ -128,7 +123,7 @@ header {
 .legends_cards {
 }
 .legends_person {
-  width: 1200px;
+  max-width: 1200px;
   border: 2px solid #be1a1a74;
 
 
@@ -228,4 +223,45 @@ header {
 .footer_map {
 }
 .footer_contacts {
+}
+
+
+@media screen and (max-width:900px) {
+  .hero {
+    flex-direction: column;
+    padding: 0 32px;
+    height: max-content;
+  }
+  .feedback {
+    padding-top: 64px;
+    flex-direction: column;
+    height: max-content;
+    align-items: center;
+  }
+  .feedback_avatar {
+    margin-top: 64px;
+    width: 100%;
+    height: 240px;
+    background-size: 100%;
+    background-position: center top;
+  }
+  .feedback_text {
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  .legends_info {
+    padding: 16px;
+    font-size: 18px;
+  }
+  .legends_person {
+    width: 90vw;
+    margin: 16px 0;
+
+  }
+  .legends_general {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
 }
