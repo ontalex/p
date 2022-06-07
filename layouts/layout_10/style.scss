@@ -35,7 +35,7 @@ h1 {
 }
 
 .person {
-  width: 900px;
+  // width: 900px;
 
   margin: 16px auto;
 }
@@ -145,5 +145,14 @@ h1 {
   }
   ul {
     list-style:inside;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .person-input:checked ~ .person_bio {
+    grid-template-columns: 1fr;
+  }
+  .wrapper {
+    padding: 32px 16px;
   }
 }
