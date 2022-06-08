@@ -77,6 +77,7 @@ menu {
   align-items: center;
   justify-content: center;
   list-style: none;
+  flex-direction: row;
 }
 
 menu li {
@@ -100,12 +101,14 @@ menu li:hover {
     0deg,
     #111111cc,
     #000000cc,
-    "http://rusboxing.ru/upload/medialibrary/fea/Foto-pod-obshchim-tekstom_500.jpg"
+    "Foto-pod-obshchim-tekstom_500.jpg"
   );
   min-height: 320px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  display: flex;
+  align-items: center;
 }
 .about_dscription p {
   font-size: 20px;
@@ -139,7 +142,7 @@ menu li:hover {
 .speecher_avatar {
   width: 64px;
   height: 64px;
-  background-image: url("http://rusboxing.ru/upload/resize_cache/iblock/a93/200_300_2/rubezhnoy.jpg");
+  background-image: url("rubezhnoy.jpg");
   background-position: center 40%;
   border-radius: 50%;
   margin: 0 16px;
@@ -294,5 +297,21 @@ h1 {
 
   .wrapper {
     padding: 32px 16px;
+  }
+
+  menu {
+    flex-direction: column;
+  }
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about_speech--text {
+    margin: 32px 32px 0 32px;
+  }
+  .about_speech--text::before {
+    font-size: 48px;
+    left: -24px;
+    top: -24px; 
   }
 }
