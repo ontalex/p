@@ -172,7 +172,7 @@ footer {
   display: flex;
   flex-direction: column;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(320px, 100%) minmax(320px, 100%);
   min-height: 100px;
   }
   .footer_info {
@@ -378,17 +378,6 @@ h1 {
   .wrapper {
     padding: 32px 16px;
   }
-
-  // menu {
-  //   flex-direction: column;
-  // }
-  // menu li {
-  //   width: 100vw;
-  // }
-  // header {
-  //   flex-direction: column;
-  //   justify-content: center;
-  // }
   .about_speech--text {
     margin: 32px 32px 0 32px;
   }
@@ -402,7 +391,7 @@ h1 {
   }
 
   footer {
-    flex-direction: column-reverse;
+    grid-template-columns: 100%;
   }
 }
 
