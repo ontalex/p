@@ -257,9 +257,36 @@ h1 {
 }
 
 .person_avatar {
+  &_1 {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-image: url("foto-sergeya-kovalyova-1.webp");
+    background-size: cover;
+  }
+  &_2 {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-image: url("Foto-Aleksandr-Povetkin-4.jpg");
+    background-size: cover;
+  }
+  &_3 {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-image: url("Без имени-1.jpg");
+    background-size: cover;
+  }
+  &_4 {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-image: url("lebedev-1-1.webp");
+    background-size: cover;
+  }
+}
+
+.person_avatar {
   width: 160px;
   height: 240px;
-  background: gray;
+  // background: gray;
 }
 
 .person_imgs {
@@ -288,13 +315,13 @@ h1 {
 
 .person_wins ul {
   list-style: inside;
+  padding-left: 0%;
 }
 
 .wins_fight {
-  
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1023px) {
   .person-input:checked ~ .person_bio {
     grid-template-columns: 1fr;
   }
@@ -316,6 +343,9 @@ h1 {
   .about_speech--text::before {
     font-size: 48px;
     left: -24px;
-    top: -24px; 
+    top: -24px;
+  }
+  .person_bio {
+    padding: 16px 8px;
   }
 }
