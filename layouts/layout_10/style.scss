@@ -81,6 +81,11 @@ menu {
 }
 
 menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: auto;
   padding: 16px 24px;
 }
 menu li:hover {
@@ -163,8 +168,42 @@ menu li:hover {
 }
 
 footer {
-  background-color: #220e0e;
-}
+  background-color: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100px;
+  }
+  .footer_info {
+    margin: 16px 16px;
+  }
+  .footer_item {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 16px;
+  }
+  .address_icon svg {
+    width: 16px;
+    height: 16px;
+    fill: white;
+    margin-right: 8px;
+  }
+  .tell_icon svg {
+    width: 16px;
+    height: 16px;
+    fill: white;
+    margin-right: 8px;
+
+  }
+  .mail_icon svg {
+    width: 16px;
+    height: 16px;
+    fill: white;
+    margin-right: 8px;
+
+  }
 
 .wrapper {
   max-width: 1200px;
@@ -318,7 +357,17 @@ h1 {
   padding-left: 0%;
 }
 
-.wins_fight {
+@media screen and (max-width: 640px) {
+  menu {
+    flex-direction: column;
+  }
+  menu li {
+    width: 100vw;
+  }
+  header {
+      flex-direction: column;
+      justify-content: center;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -330,13 +379,16 @@ h1 {
     padding: 32px 16px;
   }
 
-  menu {
-    flex-direction: column;
-  }
-  header {
-    flex-direction: column;
-    justify-content: center;
-  }
+  // menu {
+  //   flex-direction: column;
+  // }
+  // menu li {
+  //   width: 100vw;
+  // }
+  // header {
+  //   flex-direction: column;
+  //   justify-content: center;
+  // }
   .about_speech--text {
     margin: 32px 32px 0 32px;
   }
@@ -347,5 +399,17 @@ h1 {
   }
   .person_bio {
     padding: 16px 8px;
+  }
+
+  footer {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .about_speecher {
+    justify-items: center;
+    text-align: center;
+    grid-template-columns: 1fr;
   }
 }
