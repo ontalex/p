@@ -208,7 +208,7 @@ footer {
   display: flex;
   justify-content: left;
   align-items: center;
-  background-color: #333;
+  background-color: #222;
   border-radius: 32px;
   width: min-content;
   padding: 8px;
@@ -442,7 +442,9 @@ h1 {
   .person_bio {
     padding: 16px 8px;
   }
-
+  .person_imgs {
+    grid-template-columns: 1fr;
+  }
   footer {
     grid-template-columns: 100%;
   }
