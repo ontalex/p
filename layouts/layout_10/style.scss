@@ -84,7 +84,7 @@ menu li {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   width: auto;
   padding: 16px 24px;
 }
@@ -175,36 +175,48 @@ footer {
   display: grid;
   grid-template-columns: minmax(320px, 100%) minmax(320px, 100%);
   min-height: 100px;
-  }
-  .footer_info {
-    margin: 16px 16px;
-  }
-  .footer_item {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin: 16px;
-  }
-  .address_icon svg {
-    width: 16px;
-    height: 16px;
-    fill: white;
-    margin-right: 8px;
-  }
-  .tell_icon svg {
-    width: 16px;
-    height: 16px;
-    fill: white;
-    margin-right: 8px;
+}
+.footer_info {
+  margin: 16px 16px;
+}
+.footer_item {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 16px;
+}
+.address_icon svg {
+  width: 16px;
+  height: 16px;
+  fill: white;
+  margin-right: 8px;
+}
+.tell_icon svg {
+  width: 16px;
+  height: 16px;
+  fill: white;
+  margin-right: 8px;
+}
+.mail_icon svg {
+  width: 16px;
+  height: 16px;
+  fill: white;
+  margin-right: 8px;
+}
 
+.footer_networks {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #333;
+  border-radius: 32px;
+  width: min-content;
+  padding: 8px;
+  img {
+    width: 32px;
+    margin: 0 8px;
   }
-  .mail_icon svg {
-    width: 16px;
-    height: 16px;
-    fill: white;
-    margin-right: 8px;
-
-  }
+}
 
 .wrapper {
   max-width: 1200px;
@@ -345,8 +357,6 @@ h1 {
 }
 
 .person_img {
-  background-color: #2b2b2b;
-  height: 120px;
 }
 
 .person_wins h2 {
@@ -358,6 +368,48 @@ h1 {
   padding-left: 0%;
 }
 
+.person_img {
+  background-color: #2b2b2b;
+  height: 240px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.person_img--1 {
+  background-image: url("https://kopeysk24.ru/netcat_files/365/534/kovalev_2.jpg");
+}
+.person_img--2 {
+  background-image: url("https://static.life.ru/posts/2016/11/934143/70d4a636feef1e5bb6a39a67737bfda6.jpg");
+}
+.person_img--3 {
+  background-image: url("http://indolgoprud.ru/upload/resizeproxy/720_/bbac642f3e06432ab9028dc49748adb2.jpg?1523525449");
+}
+.person_img--4 {
+  background-image: url("https://cdn25.img.ria.ru/images/rsport/113486/36/1134863682_0:0:3500:2334_600x0_80_0_1_1f87cb742ce5c4fde2b1ae1cf864ec95.jpg");
+}
+.person_img--5 {
+  background-image: url("https://allboxing.ru/sites/default/files/2015_08_24-10-09_0.jpg");
+}
+.person_img--6 {
+  background-image: url("https://phototass2.cdnvideo.ru/width/1020_b9261fa1/tass/m2/uploads/i/20140315/2979707.jpg");
+}
+.person_img--7 {
+  background-image: url("https://avatars.mds.yandex.net/get-zen_doc/1572663/pub_60154da417d39f78df88e67c_60154e2a17d39f78df89e00a/scale_1200");
+}
+.person_img--8 {
+  background-image: url("https://ctnews.ru/storage/posts/August2021/IsZJfJhIODCDKimXVfyB.jpg");
+}
+
+.persons[for="person_4"] {
+  .person_img--1 {
+    background-image: url("");
+  }
+  .person_img--2 {
+    background-image: url("");
+  }
+}
+
 @media screen and (max-width: 640px) {
   menu {
     flex-direction: column;
@@ -366,9 +418,9 @@ h1 {
     width: 100vw;
   }
   header {
-      flex-direction: column;
-      justify-content: center;
-    }
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 1023px) {
