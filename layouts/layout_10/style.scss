@@ -95,6 +95,7 @@ menu li:hover {
 @include colors_link(white, #c9c9c9);
 
 .about {
+  margin: 32px 0;
 }
 .about_dscription .wrapper {
   display: flex;
