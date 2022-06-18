@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+a,a:visited,a:hover {
+  text-decoration: none;
+}
+
 header {
   background-color: #222;
   display: flex;
@@ -138,10 +146,12 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: stretch;
     padding: 25px;
     width: 376px;
     img {
       width: 300px;
+      margin: auto;
     }
   }
   .card_name {
