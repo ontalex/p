@@ -12,120 +12,140 @@
 <body>
   <header>
     <div class="wrapper">
-      <h1 class="header_logo">&lt;&sol;Ontalex&gt;</h1>
+      <h1 class="header_logo"><span class="mark">&lt;&sol;O</span>ntalex<span class="mark">&gt;</span></h1>
       <menu>
-        <a href="#about"><li><span>обо мне</span></li></a>
-        <a href="#skills"><li><span>навыки</span></li></a>
-        <a href="#projects"><li><span>проекты</span></li></a>
-        <a href="#contacts"><li><span>контакты</span></li></a>
+        <a href="#about">
+          <li><span>обо мне</span></li>
+        </a>
+        <a href="#skills">
+          <li><span>навыки</span></li>
+        </a>
+        <a href="#projects">
+          <li><span>проекты</span></li>
+        </a>
+        <a href="#contacts">
+          <li><span>контакты</span></li>
+        </a>
       </menu>
+      <div class="menu_button">
+        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M4.125 24.75H28.875V22H4.125V24.75ZM4.125 17.875H28.875V15.125H4.125V17.875ZM4.125 8.25V11H28.875V8.25H4.125Z"
+            fill="white" />
+        </svg>
+      </div>
     </div>
   </header>
   <div class="baner" id="about">
     <div class="baner_sayHi">
       <p>Привет!<br>Меня зовут <span class="mark">Алексей</span>.</p>
-      <p>Я <span class="mark">верстальник</span> а так же наинающий <span class="mark">Frontend-разработчик</span>
-        сайтов.
+      <p>Я <span class="mark">Frontend-разработчик</span>.
         Я считаю это воим призванием. И я просто <span class="mark">обожаю</span> заниматься этим.</p>
     </div>
     <div class="baner_avatar">
-      <div class="baner_bg-text">
-        <p>&lt;!DOCTYPE html&gt;&shy;
-          &lt;html lang="en"&gt;&shy;
-          &lt;head&gt;&shy;
-          &lt;meta charset="UTF-8" &sol;&gt;&shy;
-          &lt;meta http-equiv="X-UA-Compatible" content="IE=edge" &sol;&gt;&shy;
-          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" &sol;&gt;&shy;
-          &lt;title&gt;&shy;Porten&lt;&sol;title&gt;&shy;
-          &lt;link rel="stylesheet" href="&sol;projects&sol;general_lib&sol;normaliz.css" &sol;&gt;&shy;
-          &lt;link rel="stylesheet" href="style.css" &sol;&gt;&shy;
-          &lt;&sol;head&gt;&shy;
-          hy&lt;body&gt;&shy;
-          &lt;header&gt;&shy;
-          &lt;div class="contener"&gt;&shy;
-          &lt;div class="head-info"&gt;&shy;
-          &lt;div class="info"&gt;&shy;
-          &lt;img src="img&sol;phone.svg" alt="iocon phone" &sol;&gt;&shy;
-          &lt;span
-          &gt;&shy;8 (812) 123-45-67&nbsp;| Работаем 7&nbsp;дней
-          в&nbsp;неделю&nbsp;| 9:00&nbsp;&mdash; 18:00&lt;&sol;span
-          &gt;&shy;
-          &lt;&sol;div&gt;&shy;
-          &lt;div class="inUp"&gt;&shy;
-          &lt;img src="img&sol;inUp.svg" alt="in&sol;up account" &sol;&gt;&shy;
-          &lt;span&gt;&shy;Вход&sol;Регистрация&lt;&sol;span&gt;&shy;
-          &lt;&sol;div&gt;&shy;
-          &lt;&sol;div&gt;&shy;
-          &lt;&sol;div&gt;&shy;
+      <img src="pic/avatar.png" alt="Моё серое лицо с жёлстыми глазами">
+      <pre class="baner_code">
+        <pre><code class="baner_language-js" lang="javascript">
+          let DOMobject = document.createElement("div");
 
-          &lt;div class="head-menu"&gt;&shy;
-          &lt;div class="contener"&gt;&shy;
-          &lt;div class="logo"&gt;&shy;
-          &lt;span&gt;&shy;Porten&lt;&sol;span&gt;&shy;
-          &lt;&sol;div&gt;&shy;
-          &lt;nav class="nav"&gt;&shy;
-          &lt;div&gt;&shy;&lt;span&gt;&shy;Понравилось&lt;&sol;span&gt;&shy;&lt;&sol;div&gt;&shy;
-          &lt;div&gt;&shy;&lt;span&gt;&shy;Личный кабинет&lt;&sol;span&gt;&shy;&lt;&sol;div&gt;&shy;
-          &lt;div&gt;&shy;&lt;span&gt;&shy;Настройки&lt;&sol;span&gt;&shy;&lt;&sol;div&gt;&shy;
-          &lt;div&gt;&shy;&lt;img src="img&sol;basket.svg" alt="button basket" &sol;&gt;&shy;&lt;&sol;div&gt;&shy;
-          &lt;div&gt;&shy;&lt;img src="img&sol;search.svg" alt="button search" &sol;&gt;&shy;&lt;&sol;div&gt;&shy;
-          &lt;&sol;nav&gt;&shy;
-          &lt;&sol;div&gt;&shy;
-          &lt;&sol;div&gt;&shy;
-          &lt;&sol;header&gt;&shy;</p>
-        <p>
-          let DOMobject = document.createElement("div");&shy;
-
-          let arrThings = [1, 2, 3, 4, 5, 6, 7];&shy;
+let arrThings = [1, 2, 3, 4, 5, 6, 7];
 
 
 
-          for (let i = 0;&shy; i &lt;&shy; arrThings.length;&shy; i++) {
-          let element = arrThings[i];&shy;
+for (let i = 0; i < arrThings.length; i++) {
+  let element = arrThings[i];
 
-          DOMobject.classList.add("card", "card--price");&shy;
-
-
-          DOMobject.innerHTML = `&lt;&shy;span&gt;&shy;Things: ${element}&lt;&shy;/span&gt;&shy;`;&shy;
+  DOMobject.classList.add("card", "card--price");
 
 
-          document.body.innerHTML += DOMobject;&shy;
+  DOMobject.innerHTML = `<span>Things: ${element}</span>`;
 
 
-          console.log("Round of elements: " + i);&shy;
+  document.body.innerHTML += DOMobject;
 
 
-          // Creates copies of array elements with value passing
-          }
-
-          let DOMobject = document.createElement("div");&shy;
-
-          let arrThings = [1, 2, 3, 4, 5, 6, 7];&shy;
+  console.log("Round of elements: " + i);
 
 
+  // Creates copies of array elements with value passing
+}
 
-          for (let i = 0;&shy; i &lt;&shy; arrThings.length;&shy; i++) {
-          let element = arrThings[i];&shy;
+let DOMobject = document.createElement("div");
 
-          DOMobject.classList.add("card", "card--price");&shy;
-
-
-          DOMobject.innerHTML = `&lt;&shy;span&gt;&shy;Things: ${element}&lt;&shy;/span&gt;&shy;`;&shy;
+let arrThings = [1, 2, 3, 4, 5, 6, 7];
 
 
-          document.body.innerHTML += DOMobject;&shy;
+
+for (let i = 0; i < arrThings.length; i++) {
+  let element = arrThings[i];
+
+  DOMobject.classList.add("card", "card--price");
 
 
-          console.log("Round of elements: " + i);&shy;
+  DOMobject.innerHTML = `<span>Things: ${element}</span>`;
 
 
-          // Creates copies of array elements with value passing
-          }
+  document.body.innerHTML += DOMobject;
 
 
-        </p>
-      </div>
-      <img src="pic/avatar.webp" alt="Моё серое лицо с жёлстыми глазами">
+  console.log("Round of elements: " + i);
+
+
+  // Creates copies of array elements with value passing
+}
+
+        </code></pre>
+      <pre><code class="baner_language-js" lang="javascript">
+          let DOMobject = document.createElement("div");
+
+let arrThings = [1, 2, 3, 4, 5, 6, 7];
+
+
+
+for (let i = 0; i < arrThings.length; i++) {
+  let element = arrThings[i];
+
+  DOMobject.classList.add("card", "card--price");
+
+
+  DOMobject.innerHTML = `<span>Things: ${element}</span>`;
+
+
+  document.body.innerHTML += DOMobject;
+
+
+  console.log("Round of elements: " + i);
+
+
+  // Creates copies of array elements with value passing
+}
+
+let DOMobject = document.createElement("div");
+
+let arrThings = [1, 2, 3, 4, 5, 6, 7];
+
+
+
+for (let i = 0; i < arrThings.length; i++) {
+  let element = arrThings[i];
+
+  DOMobject.classList.add("card", "card--price");
+
+
+  DOMobject.innerHTML = `<span>Things: ${element}</span>`;
+
+
+  document.body.innerHTML += DOMobject;
+
+
+  console.log("Round of elements: " + i);
+
+
+  // Creates copies of array elements with value passing
+}
+
+        </code></pre>
+      </pre>
     </div>
   </div>
   <div class="qute">
@@ -140,94 +160,75 @@
   </div>
   <div class="skills" id="skills">
     <div class="wrapper">
-      <div class="skills_description">
-        <p>Для <span class="mark">вёрстки</span> и <span class="mark">FrontEnd разработки</span> я использую языки
-          HTML5,
-          CSS3 и JavaScript + SvelteJS. <br>Кратко о каждом. </p>
-        <p><span class="mark">HTML5</span> - кости сайта, на которых всё держится.</p>
-        <p><span class="mark">CSS3</span> - язык для красивой обёртки страницы, всегда ведь интеренее смотреть на
-          цветной
-          сайт, а не чёрно белый текст.</p>
-        <p><span class="mark">JavaScript (JS)</span> - язык для оживления вашей страницы, добавяет так сказать рефлексы
-          странице.</p>
-        <p>И на последок, <span class="mark">SvelteJS</span> - удобный инструмент для написания интернет-приложений со
-          скоростью света.</p>
-      </div>
       <div class="skills_icons">
-        <div class="skills_skill"><img src="pic/skill_html.webp" alt="иконка html" class="skill_icon skill_html"></div>
-        <div class="skills_skill"><img src="pic/skill_css.webp" alt="иконка css" class="skill_icon skill_css"></div>
-        <div class="skills_skill"><img src="pic/skill_js.webp" alt="иконка javascript" class="skill_icon skill_js">
+        <div class="skills_skill">
+          <img src="pic/skill_html.svg" alt="иконка html" class="skill_icon skill_html">
+          <p class="skills_name">HTML</p>
         </div>
-        <div class="skills_skill"><img src="pic/skill_svelte.webp" alt="иконка svelte javascript"
-            class="skill_icon skill_svelte"></div>
+        <div class="skills_skill">
+          <img src="pic/skill_css.svg" alt="иконка css" class="skill_icon skill_css">
+          <p class="skills_name">CSS</p>
+        </div>
+        <div class="skills_skill">
+          <img src="pic/skill_js.svg" alt="иконка javascript" class="skill_icon skill_js">
+          <p class="skills_name">JavaScript</p>
+        </div>
+        <div class="skills_skill">
+          <img src="pic/skill_svelte.svg" alt="иконка svelte javascript" class="skill_icon skill_svelte">
+          <p class="skills_name">Svelte JS</p>
+        </div>
+        <div class="skills_skill">
+          <img src="pic/skill_git.svg" alt="иконка git" class="skill_icon skill_git">
+          <p class="skills_name">Git</p>
+        </div>
       </div>
     </div>
   </div>
   <div class="projects" id="projects">
     <div class="wrapper">
-      <div class="projects_prev"><span>&lt;</span></div>
-      <div class="projects_slider">
-        <div class="slider_view">
-          <div class="slider_line">
-            <div class="slider_slide">
-              <div class="slider_img">
-                <img src="pic/icon_backandpack.jpg" alt="Иконка проекта">
-              </div>
-              <div class="sldier_infromation">
-                <h2>Back&Pack</h2>
-                <p>Это макет я сделал с нуля самостоятельно. Основная задумка состояла в создании мини интернет-магазина
-                  сумок и рюкзаков.
-                  В процессе вёрстки не было особых проблем, однако они встретились когда пришлось добавлять некоторые
-                  интерактивные элементы страницы. В каждом интернет магазине есть фильтр по товарам, вот с ним и как
-                  раз
-                  возникла не большая проблема, но я смог её решить. На вёрстку и настройку макета, вплоть до карусили с
-                  карточками товаров и фальтров, ушло пару дней.
-                  Но результат вы и сами можите видеть.</p>
-                <div class="slider_links">
-                  <a href="#" class="slider_site"><span>&gt;Посмотреть</span></a>
-                  <a href="#" class="slider_github"><img src="pic/icon_github.svg" alt="иконка github"></a>
-                </div>
-              </div>
-            </div>
-            <div class="slider_slide">
-              <div class="slider_img">
-                <img src="pic/icon_backandpack.jpg" alt="Иконка проекта">
-              </div>
-              <div class="sldier_infromation">
-                <h2>Back&Pack</h2>
-                <p>Это макет я сделал с нуля самостоятельно. Основная задумка состояла в создании мини интернет-магазина
-                  сумок и рюкзаков.
-                  В процессе вёрстки не было особых проблем, однако они встретились когда пришлось добавлять некоторые
-                  интерактивные элементы страницы. В каждом интернет магазине есть фильтр по товарам, вот с ним и как
-                  раз
-                  возникла не большая проблема, но я смог её решить. На вёрстку и настройку макета, вплоть до карусили с
-                  карточками товаров и фальтров, ушло пару дней.
-                  Но результат вы и сами можите видеть.</p>
-                <div class="slider_links">
-                  <a href="#" class="slider_site"><span>&gt;Посмотреть</span></a>
-                  <a href="#" class="slider_github"><img src="pic/icon_github.svg" alt="иконка github"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="slider_points">
-          <div class="slider_point"></div>
-          <div class="slider_point slider_point--chosen"></div>
-          <div class="slider_point"></div>
-          <div class="slider_point"></div>
+      <div class="projects_card">
+        <div class="projects_preview projects_preview--9"></div>
+        <h3 class="projects_name">Back&Pack</h3>
+        <div class="projects_links">
+          <a href="#" class="projects_link projects_link--site">
+            <span>&gt; подробенее</span>
+          </a>
+          <a href="#" class="projects_link projects_link--github">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" rx="24" fill="#D9D9D9" />
+              <path
+                d="M23.59 2C29.316 2 34.8075 4.27465 38.8564 8.32356C42.9053 12.3725 45.18 17.864 45.18 23.59C45.18 29.316 42.9053 34.8075 38.8564 38.8564C34.8075 42.9053 29.316 45.18 23.59 45.18C17.864 45.18 12.3725 42.9053 8.32356 38.8564C4.27465 34.8075 2 29.316 2 23.59C2 17.864 4.27465 12.3725 8.32356 8.32356C12.3725 4.27465 17.864 2 23.59 2V2ZM23.59 5.52637C13.6694 5.52637 5.59833 13.5974 5.59833 23.59C5.5937 27.3879 6.78625 31.0906 9.00648 34.172C11.2267 37.2533 14.3617 39.5564 17.9658 40.7541C18.0195 40.7621 18.0735 40.7681 18.1277 40.772C18.8582 40.808 19.1317 40.3079 19.1317 39.8725L19.1065 36.7995C14.1048 37.8898 13.0469 34.3742 13.0469 34.3742C12.2301 32.2872 11.0498 31.733 11.0498 31.733C9.41617 30.6103 11.1722 30.6319 11.1722 30.6319C12.4855 30.7255 13.3455 31.6683 13.7198 32.1792L13.9285 32.4959C15.5333 35.2558 18.1385 34.4606 19.164 34C19.3296 32.8305 19.7902 32.0353 20.3047 31.5819C16.3106 31.1249 12.1113 29.574 12.1113 22.6508C12.1113 20.6789 12.813 19.0669 13.9645 17.8003L13.8565 17.4944C13.6262 16.764 13.3096 15.1267 14.1408 13.0181L14.2847 12.9929C14.7309 12.9353 16.2566 12.9461 19.0885 14.8712C20.5554 14.47 22.0692 14.2655 23.59 14.2631C25.1193 14.2703 26.6594 14.4718 28.0951 14.8748C31.5315 12.5359 33.0392 13.0181 33.0392 13.0181C34.018 15.5081 33.3991 17.3433 33.2191 17.8039C34.3706 19.0633 35.0651 20.6789 35.0651 22.6508C35.0651 29.5956 30.8586 31.1213 26.8501 31.5675C27.4978 32.1252 28.0735 33.2299 28.0735 34.914L28.0519 39.8725C28.0519 40.3402 28.3578 40.8872 29.2142 40.7541C32.8183 39.5564 35.9533 37.2533 38.1735 34.172C40.3938 31.0906 41.5863 27.3879 41.5817 23.59C41.5817 13.5974 33.5106 5.52637 23.59 5.52637Z"
+                fill="black" />
+            </svg>
+          </a>
         </div>
       </div>
-      <div class="projects_next"><span>&gl;</span></div>
+      <div class="projects_card">
+        <div class="projects_preview projects_preview--9"></div>
+        <h3 class="projects_name">Back&Pack</h3>
+        <div class="projects_links">
+          <a href="#" class="projects_link projects_link--site">
+            <span>&gt; подробенее</span>
+          </a>
+          <a href="#" class="projects_link projects_link--github">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" rx="24" fill="#D9D9D9" />
+              <path
+                d="M23.59 2C29.316 2 34.8075 4.27465 38.8564 8.32356C42.9053 12.3725 45.18 17.864 45.18 23.59C45.18 29.316 42.9053 34.8075 38.8564 38.8564C34.8075 42.9053 29.316 45.18 23.59 45.18C17.864 45.18 12.3725 42.9053 8.32356 38.8564C4.27465 34.8075 2 29.316 2 23.59C2 17.864 4.27465 12.3725 8.32356 8.32356C12.3725 4.27465 17.864 2 23.59 2V2ZM23.59 5.52637C13.6694 5.52637 5.59833 13.5974 5.59833 23.59C5.5937 27.3879 6.78625 31.0906 9.00648 34.172C11.2267 37.2533 14.3617 39.5564 17.9658 40.7541C18.0195 40.7621 18.0735 40.7681 18.1277 40.772C18.8582 40.808 19.1317 40.3079 19.1317 39.8725L19.1065 36.7995C14.1048 37.8898 13.0469 34.3742 13.0469 34.3742C12.2301 32.2872 11.0498 31.733 11.0498 31.733C9.41617 30.6103 11.1722 30.6319 11.1722 30.6319C12.4855 30.7255 13.3455 31.6683 13.7198 32.1792L13.9285 32.4959C15.5333 35.2558 18.1385 34.4606 19.164 34C19.3296 32.8305 19.7902 32.0353 20.3047 31.5819C16.3106 31.1249 12.1113 29.574 12.1113 22.6508C12.1113 20.6789 12.813 19.0669 13.9645 17.8003L13.8565 17.4944C13.6262 16.764 13.3096 15.1267 14.1408 13.0181L14.2847 12.9929C14.7309 12.9353 16.2566 12.9461 19.0885 14.8712C20.5554 14.47 22.0692 14.2655 23.59 14.2631C25.1193 14.2703 26.6594 14.4718 28.0951 14.8748C31.5315 12.5359 33.0392 13.0181 33.0392 13.0181C34.018 15.5081 33.3991 17.3433 33.2191 17.8039C34.3706 19.0633 35.0651 20.6789 35.0651 22.6508C35.0651 29.5956 30.8586 31.1213 26.8501 31.5675C27.4978 32.1252 28.0735 33.2299 28.0735 34.914L28.0519 39.8725C28.0519 40.3402 28.3578 40.8872 29.2142 40.7541C32.8183 39.5564 35.9533 37.2533 38.1735 34.172C40.3938 31.0906 41.5863 27.3879 41.5817 23.59C41.5817 13.5974 33.5106 5.52637 23.59 5.52637Z"
+                fill="black" />
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
   <div class="contacts" id="contacts">
     <div class="wrapper">
-      <p>Если вас заинтересовали мои работы, всегда рад с вами &lt;&sol; пообщаться &gt;.<br>;)</p>
-      <div class="contacts">
-        <a href="" class="contacts_contact"><img src="pic/contact_github.svg" alt="иконка github"></a>
-        <a href="" class="contacts_contact"><img src="pic/contact_vk.svg" alt="иконка vk"></a>
-        <a href="" class="contacts_contact"><img src="pic/contact_mail.svg" alt="иконка электронной почты"></a>
+      <p>Если вас заинтересовали мои работы, всегда рад с вами <br><span class="mark">&lt;&sol;пообщаться&gt;</span>.<br>;)</p>
+      <div class="contacts_icons">
+        <a href="https://github.com/ontalex" class="contacts_contact"><img src="pic/contact_github.svg" alt="иконка github"></a>
+        <a href="https://vk.com/ontalex" class="contacts_contact"><img src="pic/contact_vk.svg" alt="иконка vk"></a>
+        <a href="mail:ontalex@yandex.ru" class="contacts_contact"><img src="pic/contact_mail.svg" alt="иконка электронной почты"></a>
       </div>
     </div>
   </div>
