@@ -311,5 +311,17 @@ header {
         max-width: 100vw;
       }
     }
+    &_avatar {
+      width: 100%;
+    }
+    &_code {
+      grid-template-columns: 1fr;
+      left: 0;
+    }
+  }
+  .projects {
+    .wrapper {
+      flex-direction: column;
+    }
   }
 }
