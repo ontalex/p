@@ -276,13 +276,13 @@ header {
     line-height: 37px;
 
     color: #ffffff;
+    padding: 0;
   }
   p {
     max-width: 520px;
   }
   &_icons {
     display: flex;
-    flex-direction: column;
     gap: 20px;
   }
   &_contact {
@@ -330,7 +330,7 @@ header {
     line-height: 29px;
 
     // &_text {
-    // }
+    // }  
     &_text::before {
       font-size: 96px;
       top: -1em;
@@ -343,6 +343,11 @@ header {
   .projects {
     .wrapper {
       flex-direction: column;
+    }
+  }
+  .contacts {
+    .wrapper {
+      padding: 16px 32px;
     }
   }
 }
