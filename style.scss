@@ -39,11 +39,10 @@ header {
     justify-content: space-between;
     align-items: center;
   }
-  .header_logo {
-    font-size: 36px;
-  }
+  
   menu {
     display: flex;
+    align-items: center;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -61,6 +60,45 @@ header {
   }
   .menu_button {
     display: none;
+    .header_button {
+      height: 24px;
+      width: 42px;
+
+      display: flex;
+      flex-direction: column;
+      
+
+      background-color: #fff0;
+    }
+    .header_button_line {
+      height: 2px;
+      width: 100%;
+
+      transition: transform .3s ease-out;
+
+      background-color: white;
+      
+    }
+    .header_button--open {
+      justify-content: space-between;
+      align-items: center;
+      .header_button_line--top {
+        transform: rotate(0deg);
+      }
+      .header_button_line--bottom {
+        transform: rotate(0deg);
+      }
+    }
+    .header_button--close {
+      justify-content: center;
+      align-items: center;
+      .header_button_line--top {
+        transform: rotate(45deg);
+      }
+      .header_button_line--bottom {
+        transform: rotate(-45deg);
+      }
+    }
   }
 }
 .baner {
@@ -294,6 +332,12 @@ header {
 
 @media screen and (max-width: 480px) {
   header {
+    .header_button--open {
+      opacity: 1;
+    }
+    .header_button--close {
+      opacity: 0;
+    }
     menu {
       position: absolute;
       visibility: hidden;
