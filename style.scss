@@ -110,7 +110,10 @@ header {
       width: 100%;
       border-radius: 2px;
 
-      transition: transform 0.3s linear;
+      transition: transform .5s linear;
+      -o-transition: transform .5s linear;
+      -moz-transition: transform .5s linear;
+      -moz-transition: transform .5s linear;
 
       background-color: white;
     }
