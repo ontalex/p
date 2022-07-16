@@ -27,14 +27,18 @@ a:visited {
 }
 
 header {
+  width: 100%;
+
   position: relative;
   z-index: 9999;
+
+  background-color: #070101;
   .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   menu {
     display: flex;
     align-items: center;
@@ -57,6 +61,36 @@ header {
         color: #fcb93c;
       }
     }
+    &--float {
+      width: 100vw;
+
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+      li {
+        padding: 16px 0;
+        color: white;
+        text-transform: uppercase;
+      }
+      li:hover {
+        background-color: #191919;
+        color: #fcb93c;
+      }
+    }
+    &--float-opened {
+      position: fixed;
+      background-color: #131313;
+    }
+    &--float-closed {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+    }
   }
   .menu_button {
     display: none;
@@ -76,7 +110,7 @@ header {
       width: 100%;
       border-radius: 2px;
 
-      transition: transform .3s linear;
+      transition: transform 0.3s linear;
 
       background-color: white;
     }
@@ -85,7 +119,6 @@ header {
       align-items: center;
       .header_button_line--top {
         transform: rotate(0deg);
-        
       }
       .header_button_line--bottom {
         transform: rotate(0deg);
@@ -98,16 +131,17 @@ header {
         transform: rotate(45deg);
         position: relative;
         top: 1px;
-        
       }
       .header_button_line--bottom {
         transform: rotate(-45deg);
-        
       }
     }
   }
 }
 .baner {
+  position: relative;
+  z-index: 1000;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -206,6 +240,7 @@ header {
   z-index: 1000;
   .wrapper {
   }
+
   &_icons {
     display: flex;
     justify-content: center;
@@ -226,6 +261,9 @@ header {
     &:hover {
       background-color: rgb(36, 36, 36);
     }
+  }
+  .skill_icon {
+    width: 112px;
   }
   &_name {
     font-family: "Arial";
@@ -390,7 +428,7 @@ header {
     line-height: 29px;
 
     // &_text {
-    // }  
+    // }
     &_text::before {
       font-size: 96px;
       top: -1em;
