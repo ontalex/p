@@ -1,7 +1,10 @@
 let button_menu = document.querySelector(".header_button");
 let float_menu = document.querySelector(".header_menu--float");
 
-let isOpenMenu = false;
+let line_top = document.querySelector(".header_button_line--top");
+let line_under = document.querySelector(".header_button_line--bottom");
+
+button_menu.isSelected = false;
 
 function addEffectWriting(element, time) {
   let element_array = element.innerText.split("");
@@ -12,8 +15,6 @@ function addEffectWriting(element, time) {
   function writeSymbols() {
     element.innerText += element_array[element.count];
     element.count++;
-
-    console.log(element.count);
 
     if (element.count <= element_array.length) {
       setTimeout(() => {
@@ -30,34 +31,44 @@ function addEffectWriting(element, time) {
 }
 
 function close_openMenu() {
-  if (!isOpenMenu) {
-    button_menu.classList.remove("header_button--open");
-    button_menu.classList.add("header_button--close");
+  if (button_menu.isSelected == false) {
 
-    isOpenMenu = true;
+    line_under.style.marginTop = "-3px";
 
-    float_menu.classList.remove("header_menu--float-closed");
-    float_menu.classList.add("header_menu--float-opened");
+    setTimeout(() => {
+
+      line_top.style.transform = "rotate(45deg)";
+      line_under.style.transform = "rotate(-45deg)";
+
+      float_menu.classList.toggle("header_menu--float-closed");
+      float_menu.classList.toggle("header_menu--float-opened");
+    }, 100);
   } else {
-    button_menu.classList.remove("header_button--close");
-    button_menu.classList.add("header_button--open");
 
-    isOpenMenu = false;
+    line_top.style.transform = "rotate(0deg)";
+    line_under.style.transform = "rotate(0deg)";
 
-    console.log(`Статус меню: ${isOpenMenu}`);
+    setTimeout(() => {
 
-    float_menu.classList.remove("header_menu--float-opened");
-    float_menu.classList.add("header_menu--float-closed");
+      line_under.style.marginTop = "16px";
+
+      float_menu.classList.toggle("header_menu--float-opened");
+      float_menu.classList.toggle("header_menu--float-closed");
+    }, 100);
   }
+
+  button_menu.isSelected = !button_menu.isSelected;
 }
+
 function fixing_floatMenu() {
   if (window.scrollY >= document.querySelector("header").offsetHeight) {
     document.querySelector("header").style.position = "fixed";
-    document.querySelector(".baner").style.paddingTop = document.querySelector("header").offsetHeight + "px";
+    document.querySelector(".baner").style.paddingTop =
+      document.querySelector("header").offsetHeight + "px";
   }
 }
 
 button_menu.addEventListener("mouseup", close_openMenu);
 window.addEventListener("scroll", fixing_floatMenu);
 
-addEffectWriting(document.querySelector('.baner_language-js'), 15);
+addEffectWriting(document.querySelector(".baner_language-js"), 15);

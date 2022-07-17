@@ -100,6 +100,10 @@ header {
       display: flex;
       flex-direction: column;
 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       border: 0ch;
 
       background-color: #fff0;
@@ -109,34 +113,34 @@ header {
       width: 100%;
       border-radius: 2px;
 
-      transition: transform .5s linear;
-      -o-transition: transform .5s linear;
-      -moz-transition: transform .5s linear;
-      -moz-transition: transform .5s linear;
+      transition: transform 0.5s linear;
+      -o-transition: transform 0.5s linear;
+      -moz-transition: transform 0.5s linear;
+      -moz-transition: transform 0.5s linear;
 
       background-color: white;
     }
-    .header_button--open {
-      justify-content: space-between;
-      align-items: center;
-      .header_button_line--top {
-        transform: rotate(0deg);
-      }
-      .header_button_line--bottom {
-        transform: rotate(0deg);
-      }
+    
+
+    .header_button_line--top,
+    .header_button_line--bottom {
+      width: 32px;
+      height: 3px;
+      background-color: white;
+      border-radius: 6px;
+
+      transform: rotate(0deg);
     }
-    .header_button--close {
-      justify-content: center;
-      align-items: center;
-      .header_button_line--top {
-        transform: rotate(45deg);
-        position: relative;
-        top: 1px;
-      }
-      .header_button_line--bottom {
-        transform: rotate(-45deg);
-      }
+
+    .header_button_line--bottom {
+      margin-top: 16px;
+      transition-property: margin-top, transform;
+      transition-timing-function: linear;
+      transition-duration: 100ms;
+    }
+
+    .header_button_line--top {
+      transition: transform 100ms linear;
     }
   }
 }
