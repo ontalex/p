@@ -4,11 +4,7 @@ let float_menu = document.querySelector(".header_menu--float");
 let isOpenMenu = false;
 
 function addEffectWriting(element, time) {
-  console.log(element);
-
   let element_array = element.innerText.split("");
-
-  console.log(element_array);
 
   element.count = 0;
   element.innerText = "";
@@ -40,8 +36,6 @@ function close_openMenu() {
 
     isOpenMenu = true;
 
-    console.log(`Статус меню: ${isOpenMenu}`);
-
     float_menu.classList.remove("header_menu--float-closed");
     float_menu.classList.add("header_menu--float-opened");
   } else {
@@ -59,8 +53,7 @@ function close_openMenu() {
 function fixing_floatMenu() {
   if (window.scrollY >= document.querySelector("header").offsetHeight) {
     document.querySelector("header").style.position = "fixed";
-    document.querySelector(".baner").style.paddingTop =
-      document.querySelector("header").offsetHeight + "px";
+    document.querySelector(".baner").style.paddingTop = document.querySelector("header").offsetHeight + "px";
   }
 }
 
