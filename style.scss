@@ -281,8 +281,9 @@ header {
 .projects {
   padding: 32px 0;
   .wrapper {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 16px 64px;
     gap: 90px;
   }
   &_card {
@@ -291,8 +292,10 @@ header {
     align-items: center;
   }
   &_preview {
-    width: 305px;
-    height: 305px;
+    // width: 305px;
+    // height: 305px;
+
+    width: 100%;
 
     border-radius: 6px;
 
@@ -303,18 +306,6 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-  }
-  &_preview--9 {
-    background-image: url("pic/preview_layout_9.png");
-  }
-  &_preview--5 {
-    background-image: url("pic/preview_layout_5.png");
-  }
-  &_preview--6 {
-    background-image: url("pic/preview_layout_6.png");
-  }
-  &_preview--13 {
-    background-image: url("pic/preview_layout_13.png");
   }
   &_name {
     font-family: "Arial";
@@ -389,19 +380,45 @@ header {
   }
 }
 
+@media screen and (max-width:1024px) {
+  .projects {
+    .wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width:770px) {
+  .baner {
+    grid-template-columns: 1fr 1fr;
+  }
+  header {
+    .header_button--open {
+      opacity: 1;
+    }
+
+    .header_menu {
+      display: none;
+    }
+
+    .menu_button {
+      display: block;
+    }
+
+    .header_logo {
+      font-size: 24px;
+    }
+  }
+  .baner {
+    justify-items: right;
+  }
+}
+
 @media screen and (max-width: 480px) {
   header {
     .header_button--open {
       opacity: 1;
     }
-    .header_button--close {
-      // opacity: 0;
-    }
-    // menu {
-    //   position: absolute;
-    //   visibility: hidden;
-    //   display: none;
-    // }
 
     .header_menu {
       display: none;
@@ -422,7 +439,7 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    align-items: center;
+    align-items: right;
     &_sayHi {
       // font-size: 16px;
       padding: 16px;
@@ -455,7 +472,11 @@ header {
   }
   .projects {
     .wrapper {
-      flex-direction: column;
+      grid-template-columns: repeat(1, 1fr);
+      padding: 16px 8px;
+    }
+    &_preview {
+      transform: scale(80%);
     }
   }
   .contacts {
