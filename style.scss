@@ -299,12 +299,22 @@ header {
     box-shadow: 20px 16px 0px #fcb93c;
 
     background-color: gray;
-  }
-  &_preview--9 {
-    background-image: url("pic/preview_layout_9.png");
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  &_preview--9 {
+    background-image: url("pic/preview_layout_9.png");
+  }
+  &_preview--5 {
+    background-image: url("pic/preview_layout_5.png");
+  }
+  &_preview--6 {
+    background-image: url("pic/preview_layout_6.png");
+  }
+  &_preview--13 {
+    background-image: url("pic/preview_layout_13.png");
   }
   &_name {
     font-family: "Arial";
