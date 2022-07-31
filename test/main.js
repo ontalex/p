@@ -1,3 +1,4 @@
-let body = document.body.innerHTML;
+document.body.innerHTML = `<p>Window width: ${window.innerWidth} // Window height: ${window.innerHeight}</p>`;
+document.body.style.minHeight = window.innerHeight+"px";
 
-body += `Window height: ${window.innerHeight} // Window width: ${window.innerWidth}`;
+document.body.addEventListener("mouseup", ()=>{document.body.innerHTML = `<p>Window width: ${window.innerWidth} // Window height: ${window.innerHeight}</p>`;});
