@@ -1,0 +1,155 @@
+@media (prefers-color-scheme: light) {
+    html {
+        background: rgba(255, 255, 255, 1);
+        color: black;
+    }
+
+    header {
+        background-color: #D9D9D9;
+    }
+
+    .articles {
+        .article {
+            background-color: #d9d9d9;
+        }
+        .article_id {
+            color: rgba(0, 0, 0, 0.5);
+        }
+        .article_header {
+            color: #000;
+        }
+        .article_text {
+            color: #000b;
+        }
+    }
+    .pages {
+        .toPage {
+            background-color: #bebebe;
+        }
+    }
+}
+@media (prefers-color-scheme: dark) {
+    html {
+        background: rgba(17, 17, 17, 1);
+        color: rgba(255, 255, 255, 1);
+    }
+
+    header {
+        background-color: rgba(38, 38, 38, 1);
+    }
+
+    .articles {
+        .article {
+            background-color: rgba(38, 38, 38, 1);
+        }
+        .article_id {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .article_header {
+            color: rgba(255, 255, 255, 1);
+        }
+        .article_text {
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+    .pages {
+        .toPage {
+            background-color: rgba(65, 65, 65, 1);
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+a, a:focus, a:visited {
+    outline: 0ch;
+    text-decoration: none;
+}
+
+html {}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 72px;
+    width: 100%;
+
+    h1 {
+        font-family: sans-serif;
+        margin: 0;
+    }
+}
+
+.articles {
+    margin-top: 16px;
+    padding: 0 8px;
+
+    .article {
+        max-width: 320px;
+
+        padding: 21px 15px;
+        margin: 0 auto 16px auto;
+
+        border-radius: 8px;
+
+    }
+
+    .article_id {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+
+    }
+
+    .article_header {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 21px;
+    }
+
+    .article_text {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17px;
+    }
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 16px 0;
+
+    .toPage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 24px;
+        height: 24px;
+
+        border: 0;
+        border-radius: 4px;
+
+        span {
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+}
