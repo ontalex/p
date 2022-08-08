@@ -1,5 +1,6 @@
 let articles = document.querySelector('.articles');
 let pages = document.querySelector('.pages');
+let countArticles = 7;
 
 function loadArticles(startItem, countItems) {
     const requestURl = `https://jsonplaceholder.typicode.com/posts?_start=${startItem}&_limit=${countItems}`;
@@ -31,7 +32,7 @@ loadButtons();
 
 function loadButtons() {
     let page = 1;
-    let maxPage = 5
+    let maxPage = 5;
 
     for(let i = page; i<=maxPage; i++) {
         pages.innerHTML += `<a href="#"><button topage="${i}" class="toPage"><span>${i}</span></button></a>`;
@@ -42,11 +43,11 @@ function changePage(event) {
     console.log(event);
     console.log(event.target);
 
-    let begin = +event.target.innerText * 5 - 5;
+    let begin = +event.target.innerText * countArticles - countArticles;
 
-    loadArticles(begin, 5);
+    loadArticles(begin, countArticles);
 
     pages.removeEventListener("click", (e)=changePage);
 }
 
-loadArticles(0, 5)
+loadArticles(0, countArticles)
