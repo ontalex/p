@@ -1,14 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>News Blog</title>
     <link rel="stylesheet" href="/projects/general_lib/normaliz.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <p>Проект на ремонте</p>
+    <header>
+        <img class="header_logo" src="img/logo.svg" alt="логотип проекта">
+        <menu class="header_menu">
+            <ul class="header_items">
+                <a class="header_item" href="http://" target="_blank" rel="noopener noreferrer">Главная</a>
+                <a class="header_item" href="http://" target="_blank" rel="noopener noreferrer">О нас</a>
+                <a class="header_item" href="http://" target="_blank" rel="noopener noreferrer">Контакты</a>
+                <a class="header_item" href="http://" target="_blank" rel="noopener noreferrer">Поиск</a>
+                <a class="header_item" class="header_tell" href="tel:+79168878767">
+                    <img class="header_tell--svg" src="img/tel.svg" alt="иконка телефона">
+                    <span>+7 (916) 887-87-67</span>
+                </a>
+            </ul>
+            <img class="header_button" src="" alt="иконка меню">
+        </menu>
+    </header>
+    <div class="baner"></div>
+    <main class="section">
+        <div class="articles">
+            <article class="article article--full">
+                <div class="article-top">
+                    <span class="article-category">категория</span>
+                    <span class="article-date">10 Августа 2022</span>
+                </div>
+                <h2 class="article-header">Какой-то заголовок статьи для новостей</h2>
+                <p>Следует отметить, что начало повседневной работы по формированию позиции предоставляет широкие
+                    возможности для модели развития. Внезапно, диаграммы связей превращены в посмешище, хотя само их
+                    существование приносит несомненную пользу обществу.</p>
+            </article>
+            <div class="pagination">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>...</span>
+                <span>10</span>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar-news">
+                <p>Противоположная точка зрения подразумевает, что сделанные на базе интернет-аналитики выводы формируют
+                    глобальную экономическую сеть и при этом — объединены в целые кластеры себе подобных.</p>
+                <span>10 Августа 2022</span>
+            </div>
+            <div class="sidebar-subscription">
+                <h3 class="sidebar-subscription--header">Подписаться на рассылку</h3>
+                <input class="sidebar-subscription--input" type="email" name="" id="">
+                <button class="sidebar-subscription--button"><span>Подписаться</span></button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img class="footer-logo" src="img/logo.svg" alt="логотип проекта">
+        <menu class="footer-menu">
+            <a class="footer_item" href="http://" target="_blank" rel="noopener noreferrer">Главная</a>
+            <a class="footer_item" href="http://" target="_blank" rel="noopener noreferrer">О нас</a>
+            <a class="footer_item" href="http://" target="_blank" rel="noopener noreferrer">Контакты</a>
+            <a class="footer_item" href="http://" target="_blank" rel="noopener noreferrer">Поиск</a>
+        </menu>
+        <p class="footer-liocent">ООО Организация 2020. Все права защещены</p>
+    </footer>
 </body>
+
 </html>
