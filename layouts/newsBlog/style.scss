@@ -6,6 +6,8 @@
     --bg-article: #FFFFFF;
     --bg-button: #5D71DD;
     --bg-button_hover: #374BB7;
+    
+    --bg-menu-button: #000000;
 
     --c-header-text: #000;
     --c-header-item: #5D71DD;
@@ -37,6 +39,8 @@
         --bg-button: #5D71DD;
         --bg-button_hover: #374BB7;
 
+        --bg-menu-button: #000000;
+
         --c-header-text: #000;
         --c-header-item: #5D71DD;
         --c-button: #FFFFFF;
@@ -67,6 +71,8 @@
         --bg-article: #202020;
         --bg-button: #5D71DD;
         --bg-button_hover: #374BB7;
+
+        --bg-menu-button: #FFFFFF;
 
         --c-header-text: #fff;
         --c-header-item: #5D71DD;
@@ -145,6 +151,8 @@ header {
 
     .header_button {
         display: none;
+
+        fill: var(--bg-menu-button);
     }
 
     .header_button:hover {}
@@ -296,6 +304,7 @@ footer {
     color: var(--c-footer);
 
     padding: 21px 120px;
+
     .footer-logo {
         width: 64px;
     }
@@ -303,6 +312,9 @@ footer {
     .footer-menu {
         display: flex;
         gap: 16px;
+
+        flex-direction: row;
+        align-items: center;
 
         padding: 0;
         margin: 32px 0;
@@ -314,4 +326,37 @@ footer {
     }
 
     .footer-liocent {}
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        padding: 4px 16px;
+
+        .header_items {
+            display: none;
+        }
+
+        .header_button {
+            display: block;
+        }
+    }
+
+    .section {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        padding: 4px 16px;
+    }
+
+    footer {
+        padding: 21px 16px;
+
+        .footer-menu {
+            flex-direction: column;
+        }
+
+        .footer-liocent {
+            text-align: center;
+        }
+    }
 }
