@@ -24,7 +24,7 @@ function slider_prev(e) {
 button_next.addEventListener('mouseup', ()=>{
     console.log(slider_index);
     if(slider_index==slider_line.childElementCount-3) {
-        button_next.classList.toggle("inactive_button")
+        button_next.classList.add("inactive_button")
     }
     if(slider_index == slider_line.childElementCount-2) {
         return true; 
@@ -39,6 +39,7 @@ button_next.addEventListener('mouseup', ()=>{
     }
 });
 button_prev.addEventListener('mouseup', ()=>{
+    button_next.classList.remove("inactive_button");
     if(slider_index == 2) {
         button_prev.classList.add("inactive_button");
     }

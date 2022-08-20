@@ -603,7 +603,7 @@ body {
 
             left: 0px;
 
-            transition: left .3s ease-in-out;
+            transition: left .3s ease-in;
         }
 
         .slide {
@@ -649,4 +649,22 @@ body {
             // right: 100vh;
         }
     }
+}
+
+.contact {
+    &_wrapper {}
+    &_form {}
+    h2 {}
+    &_inputs {}
+    &_input {}
+    &_send {
+        span {
+
+        }
+    }
+    &_name {}
+    &_surname {}
+    &_email {}
+    &_message {}
+    &_img {}
 }
