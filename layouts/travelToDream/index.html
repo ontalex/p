@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel to your dream | Travel Blog</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -23,12 +24,12 @@
         </div>
     </header>
     <div class="welcome">
-        <div class="wrapper">
+        <div class="welcome_wrapper">
             <div class="welcome_text">
                 <h1>Travel to your dream destination</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit hic libero id, perspiciatis sunt
                     obcaecati neque facilis placeat sint aliquam excepturi.</p>
-                <a href="#"><span>Reserve Ticket</span></a>
+                <a href="#" class="welcome_button"><span>Reserve Ticket</span></a>
             </div>
             <div class="welcome_photo"></div>
         </div>
@@ -40,26 +41,29 @@
         <a href="#"><span>My Travel Logs</span></a>
     </div>
     <div class="blog">
-        <div class="wrapper">
+        <div class="blog_wrapper">
             <div class="card">
-                <div class="img"></div>
-                <!-- Линию под фото сделать через ::after -->
-                <h3>Lorem ipsum dolor sit amet.</h3>
+                <!-- <div class="blog_img blog_img-1"></div> -->
+                <img class="blog_img blog_img-1" src="imgs/blog-1.jpg" alt="">
+                <div class="blog_line"></div>
+                <h3>Lorem ipsum dolor sit amet</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quae, eaque quasi iure rerum dolor?
                     Soluta incidunt et eius alias molestiae velit, ab nostrum quis ullam.</p>
             </div>
             <div class="card">
-                <div class="img"></div>
-                <!-- Линию под фото сделать через ::after -->
-                <h3>Lorem ipsum dolor sit amet.</h3>
+                <!-- <div class="blog_img blog_img-2"></div> -->
+                <img class="blog_img blog_img-2" src="imgs/blog-2.jpg" alt="">
+                <div class="blog_line"></div>
+                <h3>Lorem ipsum dolor sit amet</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nobis fugit corporis temporibus
                     eveniet. Unde quaerat iure asperiores! Veritatis libero enim amet dolorum explicabo culpa voluptas.
                 </p>
             </div>
             <div class="card">
-                <div class="img"></div>
-                <!-- Линию под фото сделать через ::after -->
-                <h3>Lorem ipsum dolor sit amet.</h3>
+                <!-- <div class="blog_img blog_img-3"></div> -->
+                <img class="blog_img blog_img-3" src="imgs/blog-3.jpg" alt="">
+                <div class="blog_line"></div>
+                <h3>Lorem ipsum dolor sit amet</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque maiores, iste ipsa ipsum ea minima
                     in! Vitae voluptatem impedit fugiat itaque, autem vero inventore!</p>
             </div>
@@ -67,15 +71,15 @@
     </div>
     <div class="about">
         <div class="about_baner">
-            <!--svg-->
-            <p>Sea places you've <span>never</span> been before</p>
-            <span>Lorem, ipsum dolor | Lorem, ipsum dolor | Lorem, ipsum dolor</span>
+            <img class="about_icon" src="imgs/airplane.svg" alt="">
+            <p class="about_slogan">Sea places you've <span>never</span> been before</p>
+            <span class="about_keywords">Lorem, ipsum dolor | Lorem, ipsum dolor | Lorem, ipsum dolor</span>
         </div>
         <div class="about_travel">
-            <div class="wrapper">
+            <div class="about_wrapper">
                 <div class="bigImg"></div>
-                <div class="about">
-                    <img src="" alt="Склоны гор" class="aboutImg">
+                <div class="about_information">
+                    <img src="imgs/about-2.jpg" alt="Склоны гор" class="aboutImg">
                     <div class="about_text">
                         <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
                         <div class="description">
@@ -87,7 +91,9 @@
                                 natus totam! Accusantium alias debitis earum doloribus consequuntur.</p>
                         </div>
                     </div>
-                    <div class="arrow"></div>
+                    <div class="arrow">
+                        <span>&LongRightArrow;</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,66 +101,127 @@
     <div class="choose">
         <div class="choose_text">
             <h3>Choose anywhere you'd like to be</h3>
-            <h5>Lorem ipsum dolor</h5>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, quaerat praesentium voluptatem, tempore
-                cupiditate nemo asperiores voluptate, est ea explicabo officiis officia. Ipsum illum deserunt aspernatur
-                dolorem sequi corrupti, odio id laboriosam est totam, ducimus earum distinctio. Magni nihil totam
-                impedit praesentium quaerat veritatis maxime saepe commodi nisi.</p>
-            <h5>Lorem ipsum dolor</h5>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, sequi. Repellat temporibus odio
-                dolorum, nisi quis repellendus asperiores error assumenda, nostrum id maiores eligendi dicta debitis!
-                Modi perspiciatis veritatis ea in provident? Quasi harum at aperiam facilis reiciendis architecto nihil
-                doloribus aliquid nesciunt temporibus eaque ad, provident eligendi!</p>
+            <div class="choose_article">
+                <h5>Lorem ipsum dolor</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, quaerat praesentium voluptatem,
+                    tempore
+                    cupiditate nemo asperiores voluptate, est ea explicabo officiis officia. Ipsum illum deserunt
+                    aspernatur
+                    dolorem sequi corrupti, odio id laboriosam est totam, ducimus earum distinctio. Magni nihil totam
+                    impedit praesentium quaerat veritatis maxime saepe commodi nisi.</p>
+            </div>
+            <div class="choose_article">
+                <h5>Lorem ipsum dolor</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, sequi. Repellat temporibus
+                    odio
+                    dolorum, nisi quis repellendus asperiores error assumenda, nostrum id maiores eligendi dicta
+                    debitis!
+                    Modi perspiciatis veritatis ea in provident? Quasi harum at aperiam facilis reiciendis architecto
+                    nihil
+                    doloribus aliquid nesciunt temporibus eaque ad, provident eligendi!</p>
+            </div>
         </div>
         <div class="choose_img"></div>
     </div>
     <div class="questions">
-        <div class="wrapper">
+        <div class="questions_wrapper">
             <div class="questions_text">
                 <h2>Lorem ipsum dolor sit amet consectetur</h2>
-                <div class="accordion">
+                <div class="acor-container">
+
+                    <div class="acor-item">
+                        <input type="radio" name="acor" id="acor1" checked="checked" checked />
+                        <label for="acor1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est!</label>
+                        <div class="acor-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid maxime mollitia
+                                asperiores architecto eligendi officiis ut nobis fugiat?</p>
+                        </div>
+                    </div>
+
+                    <div class="acor-item">
+                        <input type="radio" name="acor" id="acor2" />
+                        <label for="acor2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Eveniet!</label>
+                        <div class="acor-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore incidunt omnis
+                                ratione
+                                ab, deleniti velit perferendis placeat amet?</p>
+                        </div>
+                    </div>
+
+                    <div class="acor-item">
+                        <input type="radio" name="acor" id="acor3" />
+                        <label for="acor3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid?</label>
+                        <div class="acor-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eaque, maiores inventore
+                                dolor error quidem dicta in atque?</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="acor-item">
+                        <input type="radio" name="acor" id="acor4" />
+                        <label for="acor4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid?</label>
+                        <div class="acor-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eaque, maiores inventore
+                                dolor error quidem dicta in atque?</p>
+                        </div>
+                    </div>
 
                 </div>
             </div>
+            <img class="questions_img" src='imgs/question-1.jpg' alt="">
         </div>
     </div>
     <div class="reviews">
         <h2>Here's what they have to say...</h2>
         <div class="slider">
-            <button class="button button_pren"></button>
+            <button class="button button_prev inactive_button"><img src="imgs/arrow.svg" alt=""></button>
             <div class="slider_view">
                 <div class="slider_line">
                     <div class="slide">
-                        <img src="" alt="фотография человека">
-                        <h6>Customer Name</h6>
+                        <img src="imgs/person.svg" alt="фотография человека">
+                        <h6>Customer Name 1</h6>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum sapiente pariatur doloribus
                             incidunt quaerat! Quo, reprehenderit!</p>
                     </div>
                     <div class="slide">
-                        <img src="" alt="фотография человека">
-                        <h6>Customer Name</h6>
+                        <img src="imgs/person.svg" alt="фотография человека">
+                        <h6>Customer Name 2</h6>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum sapiente pariatur doloribus
                             incidunt quaerat! Quo, reprehenderit!</p>
                     </div>
                     <div class="slide">
-                        <img src="" alt="фотография человека">
-                        <h6>Customer Name</h6>
+                        <img src="imgs/person.svg" alt="фотография человека">
+                        <h6>Customer Name 3</h6>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum sapiente pariatur doloribus
                             incidunt quaerat! Quo, reprehenderit!</p>
                     </div>
                     <div class="slide">
-                        <img src="" alt="фотография человека">
-                        <h6>Customer Name</h6>
+                        <img src="imgs/person.svg" alt="фотография человека">
+                        <h6>Customer Name 4</h6>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum sapiente pariatur doloribus
+                            incidunt quaerat! Quo, reprehenderit!</p>
+                    </div>
+                    <div class="slide">
+                        <img src="imgs/person.svg" alt="фотография человека">
+                        <h6>Customer Name 5</h6>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum sapiente pariatur doloribus
+                            incidunt quaerat! Quo, reprehenderit!</p>
+                    </div>
+                    <div class="slide">
+                        <img src="imgs/person.svg" alt="фотография человека">
+                        <h6>Customer Name 6</h6>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum sapiente pariatur doloribus
                             incidunt quaerat! Quo, reprehenderit!</p>
                     </div>
                 </div>
             </div>
-            <button class="button button_next"></button>
+            <button class="button button_next"><img src="imgs/arrow.svg" alt=""></button>
         </div>
     </div>
     <div class="contact">
-        <div class="wrapper">
+        <div class="contact_wrapper">
             <div class="contact_form">
                 <h2>Be updated!</h2>
                 <form action="" method="post">
@@ -168,7 +235,7 @@
         </div>
     </div>
     <footer>
-        <div class="wrapper">
+        <div class="footer_wrapper">
             <div class="footer_main">
                 <h2>My Log Travels</h2>
                 <div class="footer_information">
@@ -192,6 +259,6 @@
             <p class="footer_license">2021 - 2022 My Log Travels All Rights Reserved.</p>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
-
 </html>
