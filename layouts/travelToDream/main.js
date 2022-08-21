@@ -6,10 +6,8 @@ let slider_index = 1;
 let slide_gap = 20;
 let slide_border = 3;
 let last_left_margin = 0;
-
-function button_visibility(e) {
-    
-}
+// let cout_view = window.innerWidth <= 480 ? 1 : 3;
+let count_view = 3;
 
 function slider_next(e) {
     console.log("hi");
@@ -23,10 +21,10 @@ function slider_prev(e) {
 
 button_next.addEventListener('mouseup', ()=>{
     console.log(slider_index);
-    if(slider_index==slider_line.childElementCount-3) {
+    if(slider_index==slider_line.childElementCount-count_view) {
         button_next.classList.add("inactive_button")
     }
-    if(slider_index == slider_line.childElementCount-2) {
+    if(slider_index == slider_line.childElementCount-(count_view-1)) {
         return true; 
     } else {
         if (slider_index == 1) {
@@ -51,3 +49,10 @@ button_prev.addEventListener('mouseup', ()=>{
         slider_index--;
     }
 });
+
+//* Добавить фуенкционал Drag & Drop для слайдера отзывывов
+    // События на нажание и отжатие мыши {
+        //TODO Фиксация положения линии слайдела относительно курсора мыши (адаптировать и для мобильных устройств)
+        //TODO при нажатии делать пересчёт count_view
+        //TODO При отжатии мыши выравнивать положение линии слайдера к ближайшему блоку (50% - граница)
+    // }
