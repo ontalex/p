@@ -655,6 +655,8 @@ body {
 }
 
 .contact {
+    padding: 200px 0;
+
     &_wrapper {
         display: grid;
         grid-template-columns: 2fr 3fr;
@@ -726,5 +728,58 @@ body {
         background-size: cover;
         background-position: center;
         background-color: var(--c-gray);
+    }
+}
+
+footer {
+    background-color: var(--bg-footer);
+
+    .footer_wrapper {
+        padding: 90px;
+    }
+
+    .footer_main {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        h2 {
+            font-size: 48px;
+            font-family: var(--ff-cardo);
+            font-weight: 900;
+
+            margin: 0;
+        }
+    }
+
+    .footer_information {
+        h3 {
+            font-size: 20px;
+            font-family: var(--ff-lato);
+            margin-bottom: 38px;
+        }
+    }
+
+    .footer_links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 32px;
+
+        font-family: var(--ff-lato);
+        font-size: 16px;
+        a {
+            color: var(--c-dark);
+            text-decoration: none;
+        }
+        a:hover {}
+        a:focus {}
+        a:visited {}
+    }
+
+    .footer_license {
+        margin: 120px 0 0 0;
+        text-align: center;
+        
+        font-family: var(--ff-lato);
+        color: var(--c-dark);
     }
 }
