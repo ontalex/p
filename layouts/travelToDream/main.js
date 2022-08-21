@@ -1,13 +1,11 @@
-let button_prev = document.querySelector('.button_prev');
-let button_next = document.querySelector('.button_next');
-
-let slider_line = document.querySelector('.slider_line');
-let slider_index = 1;
-let slide_gap = 20;
-let slide_border = 3;
+let button_prev      = document.querySelector('.button_prev');
+let button_next      = document.querySelector('.button_next');
+let slider_line      = document.querySelector('.slider_line');
+let slider_index     = 1;
+let slide_gap        = 20;
+let slide_border     = 3;
 let last_left_margin = 0;
-// let cout_view = window.innerWidth <= 480 ? 1 : 3;
-let count_view = 3;
+let count_view       = 3;
 
 function slider_next(e) {
     console.log("hi");
@@ -19,38 +17,38 @@ function slider_prev(e) {
     // перенести из стрелочной функции слушателя событий
 }
 
-button_next.addEventListener('mouseup', ()=>{
+button_next.addEventListener('mouseup', () => {
     console.log(slider_index);
-    if(slider_index==slider_line.childElementCount-count_view) {
+    if (slider_index == slider_line.childElementCount - count_view) {
         button_next.classList.add("inactive_button")
     }
-    if(slider_index == slider_line.childElementCount-(count_view-1)) {
-        return true; 
+    if (slider_index == slider_line.childElementCount - (count_view - 1)) {
+        return true;
     } else {
         if (slider_index == 1) {
             button_prev.classList.remove("inactive_button")
         }
-        last_left_margin -= document.querySelector('.slide').clientWidth + slide_gap + slide_border*2;
-        slider_line.style.left = last_left_margin + "px";
+        last_left_margin       -= document.querySelector('.slide').clientWidth + slide_gap + slide_border * 2;
+        slider_line.style.left  = last_left_margin + "px";
         slider_index++;
-        
+
     }
 });
-button_prev.addEventListener('mouseup', ()=>{
+button_prev.addEventListener('mouseup', () => {
     button_next.classList.remove("inactive_button");
-    if(slider_index == 2) {
+    if (slider_index == 2) {
         button_prev.classList.add("inactive_button");
     }
     if (slider_index == 1) {
         return true;
     } else {
-        last_left_margin += document.querySelector('.slide').clientWidth + slide_gap + slide_border*2;
-        slider_line.style.left = last_left_margin + "px";
+        last_left_margin       += document.querySelector('.slide').clientWidth + slide_gap + slide_border * 2;
+        slider_line.style.left  = last_left_margin + "px";
         slider_index--;
     }
 });
 
-//* Добавить фуенкционал Drag & Drop для слайдера отзывывов
+//* Добавить функционал Drag & Drop для слайдера отзывывов
     // События на нажание и отжатие мыши {
         //TODO Фиксация положения линии слайдела относительно курсора мыши (адаптировать и для мобильных устройств)
         //TODO при нажатии делать пересчёт count_view
