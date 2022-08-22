@@ -67,7 +67,7 @@ function touchSlider() {
     function touchstart(event) {
         state.start = event.changedTouches[0].clientX;
 
-        count_view = 1;
+        // count_view = 1;
     }
     function touchmove(event) {
         state.path = 1 * (event.changedTouches[0].clientX - state.start);
