@@ -1,0 +1,74 @@
+.slider {
+    margin: 10px;
+    &_view {
+        max-width: 100%;
+        height: 300px;
+
+        overflow: hidden;
+        position: relative;
+    }
+
+    &_line {
+        height: inherit;
+
+        display: inline-flex;
+
+        align-items: center;
+
+        position: absolute;
+        left: 0px;
+        // transition: left 0.1s ease-in-out;
+    }
+}
+
+.slide {
+    width: 380px;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-right: 20px;
+    padding: 20px 0;
+
+    background-color: gainsboro;
+    border-radius: 20px;
+
+    &_hedaer {
+        font-size: 22px;
+    }
+
+    &_text {
+        font-size: 18px;
+    }
+
+    &_button {
+        width: 100px;
+        position: relative;
+        border: 0;
+        background-color: #222;
+        color: whitesmoke;
+    }
+}
+
+.button_text {
+    margin: 8px auto;
+}
+
+.cl {
+
+}
+.cl_last {
+
+}
+.cl_start {
+
+}
+.cl_move {
+
+}
+.cl_stop {
+
+}
