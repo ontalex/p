@@ -303,6 +303,8 @@ body {
 
         font-size: 16px;
         line-height: 18px;
+
+        text-align: center;
     }
 
     .about_travel {
@@ -406,6 +408,7 @@ body {
         background-image: url('imgs/choose-1.jpg');
         background-size: cover;
         background-position: right;
+        min-height: 200px;
     }
 }
 
@@ -707,6 +710,8 @@ body {
         background-size: cover;
         background-position: center;
         background-color: var(--c-gray);
+
+        min-height: 200px;
     }
 }
 
@@ -807,7 +812,48 @@ footer {
 }
 
 @media screen and (max-width: 480px) { //phones
-    
+    .header {
+        .header_menu {
+            display: none;
+        }
+        .header_button {
+            width: max-content;
+            padding: 0 8px;
+            font-size: 18px;
+        }
+    }
+    .welcome {
+        .welcome_wrapper {
+            .welcome_text {
+                text-align: center;
+                h1 {
+                    font-size: 64px;
+                    line-height: 60px;
+                }
+            }
+            .welcome_button {
+                margin: 16px auto;
+            }
+        }
+    }
+    .blog {
+        padding: 64px 0;
+        .blog_wrapper {
+            grid-template-columns: 1fr;
+        }
+    }
+    .about {
+        .about_slogan {
+            font-size: 64px;
+            line-height: 66px;
+        }
+        .about_text {
+            grid-template-columns: 1fr;
+        }
+    }
+    .choose {
+        grid-template-columns: 1fr;
+    }
     .reviews {
         .slider {
             .slider_line {
@@ -816,6 +862,31 @@ footer {
             .slide {
                 width: 100%;
             }
+        }
+    }
+    .contact {
+        padding: 100px 0;
+        .contact_wrapper {
+            grid-template-columns: 1fr;
+        }
+        .contact_img {
+            min-height: 500px;
+        }
+    }
+    footer {
+        .footer_main {
+            h2 {
+                text-align: center;
+            }
+        }
+        .footer_information {
+            h3 {
+                text-align: center;
+            }
+        }
+        .footer_links {
+            grid-template-columns: 1fr;
+            justify-items: center;
         }
     }
 }
