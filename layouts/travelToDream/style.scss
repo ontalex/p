@@ -40,6 +40,9 @@ body {
         height: inherit;
 
         margin: var(--m-wrapper);
+
+        position: relative;
+        z-index: 110;
     }
 
     .header_menu {
@@ -50,6 +53,12 @@ body {
 
         padding: 0;
         margin: 0;
+
+        transition: none;
+    }
+
+    .header_btn--menu {
+        display: none;
     }
 
     .header_link,
@@ -95,12 +104,17 @@ body {
 
         background: #0000;
         border: 0ch;
+
         svg {
             width: 40px;
             height: 40px;
             fill: var(--bg-dark)
         }
     }
+}
+
+.free_menu {
+    display: none;
 }
 
 .welcome {
@@ -737,6 +751,7 @@ footer {
     .footer_main {
         display: grid;
         grid-template-columns: 1fr 3fr;
+
         h2 {
             font-size: 48px;
             font-family: var(--ff-cardo);
@@ -762,60 +777,76 @@ footer {
 
         font-family: var(--ff-lato);
         font-size: 16px;
+
         a {
             color: var(--c-dark);
             text-decoration: none;
         }
+
         a:hover {}
+
         a:focus {}
+
         a:visited {}
     }
 
     .footer_license {
         margin: 120px 0 0 0;
         text-align: center;
-        
+
         font-family: var(--ff-lato);
         color: var(--c-dark);
     }
 }
 
-@media screen and (max-width: 1040px) { //tablets
+@media screen and (max-width: 1040px) {
+    .free_menu {
+        display: none;
+    }
+    //tablets
     .welcome {
         .welcome_wrapper {
             grid-template-columns: 1fr;
         }
     }
+
     .blog {
         .blog_wrapper {
             grid-template-columns: repeat(2, minmax(200px, 364px));
         }
     }
+
     .about {
         .about_wrapper {
             grid-template-columns: 1fr;
         }
+
         .bigImg {
             min-height: 400px;
         }
     }
+
     .questions {
         .questions_wrapper {
             display: flex;
             flex-direction: column-reverse;
         }
     }
+
     .reviews {
         .slider {
             max-width: 90%;
+
             .slider_line {
                 transition: none;
             }
+
             .button {
                 display: none;
             }
         }
     }
+
     footer {
         .footer_main {
             grid-template-columns: 1fr;
@@ -823,82 +854,138 @@ footer {
     }
 }
 
-@media screen and (max-width: 480px) { //phones
+@media screen and (max-width: 480px) {
+
+    //phones
     .header {
+        .header_wrapper {
+            position: relative;
+            z-index: 90;
+        }
         .header_menu {
             display: none;
         }
+
         .header_button {
             width: max-content;
             padding: 0 8px;
             font-size: 18px;
         }
+
         .header_btn--menu {
             display: block;
         }
     }
+
+    .free_menu--closed {
+        left: -100%;
+    }
+    .free_menu--opened {
+        left: 0px;
+    }
+    .free_menu {
+        display: block;
+        position: absolute;
+        z-index: 110;
+        width: 100%;
+
+        background-color: var(--bg-dark);
+
+        transition: left .2s ease-out;
+
+        .header_menu {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            .header_link {
+                padding: 16px 0;
+                color: var(--c-light);
+
+                text-decoration: none;
+
+                font-family: var(--ff-lato);
+                font-size: 18px;
+            }
+        }
+    }
+
     .welcome {
         .welcome_wrapper {
             .welcome_text {
                 text-align: center;
+
                 h1 {
                     font-size: 64px;
                     line-height: 60px;
                 }
             }
+
             .welcome_button {
                 margin: 16px auto;
             }
         }
     }
+
     .blog {
         padding: 64px 0;
+
         .blog_wrapper {
             grid-template-columns: 1fr;
         }
     }
+
     .about {
         .about_slogan {
             font-size: 64px;
             line-height: 66px;
         }
+
         .about_text {
             grid-template-columns: 1fr;
         }
     }
+
     .choose {
         grid-template-columns: 1fr;
     }
+
     .reviews {
         .slider {
             .slider_line {
                 transition: none;
             }
+
             .slide {
                 width: 100%;
             }
         }
     }
+
     .contact {
         padding: 100px 0;
+
         .contact_wrapper {
             grid-template-columns: 1fr;
         }
+
         .contact_img {
             min-height: 500px;
         }
     }
+
     footer {
         .footer_main {
             h2 {
                 text-align: center;
             }
         }
+
         .footer_information {
             h3 {
                 text-align: center;
             }
         }
+
         .footer_links {
             grid-template-columns: 1fr;
             justify-items: center;
