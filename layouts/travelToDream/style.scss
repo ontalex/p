@@ -89,6 +89,18 @@ body {
 
         text-decoration: none;
     }
+
+    .header_btn--menu {
+        display: none;
+
+        background: #0000;
+        border: 0ch;
+        svg {
+            width: 40px;
+            height: 40px;
+            fill: var(--bg-dark)
+        }
+    }
 }
 
 .welcome {
@@ -820,6 +832,9 @@ footer {
             width: max-content;
             padding: 0 8px;
             font-size: 18px;
+        }
+        .header_btn--menu {
+            display: block;
         }
     }
     .welcome {
