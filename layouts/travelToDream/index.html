@@ -36,7 +36,7 @@
             </menu>
         </div>
     </header>
-    
+
     <div class="welcome">
         <div class="welcome_wrapper">
             <div class="welcome_text">
@@ -48,12 +48,14 @@
             <div class="welcome_photo"></div>
         </div>
     </div>
+
     <div class="toMemory">
         <h2>Create a memory to remember</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, sit exercitationem explicabo porro et nostrum
             deserunt asperiores deleniti obcaecati unde dignissimos voluptas! A eligendi soluta repellat laudantium.</p>
         <a href="#"><span>My Travel Logs</span></a>
     </div>
+
     <div class="blog">
         <div class="blog_wrapper">
             <div class="card">
@@ -83,6 +85,7 @@
             </div>
         </div>
     </div>
+
     <div class="about">
         <div class="about_baner">
             <img class="about_icon" src="imgs/airplane.svg" alt="">
@@ -112,6 +115,7 @@
             </div>
         </div>
     </div>
+
     <div class="choose">
         <div class="choose_text">
             <h3>Choose anywhere you'd like to be</h3>
@@ -137,6 +141,7 @@
         </div>
         <div class="choose_img"></div>
     </div>
+
     <div class="questions">
         <div class="questions_wrapper">
             <div class="questions_text">
@@ -187,6 +192,7 @@
             <img class="questions_img" src='imgs/question-1.jpg' alt="">
         </div>
     </div>
+
     <div class="reviews">
         <h2>Here's what they have to say...</h2>
         <div class="slider">
@@ -239,14 +245,46 @@
             <div class="contact_form">
                 <h2>Be updated!</h2>
                 <form class="contact_inputs" action="" method="post">
-                    <input class="contact_input contact_name" type="text" name="name" id="" placeholder="First Name*">
-                    <input class="contact_input contact_surname" type="text" name="subname" id=""
-                        placeholder="Last Name*">
-                    <input class="contact_input contact_email" type="email" name="email" id=""
-                        placeholder=" Email Subject*">
-                    <textarea class="contact_input contact_message" name="message" id="" cols="30" rows="10"
-                        placeholder="Write something here..."></textarea>
-                    <button class="contact_send" disabled><span>Submit Email</span></button>
+                    <input 
+                        class="contact_input contact_name" 
+                        type="text" 
+                        name="name" 
+                        id="name"
+                        placeholder="First Name*"
+                        data-reg="^[а-яА-ЯёЁa-zA-Z]*$"
+                    >
+                    <input 
+                        class="contact_input contact_surname" 
+                        type="text" 
+                        name="subname" 
+                        id="subname"
+                        placeholder="Last Name*"
+                        data-reg="^[а-яА-ЯёЁa-zA-Z]*$"
+                    >
+                    <input 
+                        class="contact_input contact_email" 
+                        type="email" 
+                        name="email" 
+                        id="email"
+                        placeholder="admin@site.ru*"
+                        data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
+                    >
+                    <textarea 
+                        class="contact_input contact_message" 
+                        name="message" 
+                        id="message" 
+                        cols="30" 
+                        rows="10"
+                        placeholder="Write something here..."
+                        required
+                    ></textarea>
+                    <button 
+                        type="submit" 
+                        class="contact_send" 
+                        name="button" 
+                        id="button"
+                        disabled
+                    ><span>Submit message</span></button>
                 </form>
             </div>
             <div class="contact_img"></div>

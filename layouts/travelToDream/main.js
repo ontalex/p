@@ -85,6 +85,60 @@ function click_btn_menu() {
     }
 }
 
+//**************************************** */
+//todo Валидация формы отправки сообщения
+//**************************************** */
+
+
+const form         = document.querySelector('.contact_inputs');
+const formArr      = Array.from(form);                           // формируем массив из элементов формы
+const validFormArr = [];                                         // в этом массиве хранятся поля, которые нужно проверить
+
+const button_form = document.querySelector('.contact_send');
+
+formArr.forEach((el) => {
+    if (el.hasAttribute("data-reg")) {
+        el.setAttribute("is-valid", "0");
+        validFormArr.push(el);
+    }
+});
+
+form.addEventListener("input", inputHandler);
+button_form.addEventListener("click", buttonHandler);
+
+function inputHandler({ target }) {
+    if (target.hasAttribute("data-reg")) {
+        inputCheck(target);
+    }
+}
+
+function inputCheck(el) {
+    const inputValue = el.value;
+    const inputReg   = el.getAttribute("data-reg");
+    const reg        = new RegExp(inputReg);
+    if (reg.test(inputValue)) {
+        el.setAttribute("is-valid", "1");
+        el.style.border = "3px solid rgb(0, 196, 0)";
+    } else {
+        el.setAttribute("is-valid", "0");
+        el.style.border = "3px solid rgb(255, 0, 0)";
+    }
+}
+
+function buttonHandler(e) {
+    const allValid = [];
+    validFormArr.forEach((el) => {
+        allValid.push(el.getAttribute("is-valid"));
+    });
+    const isAllValid = allValid.reduce((acc, current) => {
+        return acc && current;
+    });
+
+    if (!Boolean(Number(isAllValid))) {
+        e.preventDefault();
+    }
+}
+
 button_next.addEventListener('mouseup', next_scroll_slider);
 button_prev.addEventListener('mouseup', prev_scroll_slider);
 button_menu.addEventListener('click', click_btn_menu);

@@ -700,6 +700,12 @@ body {
 
         font-family: var(--ff-lato);
         font-size: 16px;
+
+        transition: border .3s ease-in-out;
+    }
+
+    &_input:focus {
+        outline: none;
     }
 
     &_send {
@@ -803,6 +809,7 @@ footer {
     .free_menu {
         display: none;
     }
+
     //tablets
     .welcome {
         .welcome_wrapper {
@@ -862,6 +869,7 @@ footer {
             position: relative;
             z-index: 90;
         }
+
         .header_menu {
             display: none;
         }
@@ -880,9 +888,11 @@ footer {
     .free_menu--closed {
         left: -100%;
     }
+
     .free_menu--opened {
         left: 0px;
     }
+
     .free_menu {
         display: block;
         position: absolute;
@@ -897,6 +907,7 @@ footer {
             display: grid;
             grid-template-columns: 1fr;
             justify-items: center;
+
             .header_link {
                 padding: 16px 0;
                 color: var(--c-light);
