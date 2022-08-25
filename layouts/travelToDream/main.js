@@ -9,6 +9,8 @@ let slide_border     = 3;
 let last_left_margin = 0;
 let count_view       = 3;
 
+
+
 function next_scroll_slider(e) {
     console.log(slider_index);
     if (slider_index == slider_line.childElementCount - count_view) {
@@ -24,7 +26,6 @@ function next_scroll_slider(e) {
         slider_line.style.left  = last_left_margin + "px";
         slider_index++;
     }
-
 }
 function prev_scroll_slider(e) {
     console.log("hi 2");
@@ -85,14 +86,15 @@ function click_btn_menu() {
     }
 }
 
-//**************************************** */
-//todo Валидация формы отправки сообщения
-//**************************************** */
 
+
+//*************************************************/
+//!!!    Валидация формы отправки сообщения    !!!//
+//*************************************************/
 
 const form         = document.querySelector('.contact_inputs');
-const formArr      = Array.from(form);                           // формируем массив из элементов формы
-const validFormArr = [];                                         // в этом массиве хранятся поля, которые нужно проверить
+const formArr      = Array.from(form);
+const validFormArr = [];
 
 const button_form = document.querySelector('.contact_send');
 
@@ -130,6 +132,7 @@ function buttonHandler(e) {
     validFormArr.forEach((el) => {
         allValid.push(el.getAttribute("is-valid"));
     });
+
     const isAllValid = allValid.reduce((acc, current) => {
         return acc && current;
     });
