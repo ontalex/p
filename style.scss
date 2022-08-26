@@ -162,16 +162,14 @@ header {
     }
   }
   &_code {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 16px;
     position: absolute;
     z-index: 999;
-    left: 10%;
-    filter: blur(2px);
+    right: 5%;
   }
   &_language-js {
-    color: #fcb93c;
+    color: #fcb93c82;
+    font-size: 18px;
   }
   &_avatar {
     height: 80vh;
@@ -261,11 +259,6 @@ header {
     justify-content: center;
     padding: 32px;
     border-radius: 16px;
-    transition: background-color 0.2s ease-out;
-
-    &:hover {
-      background-color: rgb(36, 36, 36);
-    }
   }
   .skill_icon {
     width: 112px;

@@ -71,4 +71,4 @@ function fixing_floatMenu() {
 button_menu.addEventListener("mouseup", close_openMenu);
 window.addEventListener("scroll", fixing_floatMenu);
 
-addEffectWriting(document.querySelector(".baner_language-js"), 15);
+addEffectWriting(document.querySelector(".baner_language-js"), 5);

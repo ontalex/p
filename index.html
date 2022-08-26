@@ -61,57 +61,56 @@
     <div class="baner_avatar">
       <img src="pic/avatar.png" alt="Моё серое лицо">
       <pre class="baner_code">
-
-      <pre><code class="baner_language-js" lang="javascript">
-          let DOMobject = document.createElement("div");
-
-let arrThings = [1, 2, 3, 4, 5, 6, 7];
-
-
-
-for (let i = 0; i < arrThings.length; i++) {
-  let element = arrThings[i];
-
-  DOMobject.classList.add("card", "card--price");
-
-
-  DOMobject.innerHTML = `<span>Things: ${element}</span>`;
-
-
-  document.body.innerHTML += DOMobject;
-
-
-  console.log("Round of elements: " + i);
-
-
-  // Creates copies of array elements with value passing
-}
-
-let DOMobject = document.createElement("div");
-
-let arrThings = [1, 2, 3, 4, 5, 6, 7];
-
-
-
-for (let i = 0; i < arrThings.length; i++) {
-  let element = arrThings[i];
-
-  DOMobject.classList.add("card", "card--price");
-
-
-  DOMobject.innerHTML = `<span>Things: ${element}</span>`;
-
-
-  document.body.innerHTML += DOMobject;
-
-
-  console.log("Round of elements: " + i);
-
-
-  // Creates copies of array elements with value passing
-}
-
-        </code></pre>
+        <pre>
+          <code class="baner_language-js" lang="javascript">
+            let button_menu = document.querySelector(".header_button");
+            let float_menu = document.querySelector(".header_menu--float");
+            
+            let line_top = document.querySelector(".header_button_line--top");
+            let line_under = document.querySelector(".header_button_line--bottom");
+            
+            button_menu.isSelected = false;
+            
+            function addEffectWriting(element, time) {
+            &emsp;&emsp;let element_array = element.innerText.split("");
+            
+            &emsp;&emsp;element.count = 0;
+            &emsp;&emsp;element.innerText = "";
+            
+            &emsp;&emsp;function writeSymbols() {
+            &emsp;&emsp;&emsp;&emsp;element.innerText += element_array[element.count];
+            &emsp;&emsp;&emsp;&emsp;element.count++;
+            
+            &emsp;&emsp;&emsp;&emsp;if (element.count <= element_array.length) {
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;setTimeout(() => {
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;writeSymbols();
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}, time);
+            &emsp;&emsp;&emsp;&emsp;} else if (element.count >= element_array.length) {
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;element.count = 0;
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;element.innerText = "";
+            
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;writeSymbols();
+            &emsp;&emsp;&emsp;&emsp;}
+            &emsp;&emsp;}
+            &emsp;&emsp;writeSymbols();
+            }
+            
+            function close_openMenu() {
+            &emsp;&emsp;if (button_menu.isSelected == false) {
+            
+            &emsp;&emsp;&emsp;&emsp;line_under.style.marginTop = "-3px";
+            
+            &emsp;&emsp;&emsp;&emsp;setTimeout(() => {
+            
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;line_top.style.transform = "rotate(45deg)";
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;line_under.style.transform = "rotate(-45deg)";
+            
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;float_menu.classList.toggle("header_menu--float-closed");
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;float_menu.classList.toggle("header_menu--float-opened");
+            &emsp;&emsp;&emsp;&emsp;}, 100);
+            &emsp;&emsp;} else {
+          </code>
+        </pre>
       </pre>
     </div>
   </div>
@@ -130,23 +129,23 @@ for (let i = 0; i < arrThings.length; i++) {
       <div class="skills_icons">
         <div class="skills_skill">
           <img src="pic/skill_html.svg" alt="иконка html" class="skill_icon skill_html">
-          <p class="skills_name">HTML</p>
+          <p class="skills_name">HTML5</p>
         </div>
         <div class="skills_skill">
           <img src="pic/skill_css.svg" alt="иконка css" class="skill_icon skill_css">
-          <p class="skills_name">CSS</p>
+          <p class="skills_name">CSS3</p>
         </div>
         <div class="skills_skill">
           <img src="pic/skill_js.svg" alt="иконка javascript" class="skill_icon skill_js">
           <p class="skills_name">JavaScript</p>
         </div>
         <div class="skills_skill">
-          <img src="pic/skill_svelte.svg" alt="иконка svelte javascript" class="skill_icon skill_svelte">
-          <p class="skills_name">Svelte JS</p>
-        </div>
-        <div class="skills_skill">
           <img src="pic/skill_git.svg" alt="иконка git" class="skill_icon skill_git">
           <p class="skills_name">Git</p>
+        </div>
+        <div class="skills_skill">
+          <img src="pic/skill_sass.svg" alt="иконка scss" class="skill_icon skill_scss">
+          <p class="skills_name">Scss</p>
         </div>
       </div>
     </div>
