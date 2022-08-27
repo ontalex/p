@@ -61,56 +61,54 @@
     <div class="baner_avatar">
       <img src="pic/avatar.png" alt="Моё серое лицо">
       <pre class="baner_code">
-        <pre>
-          <code class="baner_language-js" lang="javascript">
-            let button_menu = document.querySelector(".header_button");
-            let float_menu = document.querySelector(".header_menu--float");
-            
-            let line_top = document.querySelector(".header_button_line--top");
-            let line_under = document.querySelector(".header_button_line--bottom");
-            
-            button_menu.isSelected = false;
-            
-            function addEffectWriting(element, time) {
-            &emsp;&emsp;let element_array = element.innerText.split("");
-            
-            &emsp;&emsp;element.count = 0;
-            &emsp;&emsp;element.innerText = "";
-            
-            &emsp;&emsp;function writeSymbols() {
-            &emsp;&emsp;&emsp;&emsp;element.innerText += element_array[element.count];
-            &emsp;&emsp;&emsp;&emsp;element.count++;
-            
-            &emsp;&emsp;&emsp;&emsp;if (element.count <= element_array.length) {
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;setTimeout(() => {
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;writeSymbols();
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}, time);
-            &emsp;&emsp;&emsp;&emsp;} else if (element.count >= element_array.length) {
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;element.count = 0;
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;element.innerText = "";
-            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;writeSymbols();
-            &emsp;&emsp;&emsp;&emsp;}
-            &emsp;&emsp;}
-            &emsp;&emsp;writeSymbols();
-            }
-            
-            function close_openMenu() {
-            &emsp;&emsp;if (button_menu.isSelected == false) {
-            
-            &emsp;&emsp;&emsp;&emsp;line_under.style.marginTop = "-3px";
-            
-            &emsp;&emsp;&emsp;&emsp;setTimeout(() => {
-            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;line_top.style.transform = "rotate(45deg)";
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;line_under.style.transform = "rotate(-45deg)";
-            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;float_menu.classList.toggle("header_menu--float-closed");
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;float_menu.classList.toggle("header_menu--float-opened");
-            &emsp;&emsp;&emsp;&emsp;}, 100);
-            &emsp;&emsp;} else {
-          </code>
-        </pre>
+        <code class="baner_language-js" lang="javascript">
+          let button_menu = document.querySelector(".header_button");
+          let float_menu = document.querySelector(".header_menu--float");
+          
+          let line_top = document.querySelector(".header_button_line--top");
+          let line_under = document.querySelector(".header_button_line--bottom");
+          
+          button_menu.isSelected = false;
+          
+          function addEffectWriting(element, time) {
+          &emsp;&emsp;let element_array = element.innerText.split("");
+          
+          &emsp;&emsp;element.count = 0;
+          &emsp;&emsp;element.innerText = "";
+          
+          &emsp;&emsp;function writeSymbols() {
+          &emsp;&emsp;&emsp;&emsp;element.innerText += element_array[element.count];
+          &emsp;&emsp;&emsp;&emsp;element.count++;
+          
+          &emsp;&emsp;&emsp;&emsp;if (element.count <= element_array.length) {
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;setTimeout(() => {
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;writeSymbols();
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}, time);
+          &emsp;&emsp;&emsp;&emsp;} else if (element.count >= element_array.length) {
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;element.count = 0;
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;element.innerText = "";
+          
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;writeSymbols();
+          &emsp;&emsp;&emsp;&emsp;}
+          &emsp;&emsp;}
+          &emsp;&emsp;writeSymbols();
+          }
+          
+          function close_openMenu() {
+          &emsp;&emsp;if (button_menu.isSelected == false) {
+          
+          &emsp;&emsp;&emsp;&emsp;line_under.style.marginTop = "-3px";
+          
+          &emsp;&emsp;&emsp;&emsp;setTimeout(() => {
+          
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;line_top.style.transform = "rotate(45deg)";
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;line_under.style.transform = "rotate(-45deg)";
+          
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;float_menu.classList.toggle("header_menu--float-closed");
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;float_menu.classList.toggle("header_menu--float-opened");
+          &emsp;&emsp;&emsp;&emsp;}, 100);
+          &emsp;&emsp;} else {
+        </code>
       </pre>
     </div>
   </div>
@@ -177,11 +175,12 @@
       <p>Если вас заинтересовали мои работы, всегда рад с вами <br><span
           class="mark">&lt;&sol;пообщаться&gt;</span>.<br>;)</p>
       <div class="contacts_icons">
-        <a href="https://github.com/ontalex" target="_blank" rel="noopener noreferrer" class="contacts_contact"><img src="pic/contact_github.svg"
-            alt="иконка github"></a>
-        <a href="https://vk.com/ontalex"target="_blank" rel="noopener noreferrer" class="contacts_contact"><img src="pic/contact_vk.svg" alt="иконка vk"></a>
-        <a href="mailto:ontalex@yandex.ru"target="_blank" rel="noopener noreferrer" class="contacts_contact"><img src="pic/contact_mail.svg"
-            alt="иконка электронной почты"></a>
+        <a href="https://github.com/ontalex" target="_blank" rel="noopener noreferrer" class="contacts_contact"><img
+            src="pic/contact_github.svg" alt="иконка github"></a>
+        <a href="https://vk.com/ontalex" target="_blank" rel="noopener noreferrer" class="contacts_contact"><img
+            src="pic/contact_vk.svg" alt="иконка vk"></a>
+        <a href="mailto:ontalex@yandex.ru" target="_blank" rel="noopener noreferrer" class="contacts_contact"><img
+            src="pic/contact_mail.svg" alt="иконка электронной почты"></a>
       </div>
     </div>
   </div>

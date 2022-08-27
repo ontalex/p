@@ -177,15 +177,17 @@ header {
   }
 
   &_code {
-    gap: 16px;
     position: absolute;
     z-index: 999;
     right: 5%;
+    overflow: hidden;
+
   }
 
   &_language-js {
     color: #fcb93c82;
     font-size: 18px;
+    max-width: 100vw;
   }
 
   &_avatar {
@@ -411,6 +413,11 @@ header {
       grid-template-columns: repeat(2, 1fr);
     }
   }
+  .baner {
+    &_code {
+      max-width: 50vw;
+    }
+  }
 }
 
 @media screen and (max-width:770px) {
@@ -471,7 +478,6 @@ header {
     align-items: right;
 
     &_sayHi {
-      // font-size: 16px;
       padding: 16px;
 
       p {
@@ -486,6 +492,10 @@ header {
     &_code {
       grid-template-columns: 1fr;
       left: 0;
+      max-width: 100vw;
+    }
+    &_language-js {
+      font-size: 12px;
     }
   }
 

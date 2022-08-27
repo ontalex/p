@@ -1,7 +1,7 @@
 let button_menu = document.querySelector(".header_button");
-let float_menu = document.querySelector(".header_menu--float");
+let float_menu  = document.querySelector(".header_menu--float");
 
-let line_top = document.querySelector(".header_button_line--top");
+let line_top   = document.querySelector(".header_button_line--top");
 let line_under = document.querySelector(".header_button_line--bottom");
 
 button_menu.isSelected = false;
@@ -9,7 +9,7 @@ button_menu.isSelected = false;
 function addEffectWriting(element, time) {
   let element_array = element.innerText.split("");
 
-  element.count = 0;
+  element.count     = 0;
   element.innerText = "";
 
   function writeSymbols() {
@@ -21,7 +21,7 @@ function addEffectWriting(element, time) {
         writeSymbols();
       }, time);
     } else if (element.count >= element_array.length) {
-      element.count = 0;
+      element.count     = 0;
       element.innerText = "";
 
       writeSymbols();
@@ -37,7 +37,7 @@ function close_openMenu() {
 
     setTimeout(() => {
 
-      line_top.style.transform = "rotate(45deg)";
+      line_top.style.transform   = "rotate(45deg)";
       line_under.style.transform = "rotate(-45deg)";
 
       float_menu.classList.toggle("header_menu--float-closed");
@@ -45,7 +45,7 @@ function close_openMenu() {
     }, 100);
   } else {
 
-    line_top.style.transform = "rotate(0deg)";
+    line_top.style.transform   = "rotate(0deg)";
     line_under.style.transform = "rotate(0deg)";
 
     setTimeout(() => {
@@ -62,8 +62,8 @@ function close_openMenu() {
 
 function fixing_floatMenu() {
   if (window.scrollY >= document.querySelector("header").offsetHeight) {
-    document.querySelector("header").style.position = "fixed";
-    document.querySelector(".baner").style.paddingTop =
+    document.querySelector("header").style.position   = "fixed";
+    document.querySelector(".baner").style.paddingTop = 
       document.querySelector("header").offsetHeight + "px";
   }
 }
