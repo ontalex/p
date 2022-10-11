@@ -1,0 +1,48 @@
+@media screen and (max-width: 940px) {
+  .header_logo img {
+      height: 64px;
+  }
+  .header_menu {
+      gap: 16px;
+  }
+  .header_button {
+      width: 32px;
+      height: 32px;
+  }
+    main {
+      grid-template-columns: 2fr 1fr;
+      padding: 0 8px;
+  }
+  .description_item {
+      font-size: 12px;
+  }
+    .character_person {
+    right: -15%;
+    bottom: -200px;
+    min-height: 400px;
+    height: 95vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 16px;
+    }
+    main {
+        grid-template-columns: 1fr;
+    }
+    .description_box {
+        width: 90vw;
+        margin: 0 auto;
+    }
+    .description_item {
+        font-size: 16px;
+    }
+    .character_person {
+        height: 10vw;
+        right: -30%;
+        bottom: -250px;
+    }
+}
