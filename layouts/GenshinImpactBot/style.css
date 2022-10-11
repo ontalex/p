@@ -120,6 +120,7 @@ main {
   display: flex;
   justify-content: center;
   position: relative;
+  z-index: 1000;
 }
 .description_box {
   width: max-content;
@@ -217,6 +218,7 @@ main {
 
 .character_person {
   position: fixed;  
+  z-index: 999;
   right: -130px;
   /* right: -25%; */
   bottom: unset;
