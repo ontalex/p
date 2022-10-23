@@ -35,7 +35,7 @@
     }
     .description_box {
         width: 90vw;
-        margin: 0 auto;
+        /* margin: auto; */
     }
     .description_item {
         font-size: 16px;
