@@ -81,6 +81,8 @@ header {
     border-radius: 30%;
 
     transition: backgroud 0.5s ease-in-out;
+
+    padding: 0;
 }
 
 .header_button svg {
