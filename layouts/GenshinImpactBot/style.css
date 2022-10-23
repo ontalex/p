@@ -4,6 +4,10 @@
     }
 }
 
+button {
+    cursor: pointer;
+}
+
 :root {
     --t-b-l-r: 62px;
     --k: 0.258;
@@ -83,6 +87,8 @@ header {
     transition: backgroud 0.5s ease-in-out;
 
     padding: 0;
+    
+    cursor: pointer;
 }
 
 .header_button svg {
