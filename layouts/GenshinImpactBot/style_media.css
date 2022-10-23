@@ -38,7 +38,7 @@
         grid-template-columns: 1fr;
     }
     .description_box {
-        width: 90vw;
+        max-width: 90vw;
         /* margin: auto; */
     }
     .description_item {

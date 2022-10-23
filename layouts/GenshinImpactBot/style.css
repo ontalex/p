@@ -133,6 +133,7 @@ main {
     border: 3px solid #ffffff;
     margin: calc(var(--t-b-l-r) * var(--k));
     box-sizing: border-box;
+    max-width: 45vw;
 }
 
 
@@ -142,7 +143,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0px;
-    /* max-width: 45vw; */
     box-sizing: border-box;
     color: white;
     padding: 16px 5%;
@@ -164,7 +164,7 @@ main {
     list-style: none;
 }
 .description_button {
-    margin: 8px auto;
+    margin: 16px auto;
     padding: 4px 16px;
     border-radius: 8px;
     background: rgba(217, 217, 217, 0.24);
