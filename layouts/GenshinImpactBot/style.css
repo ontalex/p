@@ -172,14 +172,23 @@ main {
     list-style: none;
 }
 .description_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
     margin: 16px auto;
     padding: 4px 16px;
     border-radius: 8px;
-    background: rgba(217, 217, 217, 0.24);
+    background: #4343435c;
     border: 2px solid #ffffff;
 }
+
+.description_button img {
+    height: 20px;
+}
+
 .description_button:hover {
-    background: #4343435c;
+    background: #2828285c;
 }
 .description_button span {
     font-size: 18px;
