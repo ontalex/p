@@ -1,241 +1,252 @@
 @media (prefers-reduced-motion: no-preference) {
-  :root {
-    scroll-behavior: smooth;
-  }
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+:root {
+    --t-b-l-r: 62px;
+    --k: 0.258;
+    --size_icon: 48px;
 }
 
 @font-face {
-  font-family: "Scipe";
-  src: url("res/Genshin_Impact.ttf");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Scipe";
+    src: url("res/Genshin_Impact.ttf");
+    font-weight: normal;
+    font-style: normal;
 }
 html {
-  background-image: url("images/bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-image: url("images/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+    width: 100vw;
+    height: 100vh;
 
-  overflow-y: hidden;
-  overflow-x: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
 
-  margin: 0;
+    margin: 0;
 
-  background-image: url("images/bgPersona.png");
-  background-size: 70vh;
-  background-repeat: no-repeat;
-  background-position-x: 95%;
-  background-position-y: bottom;
+    background-image: url("images/bgPersona.png");
+    background-size: 70vh;
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: bottom;
 
-  font-family: "Scipe";
+    font-family: "Scipe";
 }
 
 header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  padding: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 32px;
 }
 
 .header_logo {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .header_logo img {
-  height: 120px;
+    height: 120px;
 }
 
 .header_box_menu {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  padding: 0;
-  margin: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 .header_menu {
-  display: flex;
-  gap: 32px;
+    display: flex;
+    gap: 32px;
 }
 
 .header_button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  width: 54px;
-  height: 54px;
+    width: var(--size_icon);
+    height: var(--size_icon);
 
-  border-radius: 30%;
+    border-radius: 30%;
 
-  transition: backgroud 0.5s ease-in-out;
+    transition: backgroud 0.5s ease-in-out;
 }
 
 .header_button svg {
-  width: 75%;
-  height: 75%;
+    width: 75%;
+    height: 75%;
 }
 
 .header_mail,
 .header_vk,
 .header_info,
 .header_settings {
-  background: rgba(217, 217, 217, 0.24);
-  border: 2px solid #ffffff;
+    background: rgba(217, 217, 217, 0.24);
+    border: 2px solid #ffffff;
 }
 .header_mail:hover,
 .header_vk:hover,
 .header_info:hover,
 .header_settings:hover {
-  background: rgba(217, 217, 217, 0.36);
+    background: rgba(217, 217, 217, 0.36);
 }
 
 .header_link {
-  background: rgba(242, 46, 107, 0.12);
-  border: 2px solid #f22e6b;
+    background: rgba(242, 46, 107, 0.12);
+    border: 2px solid #f22e6b;
 }
 .header_link:hover {
-  background: rgba(242, 46, 107, 0.24);
+    background: rgba(242, 46, 107, 0.24);
 }
 
 main {
-  /* height: 100vh; */
+    /* height: 100vh; */
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  padding: 0 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 0 32px;
 
-  overflow-x: hidden;
-  overflow-y: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .description {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  z-index: 1000;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1000;
 }
 .description_box {
-  width: max-content;
-  height: max-content;
-  background: #d9d9d93d;
-  border: 3px solid #ffffff;
+    width: max-content;
+    height: max-content;
+    background: #d9d9d93d;
+    border: 3px solid #ffffff;
+    margin: calc(var(--t-b-l-r) * var(--k));
+    box-sizing: border-box;
 }
 
 .description_text {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  /* max-width: 45vw; */
-  box-sizing: border-box;
-  color: white;
-  padding: 16px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    /* max-width: 45vw; */
+    box-sizing: border-box;
+    color: white;
+    padding: 16px 5%;
 }
 .description_header {
-  text-align: center;
-  font-size: 22px;
+    text-align: center;
+    font-size: 22px;
 }
 .description_header--mark {
-  color: #ffe9b5;
+    color: #ffe9b5;
 }
 .description_item {
-  font-size: 18px;
-  margin: 4px 0;
+    font-size: 18px;
+    margin: 4px 0;
+    font-weight: 400;
 }
 .description_list {
-  margin: 0;
-  list-style: none;
+    margin: 0;
+    list-style: none;
 }
 .description_button {
-  margin: 8px auto;
-  padding: 4px 16px;
-  border-radius: 8px;
-  background: rgba(217, 217, 217, 0.24);
-  border: 2px solid #ffffff;
+    margin: 8px auto;
+    padding: 4px 16px;
+    border-radius: 8px;
+    background: rgba(217, 217, 217, 0.24);
+    border: 2px solid #ffffff;
 }
 .description_button:hover {
-  background: #4343435C;
+    background: #4343435c;
 }
 .description_button span {
-  font-size: 18px;
-  color: white;
-  font-family: "Scipe";
+    font-size: 18px;
+    color: white;
+    font-family: "Scipe";
 }
 .description_helper--top,
 .description_helper--bottom {
-  position: relative;
+    position: relative;
 }
 
 .description_helper--top {
-  width: 100%;
+    width: 100%;
 }
 .description_helper--bottom {
-  width: 100%;
+    width: 100%;
 }
 
 .description_helper--top::before,
 .description_helper--top::after,
 .description_helper--bottom::before,
 .description_helper--bottom::after {
-  position: absolute;
-  width: 62px;
-  height: 62px;
+    position: absolute;
+    /* width: 62px; */
+    width: var(--t-b-l-r);
+    /* height: 62px; */
+    height: var(--t-b-l-r);
 }
 
 .description_helper--top::before {
-  top: -16px;
-  left: -16px;
-  content: url("data:image/svg+xml,%3Csvg width='62' height='62' viewBox='0 0 420 421' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_8_8)'%3E%3Cpath d='M92.0508 105.418L105.418 328.206C137.134 192.176 180.757 142.261 314.839 110.617L92.0508 105.418Z' fill='%23FABB78' stroke='%23FABB78'/%3E%3Cpath d='M72 321.3C73.5962 340.728 83.5046 344.552 103.097 348.535C104.308 348.782 105.451 347.874 105.487 346.638L110.608 170.364C110.614 170.171 110.649 169.975 110.71 169.791C122.215 135.037 133.621 125.218 169.733 114.015C169.924 113.956 170.129 113.924 170.329 113.924H346.435C347.737 113.924 348.692 112.696 348.372 111.433C342.845 89.6268 338.825 77.4835 318.809 72.0689C318.642 72.0236 318.464 72 318.291 72H94.545C94.3683 72 94.1892 72.0242 94.0188 72.0707C80.5882 75.733 74.2332 79.3326 72 96.7054V321.3Z' fill='%23FFF3B5' stroke='%23FFF3B5'/%3E%3Cpath d='M304.926 155.136C248.546 180.855 214.173 179.451 155.414 154.932C153.738 154.233 152.041 155.956 152.757 157.625C179.029 218.855 177.377 252.917 152.985 306.928C152.22 308.623 153.982 310.387 155.683 309.637C215.093 283.424 249.199 285.587 304.656 309.669C306.363 310.41 308.106 308.626 307.328 306.935C282.458 252.898 283.066 218.67 307.67 157.761C308.355 156.065 306.591 154.376 304.926 155.136Z' fill='%23FFF3B5'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_8_8' x='0.5' y='0.5' width='419.435' height='419.576' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset/%3E%3CfeGaussianBlur stdDeviation='35.5'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.980392 0 0 0 0 0.733333 0 0 0 0 0.470588 0 0 0 1 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_8_8'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_8_8' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+    top: calc(-1 * var(--t-b-l-r) * var(--k));
+    left: calc(-1 * var(--t-b-l-r) * var(--k));
+    content: url("data:image/svg+xml,%3Csvg width='62' height='62' viewBox='0 0 420 421' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_8_8)'%3E%3Cpath d='M92.0508 105.418L105.418 328.206C137.134 192.176 180.757 142.261 314.839 110.617L92.0508 105.418Z' fill='%23FABB78' stroke='%23FABB78'/%3E%3Cpath d='M72 321.3C73.5962 340.728 83.5046 344.552 103.097 348.535C104.308 348.782 105.451 347.874 105.487 346.638L110.608 170.364C110.614 170.171 110.649 169.975 110.71 169.791C122.215 135.037 133.621 125.218 169.733 114.015C169.924 113.956 170.129 113.924 170.329 113.924H346.435C347.737 113.924 348.692 112.696 348.372 111.433C342.845 89.6268 338.825 77.4835 318.809 72.0689C318.642 72.0236 318.464 72 318.291 72H94.545C94.3683 72 94.1892 72.0242 94.0188 72.0707C80.5882 75.733 74.2332 79.3326 72 96.7054V321.3Z' fill='%23FFF3B5' stroke='%23FFF3B5'/%3E%3Cpath d='M304.926 155.136C248.546 180.855 214.173 179.451 155.414 154.932C153.738 154.233 152.041 155.956 152.757 157.625C179.029 218.855 177.377 252.917 152.985 306.928C152.22 308.623 153.982 310.387 155.683 309.637C215.093 283.424 249.199 285.587 304.656 309.669C306.363 310.41 308.106 308.626 307.328 306.935C282.458 252.898 283.066 218.67 307.67 157.761C308.355 156.065 306.591 154.376 304.926 155.136Z' fill='%23FFF3B5'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_8_8' x='0.5' y='0.5' width='419.435' height='419.576' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset/%3E%3CfeGaussianBlur stdDeviation='35.5'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.980392 0 0 0 0 0.733333 0 0 0 0 0.470588 0 0 0 1 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_8_8'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_8_8' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
 }
 .description_helper--top::after {
-  content: url("data:image/svg+xml,%3Csvg width='62' height='62' viewBox='0 0 421 420' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_8_12)'%3E%3Cpath d='M315.582 92.051L92.7938 105.418C228.825 137.134 278.74 180.757 310.384 314.839L315.582 92.051Z' fill='%23FABB78' stroke='%23FABB78'/%3E%3Cpath d='M99.7 72C80.2718 73.5962 76.448 83.5046 72.4648 103.097C72.2184 104.308 73.1259 105.451 74.362 105.487L250.636 110.608C250.829 110.614 251.025 110.649 251.209 110.71C285.963 122.215 295.782 133.621 306.985 169.733C307.044 169.924 307.076 170.129 307.076 170.329L307.076 346.435C307.076 347.737 308.304 348.692 309.567 348.372C331.373 342.845 343.516 338.825 348.931 318.809C348.976 318.642 349 318.464 349 318.291L349 94.545C349 94.3683 348.976 94.1892 348.929 94.0188C345.267 80.5882 341.667 74.2332 324.295 72L99.7 72Z' fill='%23FFF3B5' stroke='%23FFF3B5'/%3E%3Cpath d='M265.864 304.926C240.145 248.545 241.549 214.173 266.068 155.414C266.767 153.738 265.044 152.04 263.375 152.757C202.145 179.029 168.083 177.377 114.072 152.985C112.377 152.22 110.613 153.982 111.363 155.683C137.576 215.093 135.413 249.198 111.331 304.656C110.59 306.363 112.374 308.105 114.065 307.328C168.102 282.458 202.33 283.065 263.239 307.669C264.935 308.354 266.624 306.59 265.864 304.926Z' fill='%23FFF3B5'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_8_12' x='0.923828' y='0.5' width='419.576' height='419.434' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset/%3E%3CfeGaussianBlur stdDeviation='35.5'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.980392 0 0 0 0 0.733333 0 0 0 0 0.470588 0 0 0 1 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_8_12'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_8_12' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
-  top: -16px;
-  right: -16px;
+    content: url("data:image/svg+xml,%3Csvg width='62' height='62' viewBox='0 0 421 420' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_8_12)'%3E%3Cpath d='M315.582 92.051L92.7938 105.418C228.825 137.134 278.74 180.757 310.384 314.839L315.582 92.051Z' fill='%23FABB78' stroke='%23FABB78'/%3E%3Cpath d='M99.7 72C80.2718 73.5962 76.448 83.5046 72.4648 103.097C72.2184 104.308 73.1259 105.451 74.362 105.487L250.636 110.608C250.829 110.614 251.025 110.649 251.209 110.71C285.963 122.215 295.782 133.621 306.985 169.733C307.044 169.924 307.076 170.129 307.076 170.329L307.076 346.435C307.076 347.737 308.304 348.692 309.567 348.372C331.373 342.845 343.516 338.825 348.931 318.809C348.976 318.642 349 318.464 349 318.291L349 94.545C349 94.3683 348.976 94.1892 348.929 94.0188C345.267 80.5882 341.667 74.2332 324.295 72L99.7 72Z' fill='%23FFF3B5' stroke='%23FFF3B5'/%3E%3Cpath d='M265.864 304.926C240.145 248.545 241.549 214.173 266.068 155.414C266.767 153.738 265.044 152.04 263.375 152.757C202.145 179.029 168.083 177.377 114.072 152.985C112.377 152.22 110.613 153.982 111.363 155.683C137.576 215.093 135.413 249.198 111.331 304.656C110.59 306.363 112.374 308.105 114.065 307.328C168.102 282.458 202.33 283.065 263.239 307.669C264.935 308.354 266.624 306.59 265.864 304.926Z' fill='%23FFF3B5'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_8_12' x='0.923828' y='0.5' width='419.576' height='419.434' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset/%3E%3CfeGaussianBlur stdDeviation='35.5'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.980392 0 0 0 0 0.733333 0 0 0 0 0.470588 0 0 0 1 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_8_12'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_8_12' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+    top: calc(-1 * var(--t-b-l-r) * var(--k));
+    right: calc(-1 * var(--t-b-l-r) * var(--k));
 }
 .description_helper--bottom::before {
-  content: url("data:image/svg+xml,%3Csvg width='62' height='62' viewBox='0 0 421 420' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_8_7)'%3E%3Cpath d='M105.418 327.949L328.206 314.582C192.175 282.866 142.26 239.243 110.616 105.161L105.418 327.949Z' fill='%23FABB78' stroke='%23FABB78'/%3E%3Cpath d='M321.3 348C340.728 346.404 344.552 336.495 348.535 316.903C348.782 315.692 347.874 314.549 346.638 314.513L170.364 309.392C170.171 309.386 169.975 309.351 169.791 309.29C135.037 297.785 125.218 286.379 114.015 250.267C113.956 250.076 113.924 249.871 113.924 249.671L113.924 73.5649C113.924 72.2627 112.696 71.3083 111.433 71.6282C89.6268 77.1547 77.4835 81.1753 72.0689 101.191C72.0236 101.358 72 101.536 72 101.709L72 325.455C72 325.632 72.0242 325.811 72.0707 325.981C75.733 339.412 79.3326 345.767 96.7054 348H321.3Z' fill='%23FFF3B5' stroke='%23FFF3B5'/%3E%3Cpath d='M155.136 115.074C180.855 171.455 179.451 205.827 154.932 264.586C154.233 266.262 155.956 267.96 157.625 267.243C218.855 240.971 252.917 242.623 306.928 267.015C308.623 267.78 310.387 266.018 309.637 264.317C283.424 204.907 285.587 170.802 309.669 115.344C310.41 113.637 308.626 111.895 306.935 112.672C252.898 137.542 218.67 136.935 157.761 112.331C156.065 111.646 154.376 113.41 155.136 115.074Z' fill='%23FFF3B5'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_8_7' x='0.5' y='0.0656738' width='419.576' height='419.434' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset/%3E%3CfeGaussianBlur stdDeviation='35.5'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.980392 0 0 0 0 0.733333 0 0 0 0 0.470588 0 0 0 1 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_8_7'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_8_7' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
-  bottom: -16px;
-  left: -16px;
+    content: url("data:image/svg+xml,%3Csvg width='62' height='62' viewBox='0 0 421 420' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_8_7)'%3E%3Cpath d='M105.418 327.949L328.206 314.582C192.175 282.866 142.26 239.243 110.616 105.161L105.418 327.949Z' fill='%23FABB78' stroke='%23FABB78'/%3E%3Cpath d='M321.3 348C340.728 346.404 344.552 336.495 348.535 316.903C348.782 315.692 347.874 314.549 346.638 314.513L170.364 309.392C170.171 309.386 169.975 309.351 169.791 309.29C135.037 297.785 125.218 286.379 114.015 250.267C113.956 250.076 113.924 249.871 113.924 249.671L113.924 73.5649C113.924 72.2627 112.696 71.3083 111.433 71.6282C89.6268 77.1547 77.4835 81.1753 72.0689 101.191C72.0236 101.358 72 101.536 72 101.709L72 325.455C72 325.632 72.0242 325.811 72.0707 325.981C75.733 339.412 79.3326 345.767 96.7054 348H321.3Z' fill='%23FFF3B5' stroke='%23FFF3B5'/%3E%3Cpath d='M155.136 115.074C180.855 171.455 179.451 205.827 154.932 264.586C154.233 266.262 155.956 267.96 157.625 267.243C218.855 240.971 252.917 242.623 306.928 267.015C308.623 267.78 310.387 266.018 309.637 264.317C283.424 204.907 285.587 170.802 309.669 115.344C310.41 113.637 308.626 111.895 306.935 112.672C252.898 137.542 218.67 136.935 157.761 112.331C156.065 111.646 154.376 113.41 155.136 115.074Z' fill='%23FFF3B5'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_8_7' x='0.5' y='0.0656738' width='419.576' height='419.434' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset/%3E%3CfeGaussianBlur stdDeviation='35.5'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.980392 0 0 0 0 0.733333 0 0 0 0 0.470588 0 0 0 1 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_8_7'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_8_7' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+    bottom: calc(-1 * var(--t-b-l-r) * var(--k));
+    left: calc(-1 * var(--t-b-l-r) * var(--k));
 }
 .description_helper--bottom::after {
-  content: url("data:image/svg+xml,%3Csvg width='62' height='62' viewBox='0 0 420 421' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_8_16)'%3E%3Cpath d='M327.949 315.582L314.582 92.7936C282.866 228.824 239.243 278.739 105.161 310.383L327.949 315.582Z' fill='%23FABB78' stroke='%23FABB78'/%3E%3Cpath d='M348 99.7C346.404 80.2718 336.495 76.448 316.903 72.4647C315.692 72.2184 314.549 73.1259 314.513 74.362L309.392 250.636C309.386 250.829 309.351 251.025 309.29 251.209C297.785 285.963 286.379 295.782 250.267 306.985C250.076 307.044 249.871 307.076 249.671 307.076L73.5649 307.076C72.2627 307.076 71.3083 308.304 71.6282 309.566C77.1547 331.373 81.1753 343.516 101.191 348.931C101.358 348.976 101.536 349 101.709 349L325.455 349C325.632 349 325.811 348.976 325.981 348.929C339.412 345.267 345.767 341.667 348 324.295L348 99.7Z' fill='%23FFF3B5' stroke='%23FFF3B5'/%3E%3Cpath d='M115.074 265.864C171.454 240.145 205.827 241.549 264.586 266.068C266.262 266.767 267.959 265.044 267.243 263.375C240.971 202.145 242.623 168.083 267.015 114.072C267.78 112.377 266.018 110.613 264.317 111.363C204.907 137.576 170.801 135.413 115.344 111.331C113.637 110.59 111.894 112.374 112.672 114.065C137.542 168.102 136.934 202.33 112.33 263.239C111.645 264.935 113.409 266.624 115.074 265.864Z' fill='%23FFF3B5'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_8_16' x='0.0654297' y='0.924072' width='419.435' height='419.576' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset/%3E%3CfeGaussianBlur stdDeviation='35.5'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.980392 0 0 0 0 0.733333 0 0 0 0 0.470588 0 0 0 1 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_8_16'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_8_16' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
-  bottom: -16px;
-  right: -16px;
+    content: url("data:image/svg+xml,%3Csvg width='62' height='62' viewBox='0 0 420 421' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_8_16)'%3E%3Cpath d='M327.949 315.582L314.582 92.7936C282.866 228.824 239.243 278.739 105.161 310.383L327.949 315.582Z' fill='%23FABB78' stroke='%23FABB78'/%3E%3Cpath d='M348 99.7C346.404 80.2718 336.495 76.448 316.903 72.4647C315.692 72.2184 314.549 73.1259 314.513 74.362L309.392 250.636C309.386 250.829 309.351 251.025 309.29 251.209C297.785 285.963 286.379 295.782 250.267 306.985C250.076 307.044 249.871 307.076 249.671 307.076L73.5649 307.076C72.2627 307.076 71.3083 308.304 71.6282 309.566C77.1547 331.373 81.1753 343.516 101.191 348.931C101.358 348.976 101.536 349 101.709 349L325.455 349C325.632 349 325.811 348.976 325.981 348.929C339.412 345.267 345.767 341.667 348 324.295L348 99.7Z' fill='%23FFF3B5' stroke='%23FFF3B5'/%3E%3Cpath d='M115.074 265.864C171.454 240.145 205.827 241.549 264.586 266.068C266.262 266.767 267.959 265.044 267.243 263.375C240.971 202.145 242.623 168.083 267.015 114.072C267.78 112.377 266.018 110.613 264.317 111.363C204.907 137.576 170.801 135.413 115.344 111.331C113.637 110.59 111.894 112.374 112.672 114.065C137.542 168.102 136.934 202.33 112.33 263.239C111.645 264.935 113.409 266.624 115.074 265.864Z' fill='%23FFF3B5'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_8_16' x='0.0654297' y='0.924072' width='419.435' height='419.576' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset/%3E%3CfeGaussianBlur stdDeviation='35.5'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.980392 0 0 0 0 0.733333 0 0 0 0 0.470588 0 0 0 1 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_8_16'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_8_16' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+    bottom: calc(-1 * var(--t-b-l-r) * var(--k));
+    right: calc(-1 * var(--t-b-l-r) * var(--k));
 }
 
 .character {
-  height: min-content;
-  overflow-y: hidden;
-  overflow-x: hidden;
+    height: min-content;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .character_person {
-  position: fixed;  
-  z-index: 999;
-  right: -130px;
-  /* right: -25%; */
-  bottom: unset;
-  overflow-y: hidden;
-  animation-name: animate;
-  animation-duration: 4s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+    position: fixed;
+    z-index: 999;
+    right: -130px;
+    /* right: -25%; */
+    bottom: unset;
+    overflow-y: hidden;
+    animation-name: animate;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
 @keyframes animate {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
 
-  50% {
-    transform: translateY(2%);
-  }
+    50% {
+        transform: translateY(-25px);
+    }
 }

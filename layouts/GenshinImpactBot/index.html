@@ -1,107 +1,463 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Genshin Impact Bot</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style_media.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genshin Impact Bot</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style_media.css">
-</head>
-
-<body>
-    <header>
-        <div class="header_logo">
-            <img src="images/logo.png" alt="логотип бота">
-        </div>
-        <menu class="header_box_menu">
-            <div class="header_menu">
-                <div class="header_button header_mail">
-                    <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M3.53418 9.25244L4.84815 7.93848H39.0113L40.3253 9.25244V32.9039L39.0113 34.2178H4.84815L3.53418 32.9039V9.25244ZM6.16211 11.9724V31.5899H37.6973V11.975L22.7444 23.4433H21.1413L6.16211 11.9724ZM35.1482 10.5664H8.71121L21.9297 20.7339L35.1482 10.5664Z"
-                            fill="white" />
-                    </svg>
-                </div>
-                <div class="header_button header_vk">
-                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_18_51)">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M34.9177 9.17743C35.1618 8.37443 34.9177 7.7832 33.7485 7.7832H29.8879C28.9054 7.7832 28.4525 8.29354 28.2069 8.85682C28.2069 8.85682 26.2435 13.5572 23.4624 16.6104C22.5623 17.4957 22.1534 17.7766 21.6622 17.7766C21.4166 17.7766 21.0475 17.4957 21.0475 16.6913V9.17743C21.0475 8.21265 20.7769 7.7832 19.9592 7.7832H13.8881C13.2748 7.7832 12.9057 8.2303 12.9057 8.65533C12.9057 9.56864 14.2969 9.78042 14.4396 12.3512V17.9369C14.4396 19.162 14.2146 19.3841 13.7234 19.3841C12.4144 19.3841 9.23038 14.6617 7.34052 9.25832C6.97432 8.20677 6.6037 7.7832 5.61686 7.7832H1.75332C0.650293 7.7832 0.429688 8.29354 0.429688 8.85682C0.429688 9.85984 1.73861 14.8426 6.52575 21.4328C9.71718 25.9332 14.2102 28.3731 18.3031 28.3731C20.7577 28.3731 21.0607 27.8318 21.0607 26.8979V23.4962C21.0607 22.4123 21.2931 22.1961 22.0711 22.1961C22.6447 22.1961 23.6256 22.4785 25.917 24.6478C28.5348 27.22 28.9657 28.3731 30.4394 28.3731H34.3C35.403 28.3731 35.956 27.8318 35.6383 26.7612C35.2883 25.6964 34.0382 24.1507 32.3807 22.3167C31.4806 21.2725 30.1305 20.1474 29.7202 19.5841C29.1481 18.862 29.3114 18.5399 29.7202 17.8972C29.7202 17.8972 34.4265 11.3879 34.9162 9.17743H34.9177Z"
-                                fill="white" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_18_51">
-                                <rect width="35.2969" height="35.2969" fill="white"
-                                    transform="translate(0.429688 0.429688)" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </div>
-                <div class="header_button header_info">
-                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M18.9922 2.23438C9.73731 2.23438 2.23438 9.73731 2.23438 18.9922C2.23438 28.2471 9.73731 35.75 18.9922 35.75C28.2471 35.75 35.75 28.2471 35.75 18.9922C35.75 9.73731 28.2471 2.23438 18.9922 2.23438ZM21.0781 11.375C21.0781 10.971 20.9176 10.5835 20.6319 10.2978C20.3462 10.0121 19.3962 9.28906 18.9922 9.28906C18.5882 9.28906 17.6382 10.0121 17.3525 10.2978C17.0668 10.5835 16.9063 10.971 16.9063 11.375L17.4688 20.5156C17.4688 20.9197 17.6293 21.3072 17.915 21.5929C18.2007 21.8786 18.5882 22.0391 18.9922 22.0391C19.3962 22.0391 19.7837 21.8786 20.0694 21.5929C20.3551 21.3072 20.5156 20.9197 20.5156 20.5156L21.0781 11.375ZM20.5156 25.8477C20.5156 25.4436 20.3551 25.0561 20.0694 24.7704C19.7837 24.4847 19.3962 24.3242 18.9922 24.3242C18.5882 24.3242 18.2007 24.4847 17.915 24.7704C17.6293 25.0561 17.4688 25.4436 17.4688 25.8477V26.6094C17.4688 27.0134 17.6293 27.4009 17.915 27.6866C18.2007 27.9723 18.5882 28.1328 18.9922 28.1328C19.3962 28.1328 19.7837 27.9723 20.0694 27.6866C20.3551 27.4009 20.5156 27.0134 20.5156 26.6094V25.8477Z"
-                            fill="white" />
-                    </svg>
-                </div>
-                <div class="header_button header_settings">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M23.0185 36.4141H17.0401C16.6655 36.4141 16.3022 36.2863 16.0103 36.0517C15.7185 35.8172 15.5157 35.49 15.4355 35.1245L14.767 32.0336C13.8753 31.6433 13.0297 31.1552 12.2459 30.5784L9.2288 31.5381C8.87168 31.6519 8.48634 31.6402 8.13679 31.505C7.78723 31.3698 7.49449 31.1192 7.30717 30.7949L4.3114 25.6253C4.12605 25.3007 4.05647 24.9228 4.11406 24.5536C4.17164 24.1843 4.35297 23.8455 4.62839 23.5926L6.96883 21.4598C6.8624 20.4936 6.8624 19.5187 6.96883 18.5526L4.62839 16.4247C4.35258 16.1717 4.171 15.8325 4.11341 15.4629C4.05582 15.0933 4.12563 14.7151 4.3114 14.3903L7.3006 9.21742C7.48792 8.8931 7.78067 8.64253 8.13022 8.50734C8.47977 8.37215 8.86511 8.36046 9.22223 8.47422L12.2393 9.43398C12.6401 9.13867 13.0573 8.86305 13.4876 8.61367C13.9031 8.3807 14.3301 8.16906 14.767 7.98039L15.4371 4.89273C15.5169 4.5272 15.7194 4.19988 16.0109 3.96504C16.3025 3.7302 16.6656 3.60196 17.0401 3.60156H23.0185C23.3931 3.60196 23.7562 3.7302 24.0478 3.96504C24.3393 4.19988 24.5417 4.5272 24.6215 4.89273L25.2982 7.98203C26.1888 8.37458 27.0341 8.86251 27.8193 9.43726L30.8381 8.4775C31.195 8.36416 31.5799 8.37606 31.9291 8.51123C32.2783 8.6464 32.5708 8.89673 32.7581 9.2207L35.7472 14.3936C36.1283 15.0613 35.9969 15.9062 35.4303 16.4263L33.0898 18.5591C33.1963 19.5253 33.1963 20.5002 33.0898 21.4663L35.4303 23.5991C35.9969 24.1209 36.1283 24.9641 35.7472 25.6319L32.7581 30.8048C32.5707 31.1291 32.278 31.3797 31.9284 31.5148C31.5789 31.65 31.1935 31.6617 30.8364 31.548L27.8193 30.5882C27.0361 31.1646 26.1911 31.6522 25.2998 32.0418L24.6215 35.1245C24.5414 35.4898 24.3388 35.8167 24.0473 36.0512C23.7558 36.2857 23.3928 36.4137 23.0185 36.4141ZM20.0228 13.4453C18.2804 13.4453 16.6094 14.1367 15.3773 15.3674C14.1453 16.5981 13.4531 18.2673 13.4531 20.0078C13.4531 21.7483 14.1453 23.4175 15.3773 24.6482C16.6094 25.8789 18.2804 26.5703 20.0228 26.5703C21.7651 26.5703 23.4362 25.8789 24.6682 24.6482C25.9003 23.4175 26.5924 21.7483 26.5924 20.0078C26.5924 18.2673 25.9003 16.5981 24.6682 15.3674C23.4362 14.1367 21.7651 13.4453 20.0228 13.4453Z"
-                            fill="white" />
-                    </svg>
-                </div>
-                <div class="header_button header_link">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_18_64)">
+    <body>
+        <header>
+            <div class="header_logo">
+                <img src="images/logo.png" alt="логотип бота" />
+            </div>
+            <menu class="header_box_menu">
+                <div class="header_menu">
+                    <div class="header_button header_mail">
+                        <svg
+                            width="43"
+                            height="43"
+                            viewBox="0 0 43 43"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
                             <path
-                                d="M23.2914 31.4766L12.9511 21.1469L16.0816 18.0206L14.0727 16.0138L10.9429 19.1408L0.601978 8.81183L8.88377 0.539062L19.224 10.8687L16.0936 13.9951L18.1025 16.0018L21.2324 12.8748L31.5732 23.2038L23.2914 31.4766ZM23.2914 27.4387L27.5308 23.2041L21.2325 16.9126L20.1234 18.0206L22.1509 20.0458L20.1297 22.0647L18.1022 20.0395L16.9931 21.1474L23.2914 27.4387ZM10.9423 15.103L12.0514 13.9951L10.0239 11.9698L12.0451 9.95089L14.0725 11.9762L15.1819 10.868L8.88364 4.57594L4.64386 8.81087L10.9427 15.1023L10.9423 15.103Z"
-                                fill="#F22E6B" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_18_64">
-                                <rect width="30.9713" height="30.9375" fill="white"
-                                    transform="translate(0.602051 0.539062)" />
-                            </clipPath>
-                        </defs>
-                    </svg>
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M3.53418 9.25244L4.84815 7.93848H39.0113L40.3253 9.25244V32.9039L39.0113 34.2178H4.84815L3.53418 32.9039V9.25244ZM6.16211 11.9724V31.5899H37.6973V11.975L22.7444 23.4433H21.1413L6.16211 11.9724ZM35.1482 10.5664H8.71121L21.9297 20.7339L35.1482 10.5664Z"
+                                fill="white"
+                            />
+                        </svg>
+                    </div>
+                    <div class="header_button header_vk">
+                        <svg
+                            width="36"
+                            height="36"
+                            viewBox="0 0 36 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_18_51)">
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M34.9177 9.17743C35.1618 8.37443 34.9177 7.7832 33.7485 7.7832H29.8879C28.9054 7.7832 28.4525 8.29354 28.2069 8.85682C28.2069 8.85682 26.2435 13.5572 23.4624 16.6104C22.5623 17.4957 22.1534 17.7766 21.6622 17.7766C21.4166 17.7766 21.0475 17.4957 21.0475 16.6913V9.17743C21.0475 8.21265 20.7769 7.7832 19.9592 7.7832H13.8881C13.2748 7.7832 12.9057 8.2303 12.9057 8.65533C12.9057 9.56864 14.2969 9.78042 14.4396 12.3512V17.9369C14.4396 19.162 14.2146 19.3841 13.7234 19.3841C12.4144 19.3841 9.23038 14.6617 7.34052 9.25832C6.97432 8.20677 6.6037 7.7832 5.61686 7.7832H1.75332C0.650293 7.7832 0.429688 8.29354 0.429688 8.85682C0.429688 9.85984 1.73861 14.8426 6.52575 21.4328C9.71718 25.9332 14.2102 28.3731 18.3031 28.3731C20.7577 28.3731 21.0607 27.8318 21.0607 26.8979V23.4962C21.0607 22.4123 21.2931 22.1961 22.0711 22.1961C22.6447 22.1961 23.6256 22.4785 25.917 24.6478C28.5348 27.22 28.9657 28.3731 30.4394 28.3731H34.3C35.403 28.3731 35.956 27.8318 35.6383 26.7612C35.2883 25.6964 34.0382 24.1507 32.3807 22.3167C31.4806 21.2725 30.1305 20.1474 29.7202 19.5841C29.1481 18.862 29.3114 18.5399 29.7202 17.8972C29.7202 17.8972 34.4265 11.3879 34.9162 9.17743H34.9177Z"
+                                    fill="white"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_18_51">
+                                    <rect
+                                        width="35.2969"
+                                        height="35.2969"
+                                        fill="white"
+                                        transform="translate(0.429688 0.429688)"
+                                    />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="header_button header_info">
+                        <svg
+                            width="38"
+                            height="38"
+                            viewBox="0 0 38 38"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M18.9922 2.23438C9.73731 2.23438 2.23438 9.73731 2.23438 18.9922C2.23438 28.2471 9.73731 35.75 18.9922 35.75C28.2471 35.75 35.75 28.2471 35.75 18.9922C35.75 9.73731 28.2471 2.23438 18.9922 2.23438ZM21.0781 11.375C21.0781 10.971 20.9176 10.5835 20.6319 10.2978C20.3462 10.0121 19.3962 9.28906 18.9922 9.28906C18.5882 9.28906 17.6382 10.0121 17.3525 10.2978C17.0668 10.5835 16.9063 10.971 16.9063 11.375L17.4688 20.5156C17.4688 20.9197 17.6293 21.3072 17.915 21.5929C18.2007 21.8786 18.5882 22.0391 18.9922 22.0391C19.3962 22.0391 19.7837 21.8786 20.0694 21.5929C20.3551 21.3072 20.5156 20.9197 20.5156 20.5156L21.0781 11.375ZM20.5156 25.8477C20.5156 25.4436 20.3551 25.0561 20.0694 24.7704C19.7837 24.4847 19.3962 24.3242 18.9922 24.3242C18.5882 24.3242 18.2007 24.4847 17.915 24.7704C17.6293 25.0561 17.4688 25.4436 17.4688 25.8477V26.6094C17.4688 27.0134 17.6293 27.4009 17.915 27.6866C18.2007 27.9723 18.5882 28.1328 18.9922 28.1328C19.3962 28.1328 19.7837 27.9723 20.0694 27.6866C20.3551 27.4009 20.5156 27.0134 20.5156 26.6094V25.8477Z"
+                                fill="white"
+                            />
+                        </svg>
+                    </div>
+                    <div class="header_button header_settings">
+                        <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M23.0185 36.4141H17.0401C16.6655 36.4141 16.3022 36.2863 16.0103 36.0517C15.7185 35.8172 15.5157 35.49 15.4355 35.1245L14.767 32.0336C13.8753 31.6433 13.0297 31.1552 12.2459 30.5784L9.2288 31.5381C8.87168 31.6519 8.48634 31.6402 8.13679 31.505C7.78723 31.3698 7.49449 31.1192 7.30717 30.7949L4.3114 25.6253C4.12605 25.3007 4.05647 24.9228 4.11406 24.5536C4.17164 24.1843 4.35297 23.8455 4.62839 23.5926L6.96883 21.4598C6.8624 20.4936 6.8624 19.5187 6.96883 18.5526L4.62839 16.4247C4.35258 16.1717 4.171 15.8325 4.11341 15.4629C4.05582 15.0933 4.12563 14.7151 4.3114 14.3903L7.3006 9.21742C7.48792 8.8931 7.78067 8.64253 8.13022 8.50734C8.47977 8.37215 8.86511 8.36046 9.22223 8.47422L12.2393 9.43398C12.6401 9.13867 13.0573 8.86305 13.4876 8.61367C13.9031 8.3807 14.3301 8.16906 14.767 7.98039L15.4371 4.89273C15.5169 4.5272 15.7194 4.19988 16.0109 3.96504C16.3025 3.7302 16.6656 3.60196 17.0401 3.60156H23.0185C23.3931 3.60196 23.7562 3.7302 24.0478 3.96504C24.3393 4.19988 24.5417 4.5272 24.6215 4.89273L25.2982 7.98203C26.1888 8.37458 27.0341 8.86251 27.8193 9.43726L30.8381 8.4775C31.195 8.36416 31.5799 8.37606 31.9291 8.51123C32.2783 8.6464 32.5708 8.89673 32.7581 9.2207L35.7472 14.3936C36.1283 15.0613 35.9969 15.9062 35.4303 16.4263L33.0898 18.5591C33.1963 19.5253 33.1963 20.5002 33.0898 21.4663L35.4303 23.5991C35.9969 24.1209 36.1283 24.9641 35.7472 25.6319L32.7581 30.8048C32.5707 31.1291 32.278 31.3797 31.9284 31.5148C31.5789 31.65 31.1935 31.6617 30.8364 31.548L27.8193 30.5882C27.0361 31.1646 26.1911 31.6522 25.2998 32.0418L24.6215 35.1245C24.5414 35.4898 24.3388 35.8167 24.0473 36.0512C23.7558 36.2857 23.3928 36.4137 23.0185 36.4141ZM20.0228 13.4453C18.2804 13.4453 16.6094 14.1367 15.3773 15.3674C14.1453 16.5981 13.4531 18.2673 13.4531 20.0078C13.4531 21.7483 14.1453 23.4175 15.3773 24.6482C16.6094 25.8789 18.2804 26.5703 20.0228 26.5703C21.7651 26.5703 23.4362 25.8789 24.6682 24.6482C25.9003 23.4175 26.5924 21.7483 26.5924 20.0078C26.5924 18.2673 25.9003 16.5981 24.6682 15.3674C23.4362 14.1367 21.7651 13.4453 20.0228 13.4453Z"
+                                fill="white"
+                            />
+                        </svg>
+                    </div>
+                    <div class="header_button header_link">
+                        <svg
+                            width="32"
+                            height="32"
+                            viewBox="0 0 32 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_18_64)">
+                                <path
+                                    d="M23.2914 31.4766L12.9511 21.1469L16.0816 18.0206L14.0727 16.0138L10.9429 19.1408L0.601978 8.81183L8.88377 0.539062L19.224 10.8687L16.0936 13.9951L18.1025 16.0018L21.2324 12.8748L31.5732 23.2038L23.2914 31.4766ZM23.2914 27.4387L27.5308 23.2041L21.2325 16.9126L20.1234 18.0206L22.1509 20.0458L20.1297 22.0647L18.1022 20.0395L16.9931 21.1474L23.2914 27.4387ZM10.9423 15.103L12.0514 13.9951L10.0239 11.9698L12.0451 9.95089L14.0725 11.9762L15.1819 10.868L8.88364 4.57594L4.64386 8.81087L10.9427 15.1023L10.9423 15.103Z"
+                                    fill="#F22E6B"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_18_64">
+                                    <rect
+                                        width="30.9713"
+                                        height="30.9375"
+                                        fill="white"
+                                        transform="translate(0.602051 0.539062)"
+                                    />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </menu>
+        </header>
+        <main>
+            <div class="description">
+                <div class="description_box">
+                    <div class="description_helper--top"></div>
+                    <div class="description_text">
+                        <h1 class="description_header">
+                            <span class="description_header--mark"
+                                >Возможности</span
+                            ><br />Genshin Impact Bot
+                        </h1>
+                        <p class="description_item">
+                            - Эмуляция системы Гача/Молитв как в игре Genshin
+                            Impact
+                        </p>
+                        <p class="description_item">
+                            - Возможность просматривать игровую активность и
+                            статистику
+                        </p>
+                        <p class="description_item">
+                            - Подсчёт Гарантов и история молитв
+                        </p>
+                        <p class="description_item">- Автоматический:</p>
+                        <ul class="description_list">
+                            <li class="description_item">
+                                - Сбор ежедневных наград
+                            </li>
+                            <li class="description_item">
+                                - Напоминание о наполнении смолы
+                            </li>
+                        </ul>
+                        <p class="description_item">
+                            - Wiki и Прочая игровая информация
+                        </p>
+                        <p class="description_item">
+                            - Развлекательные команды
+                        </p>
+                        <button class="description_button">
+                            <span>Посмотреть</span>
+                        </button>
+                    </div>
+                    <div class="description_helper--bottom"></div>
                 </div>
             </div>
-        </menu>
-    </header>
-    <main>
-        <div class="description">
-            <div class="description_box">
-                <div class="description_helper--top"></div>
-                <div class="description_text">
-                    <h1 class="description_header"><span class="description_header--mark">Возможности</span><br>Genshin Impact Bot</h1>
-                    <p class="description_item">- Эмуляция системы Гача/Молитв как в игре Genshin Impact</p>
-                    <p class="description_item">- Возможность просматривать игровую активность и статистику</p>
-                    <p class="description_item">- Подсчёт Гарантов и история молитв</p>
-                    <p class="description_item">- Автоматический:</p>
-                    <ul  class="description_list">
-                        <li class="description_item">- Сбор ежедневных наград</li>
-                        <li class="description_item">- Напоминание о наполнении смолы</li>
-                    </ul>
-                    <p class="description_item">- Wiki и Прочая игровая информация</p>
-                    <p class="description_item">- Развлекательные команды</p>
-                    <button class="description_button"><span>Посмотреть</span></button>
-                </div>
-                <div class="description_helper--bottom"></div>
+            <div class="character">
+                <img src="images/persona.png" alt="" class="character_person" />
             </div>
-        </div>
-        <div class="character">
-            <img src="images/persona.png" alt="" class="character_person">
-        </div>
-    </main>
+        </main>
 
-    <script>
-        !function () { "use strict"; var a = function () { return (a = Object.assign || function (e) { for (var t, n = 1, o = arguments.length; n < o; n++)for (var p in t = arguments[n]) Object.prototype.hasOwnProperty.call(t, p) && (e[p] = t[p]); return e }).apply(this, arguments) }; function d() { for (var e = 0, t = 0, n = arguments.length; t < n; t++)e += arguments[t].length; var o = Array(e), p = 0; for (t = 0; t < n; t++)for (var r = arguments[t], i = 0, a = r.length; i < a; i++, p++)o[p] = r[i]; return o } function s(r, e) { var o, p, i = (o = { current: 0, next: function () { return ++this.current } }, p = {}, { add: function (e, t) { var n = null != t ? t : o.next(); return p[n] = e, n }, resolve: function (e, t, n) { var o = p[e]; o && (n(t) ? o.resolve(t) : o.reject(t), p[e] = null) } }); return e(function (e) { if (e.detail && e.detail.data && "object" == typeof e.detail.data && "request_id" in e.detail.data) { var t = e.detail.data, n = t.request_id, o = function (e, t) { var n = {}; for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && t.indexOf(o) < 0 && (n[o] = e[o]); if (null != e && "function" == typeof Object.getOwnPropertySymbols) { var p = 0; for (o = Object.getOwnPropertySymbols(e); p < o.length; p++)t.indexOf(o[p]) < 0 && Object.prototype.propertyIsEnumerable.call(e, o[p]) && (n[o[p]] = e[o[p]]) } return n }(t, ["request_id"]); n && i.resolve(n, o, function (e) { return !("error_type" in e) }) } }), function (o, p) { return void 0 === p && (p = {}), new Promise(function (e, t) { var n = i.add({ resolve: e, reject: t }, p.request_id); r(o, a(a({}, p), { request_id: n })) }) } } var e = "undefined" != typeof window, u = Boolean(e && window.AndroidBridge), b = Boolean(e && window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.VKWebAppClose), l = e && !u && !b, t = l && /(^\?|&)vk_platform=mobile_web(&|$)/.test(location.search), c = l ? "message" : "VKWebAppEvent", f = d(["VKWebAppInit", "VKWebAppGetCommunityAuthToken", "VKWebAppAddToCommunity", "VKWebAppAddToHomeScreenInfo", "VKWebAppClose", "VKWebAppCopyText", "VKWebAppGetUserInfo", "VKWebAppSetLocation", "VKWebAppSendToClient", "VKWebAppGetClientVersion", "VKWebAppGetPhoneNumber", "VKWebAppGetEmail", "VKWebAppGetGroupInfo", "VKWebAppGetGeodata", "VKWebAppGetCommunityToken", "VKWebAppSetTitle", "VKWebAppGetAuthToken", "VKWebAppCallAPIMethod", "VKWebAppJoinGroup", "VKWebAppLeaveGroup", "VKWebAppAllowMessagesFromGroup", "VKWebAppDenyNotifications", "VKWebAppAllowNotifications", "VKWebAppOpenPayForm", "VKWebAppOpenApp", "VKWebAppShare", "VKWebAppShowWallPostBox", "VKWebAppScroll", "VKWebAppShowOrderBox", "VKWebAppShowLeaderBoardBox", "VKWebAppShowInviteBox", "VKWebAppShowRequestBox", "VKWebAppAddToFavorites", "VKWebAppShowCommunityWidgetPreviewBox", "VKWebAppShowStoryBox", "VKWebAppSendToClient", "VKWebAppStorageGet", "VKWebAppStorageGetKeys", "VKWebAppStorageSet", "VKWebAppFlashGetInfo", "VKWebAppSubscribeStoryApp", "VKWebAppOpenWallPost"], l && !t ? ["VKWebAppResizeWindow", "VKWebAppAddToMenu", "VKWebAppShowSubscriptionBox", "VKWebAppShowInstallPushBox", "VKWebAppGetFriends"] : []), A = e ? window.AndroidBridge : void 0, w = b ? window.webkit.messageHandlers : void 0; function n(e, t) { var n = t || { bubbles: !1, cancelable: !1, detail: void 0 }, o = document.createEvent("CustomEvent"); return o.initCustomEvent(e, !!n.bubbles, !!n.cancelable, n.detail), o } "undefined" == typeof window || window.CustomEvent || (window.CustomEvent = (n.prototype = Event.prototype, n)); var o = function (n) { var r = void 0, i = []; function e(e) { i.push(e) } function t() { return b || u } function o() { return l && window.parent !== window } function p() { return t() || o() } "undefined" != typeof window && "addEventListener" in window && window.addEventListener(c, function (t) { if (b || u) return d(i).map(function (e) { return e.call(null, t) }); if (l && t && t.data) { var e = t.data, n = e.type, o = e.data, p = e.frameId; n && "VKWebAppSettings" === n ? r = p : d(i).map(function (e) { return e({ detail: { type: n, data: o } }) }) } }); var a = s(function (e, t) { A && A[e] ? A[e](JSON.stringify(t)) : w && w[e] && "function" == typeof w[e].postMessage ? w[e].postMessage(t) : l && parent.postMessage({ handler: e, params: t, type: "vk-connect", webFrameId: r, connectVersion: n }, "*") }, e); return { send: a, sendPromise: a, subscribe: e, unsubscribe: function (e) { var t = i.indexOf(e); -1 < t && i.splice(t, 1) }, supports: function (e) { return u ? !(!A || "function" != typeof A[e]) : b ? !(!w || !w[e] || "function" != typeof w[e].postMessage) : l && -1 < f.indexOf(e) }, isWebView: t, isIframe: o, isEmbedded: p, isStandalone: function () { return !p() } } }("2.4.0"); window.vkBridge = window.vkConnect = o }();
-        // Sends event to client
-        vkBridge.send('VKWebAppInit');
-    </script>
-</body>
-
+        <script>
+            !(function () {
+                "use strict";
+                var a = function () {
+                    return (a =
+                        Object.assign ||
+                        function (e) {
+                            for (var t, n = 1, o = arguments.length; n < o; n++)
+                                for (var p in (t = arguments[n]))
+                                    Object.prototype.hasOwnProperty.call(
+                                        t,
+                                        p
+                                    ) && (e[p] = t[p]);
+                            return e;
+                        }).apply(this, arguments);
+                };
+                function d() {
+                    for (var e = 0, t = 0, n = arguments.length; t < n; t++)
+                        e += arguments[t].length;
+                    var o = Array(e),
+                        p = 0;
+                    for (t = 0; t < n; t++)
+                        for (
+                            var r = arguments[t], i = 0, a = r.length;
+                            i < a;
+                            i++, p++
+                        )
+                            o[p] = r[i];
+                    return o;
+                }
+                function s(r, e) {
+                    var o,
+                        p,
+                        i =
+                            ((o = {
+                                current: 0,
+                                next: function () {
+                                    return ++this.current;
+                                },
+                            }),
+                            (p = {}),
+                            {
+                                add: function (e, t) {
+                                    var n = null != t ? t : o.next();
+                                    return (p[n] = e), n;
+                                },
+                                resolve: function (e, t, n) {
+                                    var o = p[e];
+                                    o &&
+                                        (n(t) ? o.resolve(t) : o.reject(t),
+                                        (p[e] = null));
+                                },
+                            });
+                    return (
+                        e(function (e) {
+                            if (
+                                e.detail &&
+                                e.detail.data &&
+                                "object" == typeof e.detail.data &&
+                                "request_id" in e.detail.data
+                            ) {
+                                var t = e.detail.data,
+                                    n = t.request_id,
+                                    o = (function (e, t) {
+                                        var n = {};
+                                        for (var o in e)
+                                            Object.prototype.hasOwnProperty.call(
+                                                e,
+                                                o
+                                            ) &&
+                                                t.indexOf(o) < 0 &&
+                                                (n[o] = e[o]);
+                                        if (
+                                            null != e &&
+                                            "function" ==
+                                                typeof Object.getOwnPropertySymbols
+                                        ) {
+                                            var p = 0;
+                                            for (
+                                                o =
+                                                    Object.getOwnPropertySymbols(
+                                                        e
+                                                    );
+                                                p < o.length;
+                                                p++
+                                            )
+                                                t.indexOf(o[p]) < 0 &&
+                                                    Object.prototype.propertyIsEnumerable.call(
+                                                        e,
+                                                        o[p]
+                                                    ) &&
+                                                    (n[o[p]] = e[o[p]]);
+                                        }
+                                        return n;
+                                    })(t, ["request_id"]);
+                                n &&
+                                    i.resolve(n, o, function (e) {
+                                        return !("error_type" in e);
+                                    });
+                            }
+                        }),
+                        function (o, p) {
+                            return (
+                                void 0 === p && (p = {}),
+                                new Promise(function (e, t) {
+                                    var n = i.add(
+                                        { resolve: e, reject: t },
+                                        p.request_id
+                                    );
+                                    r(o, a(a({}, p), { request_id: n }));
+                                })
+                            );
+                        }
+                    );
+                }
+                var e = "undefined" != typeof window,
+                    u = Boolean(e && window.AndroidBridge),
+                    b = Boolean(
+                        e &&
+                            window.webkit &&
+                            window.webkit.messageHandlers &&
+                            window.webkit.messageHandlers.VKWebAppClose
+                    ),
+                    l = e && !u && !b,
+                    t =
+                        l &&
+                        /(^\?|&)vk_platform=mobile_web(&|$)/.test(
+                            location.search
+                        ),
+                    c = l ? "message" : "VKWebAppEvent",
+                    f = d(
+                        [
+                            "VKWebAppInit",
+                            "VKWebAppGetCommunityAuthToken",
+                            "VKWebAppAddToCommunity",
+                            "VKWebAppAddToHomeScreenInfo",
+                            "VKWebAppClose",
+                            "VKWebAppCopyText",
+                            "VKWebAppGetUserInfo",
+                            "VKWebAppSetLocation",
+                            "VKWebAppSendToClient",
+                            "VKWebAppGetClientVersion",
+                            "VKWebAppGetPhoneNumber",
+                            "VKWebAppGetEmail",
+                            "VKWebAppGetGroupInfo",
+                            "VKWebAppGetGeodata",
+                            "VKWebAppGetCommunityToken",
+                            "VKWebAppSetTitle",
+                            "VKWebAppGetAuthToken",
+                            "VKWebAppCallAPIMethod",
+                            "VKWebAppJoinGroup",
+                            "VKWebAppLeaveGroup",
+                            "VKWebAppAllowMessagesFromGroup",
+                            "VKWebAppDenyNotifications",
+                            "VKWebAppAllowNotifications",
+                            "VKWebAppOpenPayForm",
+                            "VKWebAppOpenApp",
+                            "VKWebAppShare",
+                            "VKWebAppShowWallPostBox",
+                            "VKWebAppScroll",
+                            "VKWebAppShowOrderBox",
+                            "VKWebAppShowLeaderBoardBox",
+                            "VKWebAppShowInviteBox",
+                            "VKWebAppShowRequestBox",
+                            "VKWebAppAddToFavorites",
+                            "VKWebAppShowCommunityWidgetPreviewBox",
+                            "VKWebAppShowStoryBox",
+                            "VKWebAppSendToClient",
+                            "VKWebAppStorageGet",
+                            "VKWebAppStorageGetKeys",
+                            "VKWebAppStorageSet",
+                            "VKWebAppFlashGetInfo",
+                            "VKWebAppSubscribeStoryApp",
+                            "VKWebAppOpenWallPost",
+                        ],
+                        l && !t
+                            ? [
+                                  "VKWebAppResizeWindow",
+                                  "VKWebAppAddToMenu",
+                                  "VKWebAppShowSubscriptionBox",
+                                  "VKWebAppShowInstallPushBox",
+                                  "VKWebAppGetFriends",
+                              ]
+                            : []
+                    ),
+                    A = e ? window.AndroidBridge : void 0,
+                    w = b ? window.webkit.messageHandlers : void 0;
+                function n(e, t) {
+                    var n = t || {
+                            bubbles: !1,
+                            cancelable: !1,
+                            detail: void 0,
+                        },
+                        o = document.createEvent("CustomEvent");
+                    return (
+                        o.initCustomEvent(
+                            e,
+                            !!n.bubbles,
+                            !!n.cancelable,
+                            n.detail
+                        ),
+                        o
+                    );
+                }
+                "undefined" == typeof window ||
+                    window.CustomEvent ||
+                    (window.CustomEvent = ((n.prototype = Event.prototype), n));
+                var o = (function (n) {
+                    var r = void 0,
+                        i = [];
+                    function e(e) {
+                        i.push(e);
+                    }
+                    function t() {
+                        return b || u;
+                    }
+                    function o() {
+                        return l && window.parent !== window;
+                    }
+                    function p() {
+                        return t() || o();
+                    }
+                    "undefined" != typeof window &&
+                        "addEventListener" in window &&
+                        window.addEventListener(c, function (t) {
+                            if (b || u)
+                                return d(i).map(function (e) {
+                                    return e.call(null, t);
+                                });
+                            if (l && t && t.data) {
+                                var e = t.data,
+                                    n = e.type,
+                                    o = e.data,
+                                    p = e.frameId;
+                                n && "VKWebAppSettings" === n
+                                    ? (r = p)
+                                    : d(i).map(function (e) {
+                                          return e({
+                                              detail: { type: n, data: o },
+                                          });
+                                      });
+                            }
+                        });
+                    var a = s(function (e, t) {
+                        A && A[e]
+                            ? A[e](JSON.stringify(t))
+                            : w && w[e] && "function" == typeof w[e].postMessage
+                            ? w[e].postMessage(t)
+                            : l &&
+                              parent.postMessage(
+                                  {
+                                      handler: e,
+                                      params: t,
+                                      type: "vk-connect",
+                                      webFrameId: r,
+                                      connectVersion: n,
+                                  },
+                                  "*"
+                              );
+                    }, e);
+                    return {
+                        send: a,
+                        sendPromise: a,
+                        subscribe: e,
+                        unsubscribe: function (e) {
+                            var t = i.indexOf(e);
+                            -1 < t && i.splice(t, 1);
+                        },
+                        supports: function (e) {
+                            return u
+                                ? !(!A || "function" != typeof A[e])
+                                : b
+                                ? !(
+                                      !w ||
+                                      !w[e] ||
+                                      "function" != typeof w[e].postMessage
+                                  )
+                                : l && -1 < f.indexOf(e);
+                        },
+                        isWebView: t,
+                        isIframe: o,
+                        isEmbedded: p,
+                        isStandalone: function () {
+                            return !p();
+                        },
+                    };
+                })("2.4.0");
+                window.vkBridge = window.vkConnect = o;
+            })();
+            // Sends event to client
+            vkBridge.send("VKWebAppInit");
+        </script>
+    </body>
 </html>

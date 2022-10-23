@@ -1,27 +1,27 @@
 @media screen and (max-width: 940px) {
-  .header_logo img {
-      height: 64px;
-  }
-  .header_menu {
-      gap: 16px;
-  }
-  .header_button {
-      width: 32px;
-      height: 32px;
-  }
+    .header_logo img {
+        height: 64px;
+    }
+    .header_menu {
+        gap: 16px;
+    }
+    .header_button {
+        width: 32px;
+        height: 32px;
+    }
     main {
-      grid-template-columns: 2fr 1fr;
-      padding: 0 8px;
-  }
-  .description_item {
-      font-size: 12px;
-  }
+        grid-template-columns: 2fr 1fr;
+        padding: 0 8px;
+    }
+    .description_item {
+        font-size: 12px;
+    }
     .character_person {
-    right: -15%;
-    bottom: -200px;
-    min-height: 400px;
-    height: 95vh;
-  }
+        right: -15%;
+        bottom: -200px;
+        min-height: 400px;
+        height: 95vh;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -41,7 +41,7 @@
         font-size: 16px;
     }
     .character_person {
-        height: 10vw;
+        height: 20vw;
         right: -30%;
         bottom: -250px;
     }
