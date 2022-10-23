@@ -33,10 +33,10 @@ body {
     margin: 0;
 
     background-image: url("images/bgPersona.png");
-    background-size: 70vh;
+    background-size: 80vh;
     background-repeat: no-repeat;
-    background-position-x: 95%;
-    background-position-y: bottom;
+    background-position-x: 85%;
+    background-position-y: 20vh;
 
     font-family: "Scipe";
 }
@@ -111,8 +111,6 @@ header {
 }
 
 main {
-    /* height: 100vh; */
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -225,13 +223,14 @@ main {
     height: min-content;
     overflow-y: hidden;
     overflow-x: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .character_person {
     position: fixed;
+    height: 90vh;
     z-index: 999;
-    right: -130px;
-    /* right: -25%; */
     bottom: unset;
     overflow-y: hidden;
     animation-name: animate;
