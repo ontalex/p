@@ -1,7 +1,7 @@
 const description_text_about = document.querySelector('.description_text_about');
 const description_text_buy = document.querySelector('.description_text_buy');
 
-const heaedr_link = document.querySelector('.header_link');
+const header_link = document.querySelector('.header_link');
 const header_info = document.querySelector('.header_info');
 
 const shift_about_buy = function () {
@@ -14,7 +14,7 @@ const shift_about_buy = function () {
     }
 }
 
-heaedr_link.addEventListener("click", () => {
+header_link.addEventListener("click", () => {
     console.log("Click 1");
     shift_about_buy();
 });
