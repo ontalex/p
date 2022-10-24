@@ -130,7 +130,6 @@ main {
 
 .description {
     display: flex;
-    justify-content: center;
     position: relative;
     z-index: 1000;
 }
@@ -140,8 +139,13 @@ main {
     background: #d9d9d93d;
     border: 3px solid #ffffff;
     margin: calc(var(--t-b-l-r) * var(--k));
-    box-sizing: border-box;
+    box-sizing: content-box;
     max-width: 45vw;
+    height: 65vh;
+    display: flex; 
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
 
