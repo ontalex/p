@@ -12,6 +12,7 @@ button {
     --t-b-l-r: 62px;
     --k: 0.258;
     --size_icon: 48px;
+    --size_icon_svg: 65%;
 }
 
 @font-face {
@@ -39,7 +40,7 @@ body {
     background-image: url("images/bgPersona.png");
     background-size: 80vh;
     background-repeat: no-repeat;
-    background-position-x: 85%;
+    background-position-x: 50vw;
     background-position-y: 20vh;
 
     font-family: "Scipe";
@@ -47,9 +48,9 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    padding: 32px;
+    grid-template-columns: minmax(450px, 2fr) 3fr;
+    justify-items: stretch;
+    padding: 32px 16px;
 }
 
 .header_logo {
@@ -64,7 +65,7 @@ header {
 .header_box_menu {
     display: flex;
     justify-content: end;
-    align-items: center;
+    align-items: flex-start;
     padding: 0;
     margin: 0;
 }
@@ -91,9 +92,13 @@ header {
     cursor: pointer;
 }
 
+.header_button--hidden {
+    display: none;
+}
+
 .header_button svg {
-    width: 75%;
-    height: 75%;
+    width: var(--size_icon_svg);
+    height: var(--size_icon_svg);
 }
 
 .header_mail,
@@ -120,10 +125,9 @@ header {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(450px, 2fr) 3fr;
     justify-items: center;
-    padding: 0 32px;
-
+    padding: 0 16px;
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -134,7 +138,7 @@ main {
     z-index: 1000;
 }
 .description_box {
-    width: max-content;
+    /* width: max-content; */
     height: max-content;
     background: #d9d9d93d;
     border: 3px solid #ffffff;
@@ -142,7 +146,7 @@ main {
     box-sizing: content-box;
     max-width: 45vw;
     height: 65vh;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
@@ -157,7 +161,7 @@ main {
     gap: 0px;
     box-sizing: border-box;
     color: white;
-    padding: 16px 5%;
+    padding: 4px 5%;
 }
 .description_header {
     text-align: center;
@@ -181,7 +185,7 @@ main {
     align-items: center;
     gap: 8px;
     margin: 16px auto;
-    padding: 4px 16px;
+    padding: 8px 16px;
     border-radius: 8px;
     background: #4343435c;
     border: 2px solid #ffffff;
@@ -262,7 +266,7 @@ main {
 .character_person {
     position: fixed;
     /* height: 90vh; */
-    width: 90vh;
+    width: 70vh;
     z-index: 1100;
     bottom: unset;
     overflow-y: hidden;
