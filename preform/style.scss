@@ -6,12 +6,6 @@
     --preforms-icon-size: 16px;
 }
 
-/*
-Привенить цветовую тему Visual Studio Code (Forest Focus)
-Сделать дизайн макет в Figma,
-Сверстать адаптивную версию сайта
-*/
-
 html {
     background-color: var(--page-bgColor);
 }
@@ -41,6 +35,8 @@ body {
     }
     .preforms_item {
         background-color: var(--preforms-item-bgColor);
+        font-family: 'Courier New', Courier, monospace;
+        
     }
     .preforms_icon {
         width: var(--preforms-icon-size);
