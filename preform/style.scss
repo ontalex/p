@@ -1,0 +1,51 @@
+:root {
+    --page-bgColor: ;
+    --preforms-text-color: ;
+    --preforms-item-bgColor: ;
+    --preforms-text-color--hover: ;
+    --preforms-icon-size: 16px;
+}
+
+/*
+Привенить цветовую тему Visual Studio Code (Forest Focus)
+Сделать дизайн макет в Figma,
+Сверстать адаптивную версию сайта
+*/
+
+html {
+    background-color: var(--page-bgColor);
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.preforms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 90vw;
+
+    .preforms_link { 
+        text-decoration: none;
+        color: var(--preforms-text-color);
+        &:hover {
+            color: var(--preforms-text-color--hover);
+
+        }
+        &:visited {
+            color: var(--preforms-text-color--hover);
+        }
+    }
+    .preforms_item {
+        background-color: var(--preforms-item-bgColor);
+    }
+    .preforms_icon {
+        width: var(--preforms-icon-size);
+    }
+    .preforms_name {
+        
+    }
+}
