@@ -11,6 +11,10 @@
   --margin_wrapper: 120px;
 }
 
+html {
+  background-color:var(--dark_bg);
+}
+
 .wrapper {
   max-width: calc(100vw - var(--margin_wrapper) * 2);
   margin: 0 auto;
@@ -20,8 +24,12 @@ header {
   background-color: var(--dark_bg);
   .wrapper--header {
     display: flex;
+    
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    padding: 16px 0;
   }
   .header_logo {
     height: 32px;
@@ -29,6 +37,25 @@ header {
   .header_menu {
     display: flex;
     gap: 32px;
+    margin: 0;
+    padding: 0;
+
+  }
+  .header_menu--button {
+    display: none;
+
+    width: 48px;
+
+    background: #0000;
+    border: 0px;
+    padding: 0;
+    
+    img {
+      width: inherit;
+    }
+  }
+  .header_button--hidden {
+    display: none;
   }
   .header_item {
     color: var(--text_color);
@@ -44,9 +71,80 @@ header {
   }
 }
 
+.menu_box {
+  display: none;
+  position: absolute;
+  background-color: var(--dark_bg);
+  width: 100vw;
+  height: calc(100vh - 80px);
+  margin: 0;
+  padding: 0;
+  .menu_box--text {
+    font-family: var(--text_family_inconsolata);
+    font-size: 20px;
+  }
+  .menu_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 64px;
+
+    color: var(--text_color);
+    &:hover {
+      color: var(--mark_text);
+    }
+  }
+  
+}
+
 /*
 MQ Values:
 PC:1024 - ...
 Tablet: 640 - 1024
 Phone: ... - 640
 */
+
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  header {
+    .wrapper--header {
+      flex-direction: column;
+      justify-content: center;
+      padding: 16px 0 ;
+      gap: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 639px) {
+  :root {
+    --margin_wrapper: 16px;
+  }
+  header {
+    position: relative;
+    .header_menu {
+      display: none;
+    }
+    .header_logo {
+      height: 24px;
+    }
+    .header_menu--button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .menu_box--hidden {
+    display: none;
+    visibility: hidden;
+  }
+  .menu_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+  }
+}
