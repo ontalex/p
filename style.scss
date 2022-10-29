@@ -9,7 +9,7 @@
   // Regular, Medium, Bold
   --text_family_arial: 'Arial';
   --margin_wrapper: 120px;
-  --button-size: 36px;
+  --button-size: 32px;
 }
 
 html {
@@ -58,14 +58,10 @@ header {
 
     &--selected {
       .button_line {
-        // transform: translateX(-50%);
-        // transform: translateY(-50%);
       }
 
       .button_line--top {
         transform: rotate(45deg);
-        // top: 33%;
-        // transform: translateY(-50%);
       }
 
       .button_line--center {
@@ -76,7 +72,6 @@ header {
       .button_line--button {
         transform: rotate(-45deg);
         bottom: 9%;
-        // transform: translateY(50%);
       }
     }
 
@@ -93,7 +88,6 @@ header {
     }
 
     .button_line--top {
-      // transform: rotate(0deg);
     }
 
     .button_line--center {
