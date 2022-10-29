@@ -38,20 +38,68 @@
     </div>
     <menu class="menu_box menu_box--hidden">
       <!--Прописать эту секцию в стилях-->
-        <a class="menu_link" href="#about">
-          <span class="menu_box--text">About Me</span>
-        </a>
-        <a class="menu_link" href="#skills">
-          <span class="menu_box--text">Skills</span>
-        </a>
-        <a class="menu_link" href="#projects">
-          <span class="menu_box--text">Pet-Projects</span>
-        </a>
-        <a class="menu_link" href="#contacts">
-          <span class="menu_box--text">Contacts</span>
-        </a>
-      </menu>
+      <a class="menu_link" href="#about">
+        <span class="menu_box--text">About Me</span>
+      </a>
+      <a class="menu_link" href="#skills">
+        <span class="menu_box--text">Skills</span>
+      </a>
+      <a class="menu_link" href="#projects">
+        <span class="menu_box--text">Pet-Projects</span>
+      </a>
+      <a class="menu_link" href="#contacts">
+        <span class="menu_box--text">Contacts</span>
+      </a>
+    </menu>
   </header>
+  <div class="hello">
+    <div class="hello_text">
+      <h1 class="hello_name">Aleksey Borisov</h1>
+      <h2 class="hello_profession">Frontend Developer</h2>
+      <p class="hello_description">Frontend developer looking for ideas and projects for himself and others</p>
+    </div>
+    <div class="hello_baner">
+      <code class="hello_code" lang="javascript">
+let button_menu = document.querySelector(".header_button");
+let float_menu  = document.querySelector(".header_menu--float");
+
+let line_top   = document.querySelector(".header_button_line--top");
+let line_under = document.querySelector(".header_button_line--bottom");
+
+button_menu.isSelected = false;
+
+function addEffectWriting(element, time) {
+  let element_array = element.innerText.split("");
+
+  element.count     = 0;
+  element.innerText = "";
+
+  function writeSymbols() {
+    element.innerText += element_array[element.count];
+    element.count++;
+
+    if (element.count <= element_array.length) {
+      setTimeout(() => {
+        writeSymbols();
+      }, time);
+    } else if (element.count >= element_array.length) {
+      element.count     = 0;
+      element.innerText = "";
+
+      writeSymbols();
+    }
+  }
+  writeSymbols();
+}
+
+      </code>
+      <div class="hello_pic">
+        <div class="hello_pic--lavel hello_pic--lavel1"></div>
+        <div class="hello_pic--lavel hello_pic--lavel2"></div>
+        <div class="hello_pic--lavel hello_pic--lavel3"></div>
+      </div>
+    </div>
+  </div>
 </body>
 <script src="main.js"></script>
 
