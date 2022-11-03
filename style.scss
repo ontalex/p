@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;900&display=swap');
 
 :root {
   --light_bg: #242320;
@@ -16,6 +16,10 @@ html {
   background-color: var(--dark_bg);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .wrapper {
   max-width: calc(100vw - var(--margin_wrapper) * 2);
   margin: 0 auto;
@@ -23,6 +27,10 @@ html {
 
 header {
   background-color: var(--dark_bg);
+  width: 100%;
+
+  top: 0px;
+  z-index: 1100;
 
   .wrapper--header {
     display: flex;
@@ -57,8 +65,7 @@ header {
     padding: 4px;
 
     &--selected {
-      .button_line {
-      }
+      .button_line {}
 
       .button_line--top {
         transform: rotate(45deg);
@@ -87,17 +94,14 @@ header {
       transition: transform .3s linear;
     }
 
-    .button_line--top {
-    }
+    .button_line--top {}
 
     .button_line--center {
       margin: 20% 0;
       opacity: 100%;
     }
 
-    .button_line--button {
-
-    }
+    .button_line--button {}
   }
 
   .header_item {
@@ -125,7 +129,7 @@ header {
 
   position: absolute;
   background-color: var(--dark_bg);
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 80px);
   margin: 0;
   padding: 0;
@@ -159,6 +163,124 @@ header {
   }
 }
 
+.hello {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  background: radial-gradient(100% 100% at 50% 100%, var(--light_bg) 21.52%, var(--dark_bg) 100%);
+
+  height: 90vh;
+
+  &_text {
+    font-family: var(--text_family_inconsolata);
+    width: min-content;
+  }
+
+  &_name {
+    color: var(--mark_text);
+    font-size: 64px;
+    font-weight: 900;
+    margin: 4px 0;
+  }
+
+  &_profession {
+    color: var(--text_color);
+    font-size: 40px;
+    font-weight: 700;
+    margin: 4px 0;
+
+  }
+
+  &_description {
+    color: var(--text_color);
+    font-size: 20px;
+    font-weight: 400;
+    margin: 4px 0;
+
+  }
+
+  &_baner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &_code {
+    display: none;
+    position: absolute;
+
+    left: 50%;
+    transform: translate(-50%);
+
+
+    font-family: var(--text_family_inconsolata);
+    font-size: 16px;
+
+    color: var(--mark_text);
+
+    opacity: 35%;
+  }
+
+  &_pic {
+    width: 360px;
+    height: 360px;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    // transform: translate(-50%, -50%);
+
+    &--lavel {
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      border-radius: 56% 78% 49%/32% 97% 34%;
+      // top: 50%;
+      // left: 50%;
+      // transform: translate(-50%, -50%);
+    }
+
+    &--lavel1 {
+      background: rgba(255, 129, 3, 0.875);
+      transform: rotate(70deg);
+    }
+
+    &--lavel2 {
+      background: rgba(240, 227, 202, 0.856);
+      transform: rotate(-45deg);
+    }
+
+    &--lavel3 {
+      background-image: url("pic/pic_face.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+
+}
+
+.about {
+  padding: 16px 0;
+  .wrapper--about {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    
+  }
+  &_logo {}
+  &_text {
+    color: var(--text_color);
+    font-family: var(--text_family_inconsolata);
+    font-size: 24px;
+  }
+}
 
 /*
 MQ Values:
@@ -174,6 +296,31 @@ Phone: ... - 640
       justify-content: center;
       padding: 16px 0;
       gap: 16px;
+    }
+  }
+
+  .hello {
+    grid-template-columns: repeat(1, 1fr);
+
+    &_name {
+      font-size: 40px;
+    }
+
+    &_profession {
+      font-size: 32px;
+    }
+
+    &_description {
+      font-size: 24px;
+    }
+
+    &_pic {
+      width: 75vw;
+      height: 75vw;
+    }
+
+    &_code {
+      font-size: 8px;
     }
   }
 }
@@ -202,6 +349,53 @@ Phone: ... - 640
 
     .header_button {
       display: block;
+    }
+  }
+
+  .hello {
+    grid-template-columns: repeat(1, 1fr);
+
+    &_baner {
+      min-height: 400px;
+    }
+
+    &_name {
+      font-size: 40px;
+    }
+
+    &_profession {
+      font-size: 32px;
+    }
+
+    &_description {
+      font-size: 24px;
+    }
+
+    &_pic {
+      width: 50vw;
+      height: 60vw;
+    }
+
+    &_code {
+      font-size: 9px;
+      width: 100%;
+      margin: 0 8px;
+    }
+  }
+
+  .about {
+    .wrapper--about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .about_logo {
+
+      }
+      .about_text {
+        margin: 8px 32px;
+        font-size: 20px;
+      }
     }
   }
 }

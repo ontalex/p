@@ -38,7 +38,7 @@ function close_openMenu() {
 function fixing_floatMenu() {
   if (window.scrollY >= document.querySelector("header").offsetHeight) {
     document.querySelector("header").style.position = "fixed";
-    document.querySelector(".hello").style.paddingTop =
+    document.querySelector(".hello").style.marginTop =
       document.querySelector("header").offsetHeight + "px";
   }
 }
@@ -46,4 +46,4 @@ function fixing_floatMenu() {
 button_menu.addEventListener("click", close_openMenu);
 window.addEventListener("scroll", fixing_floatMenu);
 
-addEffectWriting(document.querySelector(".baner_language-js"), 5);
+addEffectWriting(document.querySelector(".hello_code"), 5);
