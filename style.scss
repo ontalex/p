@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;900&display=swap");
 
 :root {
   --light_bg: #242320;
-  --dark_bg: #1B1A17;
-  --mark_text: #FF8303;
-  --text_color: #F0E3CA;
-  --text_family_inconsolata: 'Inconsolata', monospace;
+  --dark_bg: #1b1a17;
+  --mark_text: #ff8303;
+  --text_color: #f0e3ca;
+  --text_family_inconsolata: "Inconsolata", monospace;
   // Regular, Medium, Bold
-  --text_family_arial: 'Arial';
+  --text_family_arial: "Arial";
   --margin_wrapper: 120px;
   --button-size: 32px;
 }
@@ -51,7 +51,6 @@ header {
     gap: 32px;
     margin: 0;
     padding: 0;
-
   }
 
   .header_button {
@@ -65,7 +64,8 @@ header {
     padding: 4px;
 
     &--selected {
-      .button_line {}
+      .button_line {
+      }
 
       .button_line--top {
         transform: rotate(45deg);
@@ -90,18 +90,20 @@ header {
       background-color: var(--text_color);
       border-radius: 2px;
 
-      transition: opacity .3s linear;
-      transition: transform .3s linear;
+      transition: opacity 0.3s linear;
+      transition: transform 0.3s linear;
     }
 
-    .button_line--top {}
+    .button_line--top {
+    }
 
     .button_line--center {
       margin: 20% 0;
       opacity: 100%;
     }
 
-    .button_line--button {}
+    .button_line--button {
+    }
   }
 
   .header_item {
@@ -117,8 +119,6 @@ header {
     font-weight: bold;
     font-size: 20px;
   }
-
-
 }
 
 .menu_box {
@@ -173,7 +173,8 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  background: radial-gradient(100% 100% at 50% 100%, var(--light_bg) 21.52%, var(--dark_bg) 100%);
+  // background: radial-gradient(100% 100% at 50% 100%, var(--light_bg) 21.52%, var(--dark_bg) 100%);
+  background: linear-gradient(0deg, var(--light_bg) 16%, var(--dark_bg));
 
   height: 90vh;
 
@@ -194,7 +195,6 @@ header {
     font-size: 40px;
     font-weight: 700;
     margin: 4px 0;
-
   }
 
   &_description {
@@ -202,22 +202,35 @@ header {
     font-size: 20px;
     font-weight: 400;
     margin: 4px 0;
-
   }
 
   &_baner {
     position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;
+  }
+
+  &_boxCode {
+    max-width: 800px;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   &_code {
-    display: none;
-    position: absolute;
+    // display: none;
+    display: block;
 
-    left: 50%;
-    transform: translate(-50%);
-
+    // position: absolute;
+    // left: 50%;
+    // top: 50%;
+    // transform: translate(-50%, -50%);
 
     font-family: var(--text_family_inconsolata);
     font-size: 16px;
@@ -262,23 +275,77 @@ header {
       background-repeat: no-repeat;
     }
   }
-
-
 }
 
 .about {
   padding: 16px 0;
+  background: var(--light_bg);
   .wrapper--about {
     display: flex;
     align-items: center;
     gap: 32px;
-    
   }
-  &_logo {}
+  &_logo {
+  }
   &_text {
     color: var(--text_color);
     font-family: var(--text_family_inconsolata);
     font-size: 24px;
+  }
+}
+
+.skills {
+  &_header {
+    margin: 64px 0;
+    text-align: center;
+    color: var(--mark_text);
+    font-family: var(--text_family_inconsolata);
+  }
+  &_line {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  &_card {
+    width: 200px;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: var(--light_bg);
+
+    border-radius: 10px;
+    p {
+      margin: 16px 0 0 0;
+
+      font-family: "Arial";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 32px;
+      /* identical to box height */
+
+      color: #ffffff;
+    }
+
+    &--html {
+      fill: #FC490B;
+    }
+    &--css {
+      fill: #2196F4;
+    }
+    &--js {
+      fill: #FFDF00;
+    }
+    &--scss {
+      fill: #CA669B;
+    }
+    &--git {
+      fill: #F25234;
+    }
   }
 }
 
@@ -320,7 +387,7 @@ Phone: ... - 640
     }
 
     &_code {
-      font-size: 8px;
+      font-size: 10px;
     }
   }
 }
@@ -377,9 +444,9 @@ Phone: ... - 640
     }
 
     &_code {
-      font-size: 9px;
+      font-size: 12px;
       width: 100%;
-      margin: 0 8px;
+      margin: 0 16px;
     }
   }
 
@@ -390,7 +457,6 @@ Phone: ... - 640
       justify-content: center;
       align-items: center;
       .about_logo {
-
       }
       .about_text {
         margin: 8px 32px;
