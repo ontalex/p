@@ -295,6 +295,8 @@ header {
 }
 
 .skills {
+  // background: linear-gradient(0deg, var(--dark_bg) 2%, var(--light_bg) 98%);
+  margin: 64px 0;
   &_header {
     margin: 64px 0;
     text-align: center;
@@ -303,6 +305,7 @@ header {
   }
   &_line {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
   }
@@ -441,6 +444,7 @@ Phone: ... - 640
     &_pic {
       width: 50vw;
       height: 60vw;
+      left: 25%;
     }
 
     &_code {
