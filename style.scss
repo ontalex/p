@@ -121,6 +121,9 @@ header {
     font-size: 20px;
   }
 }
+main {
+  // background: linear-gradient(0deg, var(--light_bg) 5%, var(--dark_bg) 90%, var(--light_bg));
+}
 
 .menu_box {
   justify-content: center;
@@ -427,6 +430,33 @@ header {
       color: var(--text_color);
     }
   }
+}
+.footer {
+  font-family: var(--text_family_inconsolata);
+  &_about {
+  }
+  &_logo {
+    height: 44px;
+  }
+  &_description {
+    color: var(--text_color);
+    font-size: 20px;
+  }
+  &_contacts {
+  }
+  &_header {
+    color: var(--mark_text);
+  }
+  &_list {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+  }
+  &_item {
+  }
+  &_icon {
+  }
+  &_link {
+  } 
 }
 
 /*
