@@ -321,6 +321,8 @@ header {
     background-color: var(--light_bg);
 
     border-radius: 10px;
+
+    gap: 20px;
     p {
       margin: 16px 0 0 0;
 
@@ -332,22 +334,6 @@ header {
       /* identical to box height */
 
       color: #ffffff;
-    }
-
-    &--html {
-      fill: #FC490B;
-    }
-    &--css {
-      fill: #2196F4;
-    }
-    &--js {
-      fill: #FFDF00;
-    }
-    &--scss {
-      fill: #CA669B;
-    }
-    &--git {
-      fill: #F25234;
     }
   }
 }
@@ -466,6 +452,29 @@ Phone: ... - 640
         margin: 8px 32px;
         font-size: 20px;
       }
+    }
+  }
+
+  .skills {
+    &_card {
+      flex-direction: row;
+      width: 240px;
+      height: min-content;
+      justify-content: left;
+      align-items: center;
+      padding: 14px 0;
+      padding-left: 32px;
+      gap: 16px;
+    }
+    p {
+      font-family: var(--text_family_inconsolata);
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 25px;
+      margin: 0;
+    }
+    img {
+      height: 32px;
     }
   }
 }
