@@ -10,6 +10,7 @@
   --text_family_arial: "Arial";
   --margin_wrapper: 120px;
   --button-size: 32px;
+  --size_project: 320px;
 }
 
 html {
@@ -338,6 +339,96 @@ header {
   }
 }
 
+.portfolio {
+  padding: 64px 0;
+  &_header {
+    color: var(--mark_text);
+    margin: 64px 0;
+    text-align: center;
+    font-family: var(--text_family_inconsolata);
+    // margin: 0;
+  }
+  &_line {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    gap: 16px;
+    justify-content: center;
+  }
+
+  &_card {
+    width: inherit;
+    height: inherit;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-direction: column;
+
+    background-color: #24232000;
+    box-sizing: border-box;
+
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition-duration: 0.5s;
+
+    font-family: var(--text_family_inconsolata);
+    * {
+      opacity: 0;
+      margin: 0;
+      text-align: center;
+
+      transition-property: opacity;
+      transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      transition-delay: .4;
+      transition-duration: 0.5s;
+    }
+    &:hover * {
+      opacity: 100%;
+    }
+    &:hover {
+      background-color: #21201dfa;
+    }
+  }
+  &_wrapper {
+    width: var(--size_project);
+    height: var(--size_project);
+    background-size: cover;
+  }
+  &_wrapper--1 {
+    background-image: url("pic/preview_layout_6.png");
+  }
+  &_wrapper--2 {
+    background-image: url("pic/preview_layout_5.png");
+  }
+  &_wrapper--3 {
+    background-image: url("pic/preview_layout_14.png");
+  }
+  .project_name {
+    color: var(--mark_text);
+  }
+  .project_technologies {
+    color: var(--text_color);
+  }
+  .project_line {
+    background-color: var(--mark_text);
+    height: 1px;
+    width: 72%;
+  }
+  .project_description {
+    color: var(--text_color);
+    width: 80%;
+  }
+  .project_button {
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: var(--dark_bg);
+    span {
+      color: var(--text_color);
+    }
+  }
+}
+
 /*
 MQ Values:
 PC:1024 - ...
@@ -379,6 +470,12 @@ Phone: ... - 640
       font-size: 10px;
     }
   }
+
+  .portfolio {
+    &_line {
+      grid-template-columns: repeat(2, min-content);
+    }
+  }
 }
 
 @media screen and (max-width: 639px) {
@@ -408,6 +505,10 @@ Phone: ... - 640
     }
   }
 
+  main {
+    position: relative;
+  }
+
   .hello {
     grid-template-columns: repeat(1, 1fr);
 
@@ -432,7 +533,9 @@ Phone: ... - 640
       height: 60vw;
       left: 25%;
     }
-
+    &_boxCode {
+      top: 65%;
+    }
     &_code {
       font-size: 12px;
       width: 100%;
@@ -475,6 +578,15 @@ Phone: ... - 640
     }
     img {
       height: 32px;
+    }
+  }
+
+  .portfolio {
+    &_header {
+      margin: 32px 0;
+    }
+    &_line {
+      grid-template-columns: min-content;
     }
   }
 }
