@@ -4,7 +4,7 @@
  * @param {number} delay - колличество милисекунд задержки
  * @param {string} linkRequest - адресс запроса
  * @param {string} linkSource - шаблоная часть ссылки для источника видео
- * @description Функция изменения адресса видео-файла, данные беруться из ответа сервера на запрос (by Ontalex (https://ontalex.github.io/p/))
+ * @description Функция бесконечного изменения адресса видео-файла, данные беруться из ответа сервера на запрос (by Ontalex (https://ontalex.github.io/p/))
  */
 
 function setVideos(elem, delay, linkRequest, linkSource) {
