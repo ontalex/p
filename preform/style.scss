@@ -16,7 +16,7 @@ body {
 }
 
 .preforms {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     justify-content: center;
 
@@ -25,6 +25,11 @@ body {
     .preforms_link { 
         text-decoration: none;
         color: var(--preforms-text-color);
+        padding: 8px 12px;
+        margin: 8px 0;
+        background-color: cadetblue;
+        color: white;
+        font-weight: bold;
         &:hover {
             color: var(--preforms-text-color--hover);
 
@@ -36,7 +41,7 @@ body {
     .preforms_item {
         background-color: var(--preforms-item-bgColor);
         font-family: 'Courier New', Courier, monospace;
-        
+        font-size: 20px;
     }
     .preforms_icon {
         width: var(--preforms-icon-size);
