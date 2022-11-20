@@ -3,7 +3,9 @@
 :root {
   --light_bg: #242320;
   --dark_bg: #1b1a17;
-  --mark_text: #ff8303;
+  // --mark_text: #ff8303;
+  --mark_text: #FF952D;
+  --dark_mark_text: #dc832b;
   --text_color: #f0e3ca;
   --text_family_inconsolata: "Inconsolata", monospace;
   // Regular, Medium, Bold
@@ -432,7 +434,19 @@ main {
   }
 }
 .footer {
+  display: grid;
+  grid-template-columns: minmax(216px, 400px) min-content;
+  
+  gap: 64px;
+  
+  align-items: center;
+  justify-content: center;
+  
   font-family: var(--text_family_inconsolata);
+  
+  padding: 64px;
+
+  background-color: var(--light_bg);
   &_about {
   }
   &_logo {
@@ -446,16 +460,34 @@ main {
   }
   &_header {
     color: var(--mark_text);
+    margin: 16px 0;
   }
   &_list {
     display: grid;
     grid-template-columns: repeat(2, max-content);
+    column-gap: 48px;
+    row-gap: 16px;
+
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
   }
   &_item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
   }
   &_icon {
+    height: 32px;
   }
   &_link {
+    font-size: 24px;
+    font-family: var(--text_family_inconsolata);
+    color: var(--mark_text);
+    &:hover {
+      color: var(--dark_mark_text);
+    }
   } 
 }
 
@@ -618,6 +650,17 @@ Phone: ... - 640
     }
     &_line {
       grid-template-columns: min-content;
+    }
+  }
+
+  .footer {
+    grid-template-columns: min-content;
+    gap: 32px;
+
+    padding: 48px 16px ;
+
+    &_list {
+      grid-template-columns: 1fr;
     }
   }
 }
