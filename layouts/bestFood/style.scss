@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 a {
     text-decoration: none;
@@ -23,7 +23,7 @@ body {
     border: 0;
 
     span {
-        font-family: 'Open Sans';
+        font-family: "Open Sans";
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
@@ -31,14 +31,14 @@ body {
 
         text-transform: uppercase;
 
-        color: #FFFFFF;
+        color: #ffffff;
     }
 }
 
 header {
     height: 800px;
 
-    background-image: url("imgs/hero_image.jpg");
+    background-image: url("imgs/hero_image.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -79,7 +79,7 @@ header {
         .bar_link {
             text-decoration: none;
             color: white;
-            font-family: 'Open Sans';
+            font-family: "Open Sans";
             font-style: normal;
             font-weight: 700;
             font-size: 14px;
@@ -111,7 +111,7 @@ header {
             display: grid;
             grid-template-columns: 1fr;
             text-decoration: none;
-            font-family: 'Open Sans';
+            font-family: "Open Sans";
             font-style: normal;
 
             .bar_tell--span {
@@ -150,7 +150,7 @@ header {
 
             h1 {
                 color: rgba(214, 126, 53, 1);
-                font-family: 'Tinos';
+                font-family: "Tinos";
                 font-style: normal;
                 font-weight: 400;
                 font-size: 50px;
@@ -166,13 +166,13 @@ header {
 
             .welcom_name {
                 position: relative;
-                font-family: 'Open Sans';
+                font-family: "Open Sans";
                 font-style: normal;
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 25px;
 
-                color: #FFFFFF;
+                color: #ffffff;
             }
 
             .welcom_name::before {
@@ -180,7 +180,7 @@ header {
                 position: absolute;
                 width: 61px;
                 height: 2px;
-                background-color: #C4C4C4;
+                background-color: #c4c4c4;
                 left: -50%;
                 top: 50%;
             }
@@ -190,7 +190,7 @@ header {
                 position: absolute;
                 width: 61px;
                 height: 2px;
-                background-color: #C4C4C4;
+                background-color: #c4c4c4;
                 right: -50%;
                 top: 50%;
             }
@@ -219,7 +219,7 @@ main {
             justify-content: start;
             align-items: center;
             flex-direction: column;
-            background: #FFFFFF;
+            background: #ffffff;
             box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
             margin: 0%;
 
@@ -230,7 +230,7 @@ main {
 
             &_name {
                 text-align: center;
-                font-family: 'Tinos';
+                font-family: "Tinos";
                 font-style: normal;
                 font-weight: 400;
                 font-size: 26px;
@@ -239,13 +239,13 @@ main {
                 margin: 0%;
 
                 &--mark {
-                    color: #BC9060;
+                    color: #bc9060;
                 }
             }
 
             &_description {
                 text-align: center;
-                font-family: 'Tinos';
+                font-family: "Tinos";
                 font-style: normal;
                 font-weight: 400;
                 font-size: 26px;
@@ -253,7 +253,6 @@ main {
                 text-align: center;
                 margin: 20px 0;
                 color: #656363;
-
             }
         }
     }
@@ -281,13 +280,12 @@ main {
             align-content: center;
 
             &--mark {
-                color: #D67E34;
+                color: #d67e34;
             }
         }
 
-
         &_header {
-            font-family: 'Tinos';
+            font-family: "Tinos";
             font-style: normal;
             font-weight: 400;
             font-size: 54px;
@@ -297,7 +295,7 @@ main {
 
         &_about {
             color: #656363;
-            font-family: 'Open Sans';
+            font-family: "Open Sans";
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -309,7 +307,6 @@ main {
             display: grid;
             grid-template-columns: repeat(3, min-content);
             gap: 40px;
-
         }
 
         &_dish {
@@ -319,20 +316,20 @@ main {
 
             &--count {
                 span {
-                    font-family: 'Open Sans';
+                    font-family: "Open Sans";
                     font-style: normal;
                     font-weight: 400;
                     font-size: 40px;
                     line-height: 54px;
                     text-align: center;
 
-                    color: #BC9060;
+                    color: #bc9060;
                 }
             }
 
             &--name {
                 span {
-                    font-family: 'Open Sans';
+                    font-family: "Open Sans";
                     font-style: normal;
                     font-weight: 400;
                     font-size: 20px;
@@ -352,9 +349,13 @@ main {
     }
 
     .stock {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(imgs/delicious-1866631_1920_1.jpg);
+        background: linear-gradient(to top,
+                rgba(0, 0, 0, 0.85),
+                rgba(0, 0, 0, 0.85)),
+            url(imgs/delicious-1866631_1920_1.webp);
         background-size: cover;
         padding: 80px 0;
+
         .wrapper {
             display: flex;
             align-items: center;
@@ -369,25 +370,126 @@ main {
         &_header {
             width: 640px;
 
-            font-family: 'Tinos';
+            font-family: "Tinos";
             font-style: normal;
             font-weight: 400;
             font-size: 52px;
             line-height: 60px;
 
-            color: #D67E34;
+            color: #d67e34;
         }
 
         &_description {
-            font-family: 'Open Sans';
+            font-family: "Open Sans";
             font-style: normal;
             font-weight: 700;
             font-size: 24px;
             line-height: 33px;
             /* identical to box height */
 
-
-            color: #FFFFFF;
+            color: #ffffff;
         }
+    }
+
+    .offers {
+        &_wrapper {
+            position: relative;
+            width: 1130px;
+            margin: 0 auto;
+            margin-bottom: 150px;
+        }
+
+        &_header {
+            text-align: center;
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 54px;
+            line-height: 62px;
+
+            color: #000000;
+
+            margin: 128px 0;
+
+            &--mark {
+                color: #d67e34;
+            }
+        }
+
+        &_menu {}
+
+        &_grid {
+            display: grid;
+            grid-template-columns: minmax(300px, 445px) 1fr;
+            grid-gap: 30px;
+        }
+
+        &_grid--bigImg {
+            background-image: url("imgs/pizza-4968645_1920\ \(1\)\ 1.webp");
+            background-size: cover;
+            background-position: top right;
+        }
+
+        &_productList {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        &_product {
+            display: grid;
+            grid-template-columns: min-content max-content 1fr max-content;
+            gap: 8px;
+            align-items: center;
+        }
+
+        &_product1 {}
+
+        &_product2 {}
+
+        &_product3 {}
+
+        &_product--innerImg {
+            width: 160px;
+            height: 140px;
+            margin-right: 22px;
+            background-color: #bc9060;
+        }
+
+        &_product--innerImg1 {
+            background-image: url("imgs/hamburger-494706_1920\ 1.webp");
+        }
+
+        &_product--innerImg2 {
+            background-image: url("imgs/hamburger-494706_1920\ 1.webp");
+        }
+
+        &_product--innerImg3 {
+            background-image: url("imgs/hamburger-494706_1920\ 1.webp");
+        }
+
+        &_name {
+            font-family: "Tinos";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 30px;
+        }
+
+        &_line {
+            position: relative;
+            top: 2px;
+
+            border-top: 2px dashed black;
+        }
+
+        &_price {
+            font-family: "Tinos";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 30px;
+        }
+
     }
 }
