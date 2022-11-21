@@ -275,7 +275,7 @@ main {
     }
 
     &--lavel3 {
-      background-image: url("pic/pic_face.jpg");
+      background-image: url("pic/pic_face.webp");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -401,13 +401,13 @@ main {
     background-size: cover;
   }
   &_wrapper--1 {
-    background-image: url("pic/preview_layout_6.png");
+    background-image: url("pic/preview_layout_6.webp");
   }
   &_wrapper--2 {
-    background-image: url("pic/preview_layout_5.png");
+    background-image: url("pic/preview_layout_5.webp");
   }
   &_wrapper--3 {
-    background-image: url("pic/preview_layout_14.png");
+    background-image: url("pic/preview_layout_14.webp");
   }
   .project_name {
     color: var(--mark_text);
