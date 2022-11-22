@@ -490,6 +490,36 @@ main {
             font-size: 26px;
             line-height: 30px;
         }
+    }
 
+    .menu {
+        &_header {}
+        &_slider {
+            .slider_section--top {
+                .slider_control {
+                }
+                .slider_control--prev {
+                }
+                .slider_control--next {
+                }
+                .slider_view {
+                }
+                .slider_card {
+                }
+                .card_img {
+                }
+                .card_name {
+                }
+                .card_description {
+                }
+                .global_btn {
+                }
+            }
+            .slider_section--bottom {
+                
+            }
+            
+        }
+        
     }
 }
