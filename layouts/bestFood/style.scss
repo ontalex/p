@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+:root {
+    --h_card: 510px;
+    --w_card: 350px;
+    --gap: 30px;
+}
+
 a {
     text-decoration: none;
 }
@@ -493,33 +499,165 @@ main {
     }
 
     .menu {
-        &_header {}
+        // min-height: 100vh;
+
+        // background-image: url("imgs/bar-1869656_1920\ 2.webp");
+        background-image: linear-gradient(#111a, #111a), url("imgs/bar-1869656_1920\ 2.webp");
+        background-size: cover;
+        background-position: center;
+
+        padding: 92px 0 230px 0;
+
+        &_header {
+            font-family: 'Tinos';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 54px;
+            line-height: 62px;
+
+            color: #FFFFFF;
+
+            text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+
+            text-align: center;
+
+            // margin: 98px;
+        }
+
         &_slider {
             .slider_section--top {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
                 .slider_control {
+                    width: 40px;
+                    height: 40px;
+                    background: #D67E34;
+                    border: 0;
+                    border-radius: 50%;
                 }
-                .slider_control--prev {
-                }
-                .slider_control--next {
-                }
+
+                .slider_control--prev {}
+
+                // .slider_control--next {}
                 .slider_view {
+                    display: flex;
+                    align-items: center;
+
+                    width: calc(var(--w_card) + var(--gap) + var(--w_card) + var(--gap) + var(--w_card));
+                    height: var(--h_card);
+
+                    overflow: hidden;
+                    position: relative;
+
+                    margin: 0 50px;
                 }
+
+                .slider_line {
+                    position: absolute;
+                    left: 0;
+                    display: flex;
+                    gap: var(--gap);
+                    align-items: center;
+                }
+
                 .slider_card {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    width: var(--w_card);
+                    min-height: var(--h_card);
+
+                    // padding: 30px 64px;
+                    padding: 80px 60px 24px 60px;
+
+                    box-sizing: border-box;
+
+                    background-color: #FFFFFF;
                 }
+
+                .card_box {
+                    position: relative;
+                }
+
+                .card_price {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+
+                    width: 100px;
+                    height: 100px;
+
+                    background: #D67E34;
+                    border: 7px solid #FFFFFF;
+
+                    border-radius: 100px;
+
+                    &--text {
+                        font-family: 'Cookie';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 30px;
+                        line-height: 33px;
+
+                        color: #FFFFFF;
+                    }
+                }
+
                 .card_img {
+                    position: relative;
+
+                    border-radius: 300px;
+                    width: 100%;
                 }
+
                 .card_name {
+                    font-family: 'Tinos';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 26px;
+                    line-height: 30px;
+
+                    margin: 17px 0;
                 }
+
                 .card_description {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                    text-align: center;
+                    margin: 0;
                 }
+
                 .global_btn {
+                    margin: 24px 0;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 22px;
+                    /* identical to box height */
+
+                    text-align: center;
+
+                    color: #FFFFFF;
+
+                    background: #D67E34;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
                 }
             }
-            .slider_section--bottom {
-                
-            }
-            
+
+            .slider_section--bottom {}
+
         }
-        
     }
 }
