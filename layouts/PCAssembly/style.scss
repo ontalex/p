@@ -383,21 +383,21 @@ body {
     &_infographic {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        height: 280px;
+        // height: 280px;
     }
 
     .header {
 
         // .header_name
-    
+
         &_name {
             width: 100%;
             display: flex;
             align-items: center;
         }
-    
+
         // .header_logo
-    
+
         &_logo {
             animation-name: rotate;
             animation-duration: 1s;
@@ -405,7 +405,7 @@ body {
             animation-iteration-count: infinite;
             animation-delay: 0s;
         }
-    
+
         &_head {
             font-family: 'Roboto';
             font-style: normal;
@@ -415,9 +415,9 @@ body {
             color: white;
             // width: 100%;
         }
-    
+
         // .header_about
-    
+
         &_about {
             font-family: 'Roboto';
             font-style: normal;
@@ -426,7 +426,7 @@ body {
             line-height: 160%;
             color: #FFFFFF;
             opacity: 0.5;
-    
+
             width: calc(100vw / 4.67);
         }
     }
@@ -483,6 +483,7 @@ body {
 
     &_100 {
         grid-template-rows: 1fr 80px 3fr;
+
         .infographic_bg {
             background: var(--gradient_pink);
             min-height: 80px;
@@ -493,6 +494,7 @@ body {
 
     &_75 {
         grid-template-rows: 1fr 60px 3fr;
+
         .infographic_bg {
             background: var(--gradient_pink--rivers);
             min-height: 60px;
@@ -503,6 +505,7 @@ body {
 
     &_50 {
         grid-template-rows: 1fr 40px 3fr;
+
         .infographic_bg {
             background: var(--gradient_pink);
             min-height: 40px;
@@ -513,6 +516,7 @@ body {
 
     &_end {
         grid-template-rows: 1fr 20px 3fr;
+
         .infographic_bg {
             background: var(--gradient_pink--rivers);
             min-height: 20px;
@@ -523,3 +527,91 @@ body {
     //     min-height: 80px;
     // }
 }
+
+.advantages {
+    margin: 200px 0;
+
+    // .advantages_title
+
+    &_title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 140%;
+
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    // .advantages_cards
+
+    &_cards {
+        width: calc(100vw * 0.675);
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 80px;
+
+        margin: 120px auto;
+    }
+
+    // .advantages_card
+
+    &_card {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+.card {
+
+    // .card_img
+
+    &_img {
+        width: calc(100% / 4);
+    }
+
+    // .card_title
+
+    &_title {
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 140%;
+        /* or 34px */
+
+        text-align: center;
+
+        /* white */
+
+        color: #FFFFFF;
+
+        margin: 60px 0px 30px;
+
+        text-align: center;
+    }
+
+    // .card_about
+
+    &_about {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        /* or 26px */
+
+        text-align: center;
+
+        /* white */
+
+        color: #FFFFFF;
+
+        opacity: 0.8;
+    }
+}
+
