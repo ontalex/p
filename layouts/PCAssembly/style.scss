@@ -48,7 +48,7 @@ body {
                 max-width: 900px;
 
                 color: white;
-                font-family: 'Roboto';
+                font-family: 'Roboto', sans-serif;
                 font-style: normal;
                 font-weight: 700;
                 font-size: 64px;
@@ -79,7 +79,7 @@ body {
 
                     &_number {
                         color: white;
-                        font-family: 'Roboto';
+                        font-family: 'Roboto', sans-serif;
                         font-style: normal;
                         font-weight: 700;
                         font-size: 36px;
@@ -87,7 +87,7 @@ body {
                     }
 
                     &_name {
-                        font-family: 'Roboto';
+                        font-family: 'Roboto', sans-serif;
                         font-style: normal;
                         font-weight: 400;
                         font-size: 16px;
@@ -141,7 +141,7 @@ body {
                 align-items: center;
                 justify-content: center;
 
-                font-family: 'Roboto';
+                font-family: 'Roboto', sans-serif;
                 font-style: normal;
                 font-weight: bold;
                 font-size: 16px;
@@ -182,7 +182,7 @@ body {
         align-items: center;
         justify-content: center;
 
-        font-family: 'Roboto';
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
@@ -209,7 +209,7 @@ body {
             }
 
             &_name {
-                font-family: 'Roboto';
+                font-family: 'Roboto', sans-serif;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 16px;
@@ -220,7 +220,7 @@ body {
             }
 
             &_number {
-                font-family: 'Roboto';
+                font-family: 'Roboto', sans-serif;
                 font-style: normal;
                 font-weight: 700;
                 font-size: 16px;
@@ -244,7 +244,7 @@ body {
             }
 
             &_name {
-                font-family: 'Roboto';
+                font-family: 'Roboto', sans-serif;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 16px;
@@ -255,7 +255,7 @@ body {
             }
 
             &_number {
-                font-family: 'Roboto';
+                font-family: 'Roboto', sans-serif;
                 font-style: normal;
                 font-weight: 700;
                 font-size: 16px;
@@ -294,7 +294,7 @@ body {
                     // .progressbar_number
 
                     &_number {
-                        font-family: 'Roboto';
+                        font-family: 'Roboto', sans-serif;
                         font-style: normal;
                         font-weight: 400;
                         font-size: 16px;
@@ -348,7 +348,7 @@ body {
         color: white;
 
         h2 {
-            font-family: 'Roboto';
+            font-family: 'Roboto', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 48px;
@@ -356,7 +356,7 @@ body {
         }
 
         p {
-            font-family: 'Roboto';
+            font-family: 'Roboto', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -394,6 +394,7 @@ body {
             width: 100%;
             display: flex;
             align-items: center;
+            gap: 40px;
         }
 
         // .header_logo
@@ -407,7 +408,7 @@ body {
         }
 
         &_head {
-            font-family: 'Roboto';
+            font-family: 'Roboto', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 48px;
@@ -419,7 +420,7 @@ body {
         // .header_about
 
         &_about {
-            font-family: 'Roboto';
+            font-family: 'Roboto', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -460,7 +461,7 @@ body {
     // .infographic_value
 
     &_value {
-        font-family: 'Roboto';
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 36px;
@@ -470,7 +471,7 @@ body {
     // .infographic_about
 
     &_about {
-        font-family: 'Roboto';
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -534,7 +535,7 @@ body {
     // .advantages_title
 
     &_title {
-        font-family: 'Roboto';
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 48px;
@@ -577,7 +578,7 @@ body {
 
     &_title {
 
-        font-family: 'Roboto';
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 24px;
@@ -598,7 +599,7 @@ body {
     // .card_about
 
     &_about {
-        font-family: 'Roboto';
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -644,6 +645,7 @@ body {
         display: flex;
         align-items: center;
         margin: 60px 0;
+        gap: 40px;
     }
 
     // .header_logo
@@ -659,7 +661,7 @@ body {
     // .header_head
 
     &_head {
-        font-family: 'Roboto';
+        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 48px;
@@ -678,9 +680,8 @@ body {
 
 .program {
     margin: 160px 0;
-    .header {
 
-        // .header_name
+    .header {
 
         &_name {
             width: 100%;
@@ -700,7 +701,7 @@ body {
         }
 
         &_head {
-            font-family: 'Roboto';
+            font-family: 'Roboto', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 48px;
@@ -712,7 +713,7 @@ body {
         // .header_about
 
         &_about {
-            font-family: 'Roboto';
+            font-family: 'Roboto', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -778,7 +779,7 @@ body {
 
             &_number {
                 opacity: 0.5;
-                font-family: 'Roboto';
+                font-family: 'Roboto', sans-serif;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 14px;
@@ -788,7 +789,7 @@ body {
             // .week_name
 
             &_name {
-                font-family: 'Roboto';
+                font-family: 'Roboto', sans-serif;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 18px;
@@ -809,4 +810,108 @@ body {
         }
 
     }
+}
+
+.teachers {
+    width: calc(100vw * 0.6987);
+    margin: 170px auto;
+
+    &_header {
+        .header {
+            &_name {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 40px;
+            }
+
+            &_logo {
+                animation-name: rotate;
+                animation-duration: 1s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                animation-delay: 0s;
+            }
+
+            &_head {
+                font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 140%;
+                color: white;
+                // width: 100%;
+            }
+        }
+    }
+
+    &_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-items: center;
+
+    }
+
+    .grid {
+
+        &_teacher {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .teacher {
+
+        &_avatar {}
+
+        &_about {}
+
+        &_name {
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 140%;
+
+            text-align: center;
+
+            color: white;
+        }
+
+        &_profession {
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+
+            text-align: center;
+
+            color: white;
+
+            opacity: 0.8;
+        }
+
+        &_bio {
+            border: 1px solid white;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+
+            text-align: center;
+
+            color: #FFFFFF;
+            padding: 10px 30px;
+
+            border-radius: 50px;
+
+            text-decoration: none;
+        }
+    }
+
+
 }
