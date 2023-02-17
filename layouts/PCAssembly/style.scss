@@ -5,6 +5,8 @@
     --gradient_red--rivers: linear-gradient(94.78deg, #451046 11.19%, #DF5950 93.72%);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -912,6 +914,141 @@ body {
             text-decoration: none;
         }
     }
+}
+
+.contacts {
+    width: calc(100vw * 0.4);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 200px auto 32px;
+
+    &_header {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 140%;
+
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+    &_about {
+        width: 420px;
+
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+
+        text-align: center;
+
+        color: #FFFFFF;
+
+        opacity: 0.5;
+
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+
+    &_form {
+        display: flex;
+    }
+
+    &_input {
+        height: 44px;
+        padding-left: 30px;
+        background-color: rgba($color: #fff, $alpha: 0.25);
+        border-radius: 50px 0px 0px 50px;
+
+        margin: 0;
+        outline: 0;
+        border: 0;
+
+        color: white;
+    }
+
+    &_button {
+        max-height: 44px;
+        height: 44px;
+
+        background: var(--gradient_red);
+
+        border-radius: 44px;
+
+        padding: 0 30px;
+
+        position: relative;
+        left: -30px;
+
+        border: 0;
+
+        span {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+    }
+
+    &_nets {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        margin-top: 40px;
+    }
+}
+
+.nets {
+
+    &_icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        background: var(--gradient_pink);
+        border-radius: 32px;
+
+        &:hover {
+            background: var(--gradient_pink--rivers);
+        }
+    }
 
 
+}
+
+.icon {
+
+    &_svg {
+        margin: auto;
+        width: 18px;
+    }
+}
+
+.contact {
+
+    &_info {
+        color: white;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+
+        text-align: center;
+
+        color: #FFFFFF;
+
+        opacity: 0.8;
+    }
 }
