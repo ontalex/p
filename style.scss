@@ -13,6 +13,7 @@
   --margin_wrapper: 120px;
   --button-size: 32px;
   --size_project: 320px;
+  --index_font: calc(1vw + 1vh);
 }
 
 html {
@@ -314,6 +315,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
+    opacity: 100%;
   }
   &_card {
     width: 200px;
@@ -329,6 +331,8 @@ main {
     border-radius: 10px;
 
     gap: 20px;
+
+    transition: transform ease;
     p {
       margin: 16px 0 0 0;
 
