@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --index: calc(1vw + 1vh);
+    --size_shadow: 2px;
+}
+
+body{
+    margin: 0;
+    /* padding: 8px 8px; */
+    font-family: "Roboto", sans-serif;
+
+    background-color: #111;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.svg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+
+    width: 140px;
+    height: 140px;
+
+    opacity: 10%;
+}
+.svg_1 {
+    transform: rotate(0deg) translateX(-50%) translateY(-40%) scale(9);
+}
+.svg_2 {
+    transform: rotate(123deg) translateX(-50%) translateY(-40%) scale(10);
+}
+.svg_3 {
+    transform: rotate(213deg) translateX(-50%) translateY(-40%) scale(11);
+}
+
+.grid_box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: calc(calc(var(--index) * 1));
+
+}
+.box {
+    width: calc(var(--index) * 2);
+    height: calc(var(--index) * 2);
+    background-color: beige;
+}
+.box_1 {
+    background: #FFD900;
+    box-shadow: 0px 0px var(--size_shadow)#FFD900
+}
+.box_2 {
+    background: #00C12B;
+    box-shadow: 0px 0px var(--size_shadow)#00C12B
+}
+.box_3 {
+    background: #FF1800;
+    box-shadow: 0px 0px var(--size_shadow)#FF1800
+}
+.box_4 {
+    background: #554DD8;
+    box-shadow: 0px 0px var(--size_shadow)#554DD8
+}
+.box_5 {
+    background: #FF8300;
+    box-shadow: 0px 0px var(--size_shadow)#FF8300
+}
+.box_6 {
+    background: #3AAACF;
+    box-shadow: 0px 0px var(--size_shadow)#3AAACF
+}
+.box_7 {
+    background-color: red;
+    box-shadow: 0px 0px var(--size_shadow)red
+}
+.box_8 {
+    background-color: green;
+    box-shadow: 0px 0px var(--size_shadow)green
+}
+.box_9 {
+    background-color: yellow;
+    box-shadow: 0px 0px var(--size_shadow)yellow
+}
+.box_10 {
+    background: aqua;
+    box-shadow: 0px 0px var(--size_shadow)aqua
+}
+.box_11 {
+    background: deeppink;
+    box-shadow: 0px 0px var(--size_shadow)deeppink
+}
+.box_12 {
+    background: greenyellow;
+    box-shadow: 0px 0px var(--size_shadow)greenyellow
+}
