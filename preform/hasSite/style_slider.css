@@ -1,0 +1,32 @@
+.slider {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.slider_window {
+    width: calc(var(--index) * 32);
+    height: calc(var(--index) * 20);
+    background-color: aquamarine;
+}
+
+.slider_img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: aquamarine;
+
+    transition: background-image .3s ease;
+}
+
+.slider_pagination {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.slider_point {
+    width: 64px;
+    object-fit: cover;
+}
