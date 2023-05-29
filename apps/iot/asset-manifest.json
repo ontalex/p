@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/p/app/iot/static/css/main.55039991.css",
+    "main.js": "/p/app/iot/static/js/main.95cb05c7.js",
+    "static/media/devices.svg": "/p/app/iot/static/media/devices.862e1e1f838b857dfa98ca3412fa6e88.svg",
+    "static/media/profile.svg": "/p/app/iot/static/media/profile.b67c9c9eff4ad7f2e03cd482806a10f4.svg",
+    "index.html": "/p/app/iot/index.html",
+    "main.55039991.css.map": "/p/app/iot/static/css/main.55039991.css.map",
+    "main.95cb05c7.js.map": "/p/app/iot/static/js/main.95cb05c7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.55039991.css",
+    "static/js/main.95cb05c7.js"
+  ]
+}
