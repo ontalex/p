@@ -20,7 +20,7 @@
                 "alt": "JS"
             }
         ],
-        "description": "Пример использования пагинации. Подгрузка статей с <a href='jsonplaceholder.typicode.com'>JSONPlaceholder</a>.",
+        "description": "Пример использования пагинации. Подгрузка статей с JSONPlaceholder.",
         "web": "http://ontalex.github.io/p/preform/pagination",
         "github": "https://github.com/ontalex/p/tree/master/preform/pagination"
     },
