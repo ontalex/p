@@ -1,6 +1,31 @@
 [
     {
-        "title": "preform1",
+        "title": "Пагинация",
+        "picture": "pic/placeholder.png",
+        "used": [
+            {
+                "src": "icons/icon html.svg",
+                "alt": "HTML"
+            },
+            {
+                "src": "icons/icon scss.svg",
+                "alt": "SCSS"
+            },
+            {
+                "src": "icons/icon css.svg",
+                "alt": "CSS"
+            },
+            {
+                "src": "icons/icon js.svg",
+                "alt": "JS"
+            }
+        ],
+        "description": "Пример использования пагинации. Подгрузка статей с <a href='jsonplaceholder.typicode.com'>JSONPlaceholder</a>.",
+        "web": "http://ontalex.github.io/p/preform/pagination",
+        "github": "https://github.com/ontalex/p/tree/master/preform/pagination"
+    },
+    {
+        "title": "Генератор цветов",
         "picture": "pic/placeholder.png",
         "used": [
             {
@@ -16,8 +41,206 @@
                 "alt": "JS"
             }
         ],
-        "description": "Text about preform1",
-        "web": "http://ontalex.github.io/p/preform/preform1",
-        "github": "https://github.com/ontalex/p/tree/master/preform/preform1"
+        "description": "Генератор случайных цветов.",
+        "web": "http://ontalex.github.io/p/preform/randomColor",
+        "github": "https://github.com/ontalex/p/tree/master/preform/randomColor"
+    },
+    {
+        "title": "Анимации",
+        "picture": "pic/placeholder.png",
+        "used": [
+            {
+                "src": "icons/icon html.svg",
+                "alt": "HTML"
+            },
+            {
+                "src": "icons/icon css.svg",
+                "alt": "CSS"
+            },
+            {
+                "src": "icons/icon js.svg",
+                "alt": "JS"
+            }
+        ],
+        "description": "Использование анимаций библиотеки animejs ",
+        "web": "http://ontalex.github.io/p/preform/animeJS",
+        "github": "https://github.com/ontalex/p/tree/master/preform/animeJS"
+    },
+    {
+        "title": "HAS Home Page",
+        "picture": "pic/placeholder.png",
+        "used": [
+            {
+                "src": "icons/icon html.svg",
+                "alt": "HTML"
+            },
+            {
+                "src": "icons/icon scss.svg",
+                "alt": "SCSS"
+            },
+            {
+                "src": "icons/icon css.svg",
+                "alt": "CSS"
+            },
+            {
+                "src": "icons/icon js.svg",
+                "alt": "JS"
+            }
+        ],
+        "description": "Макет главной страницы магазина бытовой техники HAS (тема учебной практики колледжа).",
+        "web": "http://ontalex.github.io/p/preform/hasSite",
+        "github": "https://github.com/ontalex/p/tree/master/preform/hasSite"
+    },
+    {
+        "title": "Пространственная галерея",
+        "picture": "pic/placeholder.png",
+        "used": [
+            {
+                "src": "icons/icon html.svg",
+                "alt": "HTML"
+            },
+            {
+                "src": "icons/icon css.svg",
+                "alt": "CSS"
+            },
+            {
+                "src": "icons/icon js.svg",
+                "alt": "JS"
+            }
+        ],
+        "description": "Макет пространственной галереи (тема учебной практики колледжа).",
+        "web": "http://ontalex.github.io/p/preform/practic_galery",
+        "github": "https://github.com/ontalex/p/tree/master/preform/practic_galery"
+    },
+    {
+        "title": "Slider Parallax",
+        "picture": "pic/placeholder.png",
+        "used": [
+            {
+                "src": "icons/icon html.svg",
+                "alt": "HTML"
+            },
+            {
+                "src": "icons/icon css.svg",
+                "alt": "CSS"
+            },
+            {
+                "src": "icons/icon js.svg",
+                "alt": "JS"
+            }
+        ],
+        "description": "Макет слайдер с эффектом паралакса (тема учебной практики колледжа).",
+        "web": "http://ontalex.github.io/p/preform/practic_parallax_slider",
+        "github": "https://github.com/ontalex/p/tree/master/preform/practic_parallax_slider"
+    },
+    {
+        "title": "Reader v1",
+        "picture": "pic/placeholder.png",
+        "used": [
+            {
+                "src": "icons/icon html.svg",
+                "alt": "HTML"
+            },
+            {
+                "src": "icons/icon css.svg",
+                "alt": "CSS"
+            },
+            {
+                "src": "icons/icon js.svg",
+                "alt": "JS"
+            }
+        ],
+        "description": "Макет читалки первой версии.",
+        "web": "http://ontalex.github.io/p/preform/reader",
+        "github": "https://github.com/ontalex/p/tree/master/preform/reader"
+    },
+    {
+        "title": "Reader v2",
+        "picture": "pic/placeholder.png",
+        "used": [
+            {
+                "src": "icons/icon html.svg",
+                "alt": "HTML"
+            },
+            {
+                "src": "icons/icon css.svg",
+                "alt": "CSS"
+            },
+            {
+                "src": "icons/icon js.svg",
+                "alt": "JS"
+            }
+        ],
+        "description": "Макет читалки второй версии.",
+        "web": "http://ontalex.github.io/p/preform/readerInter",
+        "github": "https://github.com/ontalex/p/tree/master/preform/readerInter"
+    },
+    {
+        "title": "Окно входа",
+        "picture": "pic/placeholder.png",
+        "used": [
+            {
+                "src": "icons/icon html.svg",
+                "alt": "HTML"
+            },
+            {
+                "src": "icons/icon css.svg",
+                "alt": "CSS"
+            }
+        ],
+        "description": "Макет окна входа в аккаунт.",
+        "web": "http://ontalex.github.io/p/preform/signin",
+        "github": "https://github.com/ontalex/p/tree/master/preform/signin"
+    },
+    {
+        "title": "Touch Slider",
+        "picture": "pic/placeholder.png",
+        "used": [
+            {
+                "src": "icons/icon html.svg",
+                "alt": "HTML"
+            },
+            {
+                "src": "icons/icon scss.svg",
+                "alt": "SCSS"
+            }
+            ,
+            {
+                "src": "icons/icon css.svg",
+                "alt": "CSS"
+            },
+            {
+                "src": "icons/icon js.svg",
+                "alt": "JS"
+            }
+        ],
+        "description": "Макет галереи отзывов (работает только на смартфонах). Использует Touch события.",
+        "web": "http://ontalex.github.io/p/preform/touchSlider",
+        "github": "https://github.com/ontalex/p/tree/master/preform/touchSlider"
+    },
+    {
+        "title": "Размер Экрана",
+        "picture": "pic/placeholder.png",
+        "used": [
+            {
+                "src": "icons/icon html.svg",
+                "alt": "HTML"
+            },
+            {
+                "src": "icons/icon css.svg",
+                "alt": "CSS"
+            },
+            {
+                "src": "icons/icon scss.svg",
+                "alt": "SCSS"
+            },
+            {
+                "src": "icons/icon js.svg",
+                "alt": "JS"
+            }
+        ],
+        "description": "Инструмент просмотра размеров окна браузера. Иногда полезно при разработке.",
+        "web": "http://ontalex.github.io/p/preform/windowSize",
+        "github": "https://github.com/ontalex/p/tree/master/preform/windowSize"
     }
 ]
