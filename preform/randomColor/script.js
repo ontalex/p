@@ -28,7 +28,7 @@ for (let i = 0; i < cell.length; i++) {
 }
 
 for (let i = 0; i < cell.length; i++) {
-    colorsBG.push(randomColor(2, 14));
+    colorsBG.push(randomColor(0, 15));
     textCellArr.push(colorsBG[i]);
 }
 
