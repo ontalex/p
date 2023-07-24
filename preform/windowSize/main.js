@@ -1,4 +1,10 @@
-document.body.innerHTML = `<p>Window width: ${window.innerWidth} // Window height: ${window.innerHeight}</p>`;
-document.body.style.minHeight = window.innerHeight+"px";
+let spanWidth   = document.querySelector(".width");
+let spanHeight  = document.querySelector(".height");
 
-document.body.addEventListener("mouseup", ()=>{document.body.innerHTML = `<p>Window width: ${window.innerWidth} // Window height: ${window.innerHeight}</p>`;});
+let rerenderSpans = () => {
+    spanWidth.innerHTML     = window.innerWidth.toString();
+    spanHeight.innerHTML    = window.innerHeight.toString();
+}
+
+window.onload       = () => rerenderSpans();
+window.onresize     = () => rerenderSpans();
