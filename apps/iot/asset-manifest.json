@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/p/apps/iot/static/css/main.55039991.css",
-    "main.js": "/p/apps/iot/static/js/main.166b7e8d.js",
+    "main.css": "/p/apps/iot/static/css/main.7e4e6c5d.css",
+    "main.js": "/p/apps/iot/static/js/main.8ba0650b.js",
+    "static/media/activity.svg": "/p/apps/iot/static/media/activity.2408aee8c67a7d8d534d1f367486e184.svg",
+    "static/media/cog.svg": "/p/apps/iot/static/media/cog.260cb8933e7ba699fb945853afc56494.svg",
     "static/media/devices.svg": "/p/apps/iot/static/media/devices.862e1e1f838b857dfa98ca3412fa6e88.svg",
+    "static/media/theme_light.svg": "/p/apps/iot/static/media/theme_light.61b013f6e218cb8f7dcf39a250d8b02c.svg",
     "static/media/profile.svg": "/p/apps/iot/static/media/profile.b67c9c9eff4ad7f2e03cd482806a10f4.svg",
+    "static/media/theme_dark.svg": "/p/apps/iot/static/media/theme_dark.803cb84592a110425ff4cc91308b66a2.svg",
     "index.html": "/p/apps/iot/index.html",
-    "main.55039991.css.map": "/p/apps/iot/static/css/main.55039991.css.map",
-    "main.166b7e8d.js.map": "/p/apps/iot/static/js/main.166b7e8d.js.map"
+    "static/media/play.svg": "/p/apps/iot/static/media/play.9d1a505cb3b91c5e69697365dfeeab7a.svg",
+    "main.7e4e6c5d.css.map": "/p/apps/iot/static/css/main.7e4e6c5d.css.map",
+    "main.8ba0650b.js.map": "/p/apps/iot/static/js/main.8ba0650b.js.map"
   },
   "entrypoints": [
-    "static/css/main.55039991.css",
-    "static/js/main.166b7e8d.js"
+    "static/css/main.7e4e6c5d.css",
+    "static/js/main.8ba0650b.js"
   ]
 }
