@@ -3,12 +3,10 @@
 :root {
   --light_bg: #242320;
   --dark_bg: #1b1a17;
-  // --mark_text: #ff8303;
   --mark_text: #FF952D;
   --dark_mark_text: #dc832b;
   --text_color: #f0e3ca;
   --text_family_inconsolata: "Inconsolata", monospace;
-  // Regular, Medium, Bold
   --text_family_arial: "Arial";
   --margin_wrapper: 120px;
   --button-size: 32px;
@@ -260,9 +258,6 @@ main {
       width: inherit;
       height: inherit;
       border-radius: 56% 78% 49%/32% 97% 34%;
-      // top: 50%;
-      // left: 50%;
-      // transform: translate(-50%, -50%);
     }
 
     &--lavel1 {
@@ -276,7 +271,7 @@ main {
     }
 
     &--lavel3 {
-      background-image: url("pic/pic_face.webp");
+      background-image: url("pic/img/pic_face.webp");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -405,16 +400,16 @@ main {
     background-size: cover;
   }
   &_wrapper--1 {
-    background-image: url("pic/preview_layout_6.webp");
+    background-image: url("pic/img/preview_layout_6.webp");
   }
   &_wrapper--2 {
-    background-image: url("pic/preview_layout_5.webp");
+    background-image: url("pic/img/preview_layout_5.webp");
   }
   &_wrapper--3 {
-    background-image: url("pic/preview_layout_14.webp");
+    background-image: url("pic/img/preview_layout_14.webp");
   }
   &_wrapper--4 {
-    background-image: url("pic/Templates18.webp");
+    background-image: url("pic/img/Templates18.webp");
   }
   .project_name {
     color: var(--mark_text);
@@ -432,7 +427,7 @@ main {
     width: 80%;
   }
   .project_button {
-    padding: 8px 12px;
+    padding: 14px 20px;
     border-radius: 4px;
     background-color: var(--dark_bg);
     span {

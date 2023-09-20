@@ -1,71 +1,68 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://ontalex.github.io/p/general_lib/normaliz.css"
-    />
-    <link rel="shortcut icon" href="logo.svg" type="image/x-icon" />
-    <title>Портфолио Алексея Борисова (ontalex)</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="wrapper wrapper--header">
-        <img class="header_logo" src="pic/logo_me.svg" alt="логотип страницы" />
-        <menu class="header_menu">
-          <a class="header_item" href="#about">
-            <span class="header_item--text">About Me</span>
-          </a>
-          <a class="header_item" href="#skills">
-            <span class="header_item--text">Skills</span>
-          </a>
-          <a class="header_item" href="#projects">
-            <span class="header_item--text">Pet-Projects</span>
-          </a>
-          <a class="header_item" href="#contacts">
-            <span class="header_item--text">Contacts</span>
-          </a>
-        </menu>
-        <button class="header_button" id="header_button">
-          <!-- <img class="header_button--open" src="pic/icon_menu--open.svg" alt="">
-        <img class="header_button--close header_button--hidden" src="pic/icon_menu--close.svg" alt=""> -->
-          <div class="button_line button_line--top"></div>
-          <div class="button_line button_line--center"></div>
-          <div class="button_line button_line--button"></div>
-        </button>
-      </div>
-      <menu class="menu_box menu_box--hidden">
-        <!--Прописать эту секцию в стилях-->
-        <a class="menu_link" href="#about">
-          <span class="menu_box--text">About Me</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://ontalex.github.io/p/general_lib/normaliz.css" />
+  <link rel="shortcut icon" href="pic/icons/logo.svg" type="image/x-icon" />
+  <title>Портфолио Алексея Борисова (ontalex)</title>
+</head>
+
+<body>
+  <header>
+    <div class="wrapper wrapper--header">
+      <img class="header_logo" src="pic/icons/logo_me.svg" alt="логотип страницы" />
+      <menu class="header_menu">
+        <a class="header_item" href="#about">
+          <span class="header_item--text">Про меня</span>
         </a>
-        <a class="menu_link" href="#skills">
-          <span class="menu_box--text">Skills</span>
+        <a class="header_item" href="#skills">
+          <span class="header_item--text">Навыки</span>
         </a>
-        <a class="menu_link" href="#projects">
-          <span class="menu_box--text">Pet-Projects</span>
+        <a class="header_item" href="#projects">
+          <span class="header_item--text">Работы</span>
         </a>
-        <a class="menu_link" href="#contacts">
-          <span class="menu_box--text">Contacts</span>
+        <a class="header_item" href="#contacts">
+          <span class="header_item--text">Контакты</span>
         </a>
       </menu>
-    </header>
-    <div class="hello" id="about">
-      <div class="hello_text">
-        <h1 class="hello_name">Aleksey&nbsp;Borisov</h1>
-        <h2 class="hello_profession">Frontend&nbsp;Developer</h2>
-        <p class="hello_description">
-          Frontend developer looking for ideas and projects for himself and
-          others
-        </p>
-      </div>
-      <div class="hello_baner">
-        <div class="hello_boxCode">
-          <pre class="hello_code" lang="javascript">
+      <button class="header_button" id="header_button">
+        <!-- <img class="header_button--open" src="pic/icons/icon_menu--open.svg" alt="">
+        <img class="header_button--close header_button--hidden" src="pic/icons/icon_menu--close.svg" alt=""> -->
+        <div class="button_line button_line--top"></div>
+        <div class="button_line button_line--center"></div>
+        <div class="button_line button_line--button"></div>
+      </button>
+    </div>
+    <menu class="menu_box menu_box--hidden">
+      <!--Прописать эту секцию в стилях-->
+      <a class="menu_link" href="#about">
+        <span class="menu_box--text">Про меня</span>
+      </a>
+      <a class="menu_link" href="#skills">
+        <span class="menu_box--text">Навыки</span>
+      </a>
+      <a class="menu_link" href="#projects">
+        <span class="menu_box--text">Работы</span>
+      </a>
+      <a class="menu_link" href="#contacts">
+        <span class="menu_box--text">Контакты</span>
+      </a>
+    </menu>
+  </header>
+  <div class="hello" id="about">
+    <div class="hello_text">
+      <h1 class="hello_name">Алексей&nbsp;Борисов</h1>
+      <h2 class="hello_profession">Frontend-разработчик</h2>
+      <p class="hello_description">
+        Frontend-разработчик, в совершенстве владеющий основами своей профессии и жаждущий новых знаний и инновационных идей.
+      </p>
+    </div>
+    <div class="hello_baner">
+      <div class="hello_boxCode">
+        <pre class="hello_code" lang="javascript">
 let button_menu = document.querySelector(".header_button");
 let float_menu  = document.querySelector(".header_menu--float");
 
@@ -98,160 +95,138 @@ function addEffectWriting(element, time) {
   writeSymbols();
 }
           
-                </pre
-          >
+                </pre>
+      </div>
+      <div class="hello_pic">
+        <div class="hello_anim hello_pic--lavel hello_pic--lavel1"></div>
+        <div class="hello_anim hello_pic--lavel hello_pic--lavel2"></div>
+        <div class="hello_anim hello_pic--lavel hello_pic--lavel3"></div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="about">
+      <div class="wrapper wrapper--about">
+        <img class="about_logo" src="pic/icons/logo_min.svg" alt="" />
+        <p class="about_text" id="skills">
+          Несколько лет назад у меня появился интерес к разработке веб-сайтов и пользовательских интерфейсов. С тех пор
+          я стремлюсь постоянно совершенствовать свои навыки. В настоящее время я разрабатываю веб-сайты и
+          веб-приложения как для собственного удовольствия, так и могу выполнять заказы на их разработку.
+        </p>
+      </div>
+    </div>
+    <div class="skills" id="skills">
+      <h1 class="skills_header">Мои навыки</h1>
+      <div class="skills_line">
+        <div class="skills_card skills_card--html">
+          <img src="pic/icons/icon_html.svg" alt="" />
+          <p>HTML</p>
         </div>
-        <div class="hello_pic">
-          <div class="hello_anim hello_pic--lavel hello_pic--lavel1"></div>
-          <div class="hello_anim hello_pic--lavel hello_pic--lavel2"></div>
-          <div class="hello_anim hello_pic--lavel hello_pic--lavel3"></div>
+        <div class="skills_card skills_card--css">
+          <img src="pic/icons/icon_css.svg" alt="" />
+          <p>CSS</p>
+        </div>
+        <div class="skills_card skills_card--js">
+          <img src="pic/icons/icon_js.svg" alt="" />
+          <p>JavaScript</p>
+        </div>
+        <div class="skills_card skills_card--scss">
+          <img src="pic/icons/icon_scss.svg" alt="" />
+          <p>SCSS</p>
+        </div>
+        <div class="skills_card skills_card--git">
+          <img src="pic/icons/icon_git.svg" alt="" />
+          <p>Git</p>
         </div>
       </div>
     </div>
-    <main>
-      <div class="about">
-        <div class="wrapper wrapper--about">
-          <img class="about_logo" src="pic/logo_min.svg" alt="" />
-          <p class="about_text" id="skills">
-            A few years ago, I became interested in developing websites and
-            interfaces. Since then, I have been steadily improving my skills.
-            Now I am developing websites and web applications to order or for
-            myself.
-          </p>
-        </div>
-      </div>
-      <div class="skills" id="skills">
-        <h1 class="skills_header">My Skills</h1>
-        <div class="skills_line">
-          <div class="skills_card skills_card--html">
-            <img src="pic/icon_html.svg" alt="" />
-            <p>HTML</p>
-          </div>
-          <div class="skills_card skills_card--css">
-            <img src="pic/icon_css.svg" alt="" />
-            <p>CSS</p>
-          </div>
-          <div class="skills_card skills_card--js">
-            <img src="pic/icon_js.svg" alt="" />
-            <p>JavaScript</p>
-          </div>
-          <div class="skills_card skills_card--scss">
-            <img src="pic/icon_scss.svg" alt="" />
-            <p>SCSS</p>
-          </div>
-          <div class="skills_card skills_card--git">
-            <img src="pic/icon_git.svg" alt="" />
-            <p>Git</p>
+    <div class="portfolio" id="projects">
+      <h1 class="portfolio_header">Мои работы</h1>
+      <div class="portfolio_line">
+        <div class="portfolio_wrapper portfolio_wrapper--1">
+          <div class="portfolio_card">
+            <h2 class="project_name">News Blog</h2>
+            <p class="project_technologies">HTML\CSS</p>
+            <div class="project_line"></div>
+            <p class="project_description">
+              It can adapt to the theme and size of the device. One of the
+              simple projects.
+            </p>
+            <a href="layouts/newsBlog/index.html" target="_blank" rel="noopener noreferrer" class="project_button">
+              <span></span>
+            </a>
           </div>
         </div>
-      </div>
-      <div class="portfolio" id="projects">
-        <h1 class="portfolio_header">My Works</h1>
-        <div class="portfolio_line">
-          <div class="portfolio_wrapper portfolio_wrapper--1">
-            <div class="portfolio_card">
-              <h2 class="project_name">News Blog</h2>
-              <p class="project_technologies">HTML\CSS</p>
-              <div class="project_line"></div>
-              <p class="project_description">
-                It can adapt to the theme and size of the device. One of the
-                simple projects.
-              </p>
-              <a
-                href="layouts/newsBlog/index.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project_button"
-              >
-                <span>See more →</span>
-              </a>
-            </div>
+        <div class="portfolio_wrapper portfolio_wrapper--2">
+          <div class="portfolio_card">
+            <h2 class="project_name">Porten</h2>
+            <p class="project_technologies">HTML\CSS</p>
+            <div class="project_line"></div>
+            <p class="project_description">
+              It can adapt to the size of the device.
+            </p>
+            <a href="layouts/porten/index.html" target="_blank" rel="noopener noreferrer" class="project_button">
+              <span>See more →</span>
+            </a>
           </div>
-          <div class="portfolio_wrapper portfolio_wrapper--2">
-            <div class="portfolio_card">
-              <h2 class="project_name">Porten</h2>
-              <p class="project_technologies">HTML\CSS</p>
-              <div class="project_line"></div>
-              <p class="project_description">
-                It can adapt to the size of the device.
-              </p>
-              <a
-                href="layouts/porten/index.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project_button"
-              >
-                <span>See more →</span>
-              </a>
-            </div>
+        </div>
+        <div class="portfolio_wrapper portfolio_wrapper--3">
+          <div class="portfolio_card">
+            <h2 class="project_name">Travel to dream</h2>
+            <p class="project_technologies">HTML\CSS, JS</p>
+            <div class="project_line"></div>
+            <p class="project_description">
+              It can adapt to size of the device. It have slider and Accordion
+            </p>
+            <a href="layouts/travelToDream/index.html" target="_blank" rel="noopener noreferrer" class="project_button">
+              <span>See more →</span>
+            </a>
           </div>
-          <div class="portfolio_wrapper portfolio_wrapper--3">
-            <div class="portfolio_card">
-              <h2 class="project_name">Travel to dream</h2>
-              <p class="project_technologies">HTML\CSS, JS</p>
-              <div class="project_line"></div>
-              <p class="project_description">
-                It can adapt to size of the device. It have slider and Accordion
-              </p>
-              <a
-                href="layouts/travelToDream/index.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project_button"
-              >
-                <span>See more →</span>
-              </a>
-            </div>
-          </div>
-          <div class="portfolio_wrapper portfolio_wrapper--4">
-            <div class="portfolio_card">
-              <h2 class="project_name">PCAssembly</h2>
-              <p class="project_technologies">HTML\CSS, SCSS</p>
-              <div class="project_line"></div>
-              <p class="project_description">
-                Someone layout
-              </p>
-              <a
-                href="layouts/PCAssembly/index.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project_button"
-              >
-                <span>See more →</span>
-              </a>
-            </div>
+        </div>
+        <div class="portfolio_wrapper portfolio_wrapper--4">
+          <div class="portfolio_card">
+            <h2 class="project_name">PCAssembly</h2>
+            <p class="project_technologies">HTML\CSS, SCSS</p>
+            <div class="project_line"></div>
+            <p class="project_description">
+              Someone layout
+            </p>
+            <a href="layouts/PCAssembly/index.html" target="_blank" rel="noopener noreferrer" class="project_button">
+              <span>See more →</span>
+            </a>
           </div>
         </div>
       </div>
-    </main>
-    <footer class="footer" id="contacts"> 
-      <div class="footer_about">
-        <!-- <img class="footer_logo" src="pic/logo_me.svg" alt=""> -->
-        <p class="footer_description">If you liked my work and you need me, I'm ready to talk to you. :)</p>
-      </div>
-      <div class="footer_contacts">
-        <h1 class="footer_header">Contacts</h1>
-        <ul class="footer_list">
-          <li class="footer_item">
-            <img class="footer_icon" src="pic/icon_mail.svg" alt="">
-            <a class="footer_link" href="mailto:ontalex@ya.ru">ontalex@ya.ru</a>
-          </li>
-          <li class="footer_item">
-            <img class="footer_icon" src="pic/icon_vk.svg" alt="">
-            <a class="footer_link" href="https://vk.com/ontalex">@ontalex</a>
-          </li>
-          <li class="footer_item">
-            <img class="footer_icon" src="pic/icon_github.svg" alt="">
-            <a class="footer_link" href="https://github.com/ontalex">Ontalex</a>
-          </li>
-          <li class="footer_item">
-            <img class="footer_icon" src="pic/icon_figma.svg" alt="">
-            <a class="footer_link" href="https://figma.com/@ontalex">Ontalex</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </body>
-  <script src="https://animejs.com/lib/anime.min.js"></script>
-  <script src="main.js"></script>
+    </div>
+  </main>
+  <footer class="footer" id="contacts">
+    <div class="footer_about">
+      <p class="footer_description">Если вам понравились мои работы и умения, я всегда готов пообщаться с вами и обсудить возможное сотрудничество. :)</p>
+    </div>
+    <div class="footer_contacts">
+      <h1 class="footer_header">Контакты</h1>
+      <ul class="footer_list">
+        <li class="footer_item">
+          <img class="footer_icon" src="pic/icons/icon_mail.svg" alt="">
+          <a class="footer_link" href="mailto:ontalex@ya.ru">ontalex@ya.ru</a>
+        </li>
+        <li class="footer_item">
+          <img class="footer_icon" src="pic/icons/icon_vk.svg" alt="">
+          <a class="footer_link" href="https://vk.com/ontalex">@ontalex</a>
+        </li>
+        <li class="footer_item">
+          <img class="footer_icon" src="pic/icons/icon_github.svg" alt="">
+          <a class="footer_link" href="https://github.com/ontalex">Ontalex</a>
+        </li>
+        <li class="footer_item">
+          <img class="footer_icon" src="pic/icons/icon_figma.svg" alt="">
+          <a class="footer_link" href="https://figma.com/@ontalex">Ontalex</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+<script src="https://animejs.com/lib/anime.min.js"></script>
+<script src="main.js"></script>
+
 </html>
