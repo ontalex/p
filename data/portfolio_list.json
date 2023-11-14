@@ -60,7 +60,7 @@
                 }
             ],
             "link": "/p/layouts/porten",
-            "bg": "pic/img/preview_layout_6.webp"
+            "bg": "pic/img/preview_layout_5.webp"
         },
         {
             "name": "Travel to dream",
@@ -76,7 +76,7 @@
                 }
             ],
             "link": "/p/layouts/travelToDream",
-            "bg": "pic/img/preview_layout_6.webp"
+            "bg": "pic/img/preview_layout_14.webp"
         },
         {
             "name": "PC Assembly",
@@ -92,7 +92,7 @@
                 }
             ],
             "link": "/p/layouts/PCAssembly",
-            "bg": "pic/img/preview_layout_6.webp"
+            "bg": "pic/img/Templates18.webp"
         }
     ]
 }
