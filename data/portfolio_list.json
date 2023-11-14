@@ -2,31 +2,31 @@
     "skills": [
         {
             "name": "HTML",
-            "icon": "icons/icon_html.svg"
+            "icon": "data/icons/icon_html.svg"
         },
         {
             "name": "CSS",
-            "icon": "icons/icon_css.svg"
+            "icon": "data/icons/icon_css.svg"
         },
         {
             "name": "JavaScript",
-            "icon": "icons/icon_js.svg"
+            "icon": "data/icons/icon_js.svg"
         },
         {
             "name": "SCSS",
-            "icon": "icons/icon_scss.svg"
+            "icon": "data/icons/icon_scss.svg"
         },
         {
             "name": "GIT",
-            "icon": "icons/icon_git.svg"
+            "icon": "data/icons/icon_git.svg"
         },
         {
             "name": "TailwindCSS",
-            "icon": "icons/icon_tailwindcss.svg"
+            "icon": "data/icons/icon_tailwindcss.svg"
         },
         {
             "name": "React JS",
-            "icon": "icons/icon_react.svg"
+            "icon": "data/icons/icon_react.svg"
         }
     ],
     "projects": [
@@ -36,14 +36,15 @@
             "skills": [
                 {
                     "name": "HTML",
-                    "icon": "icons/icon_html.svg"
+                    "icon": "data/icons/icon_html.svg"
                 },
                 {
                     "name": "CSS",
-                    "icon": "icons/icon_css.svg"
+                    "icon": "data/icons/icon_css.svg"
                 }
             ],
-            "link": "/p/layouts/newsBlog"
+            "link": "/p/layouts/newsBlog",
+            "bg": "pic/img/preview_layout_6.webp"
         },
         {
             "name": "Porten",
@@ -51,14 +52,15 @@
             "skills": [
                 {
                     "name": "HTML",
-                    "icon": "icons/icon_html.svg"
+                    "icon": "data/icons/icon_html.svg"
                 },
                 {
                     "name": "CSS",
-                    "icon": "icons/icon_css.svg"
+                    "icon": "data/icons/icon_css.svg"
                 }
             ],
-            "link": "/p/layouts/porten"
+            "link": "/p/layouts/porten",
+            "bg": "pic/img/preview_layout_6.webp"
         },
         {
             "name": "Travel to dream",
@@ -66,14 +68,15 @@
             "skills": [
                 {
                     "name": "HTML",
-                    "icon": "icons/icon_html.svg"
+                    "icon": "data/icons/icon_html.svg"
                 },
                 {
                     "name": "CSS",
-                    "icon": "icons/icon_css.svg"
+                    "icon": "data/icons/icon_css.svg"
                 }
             ],
-            "link": "/p/layouts/travelToDream"
+            "link": "/p/layouts/travelToDream",
+            "bg": "pic/img/preview_layout_6.webp"
         },
         {
             "name": "PC Assembly",
@@ -81,14 +84,15 @@
             "skills": [
                 {
                     "name": "HTML",
-                    "icon": "icons/icon_html.svg"
+                    "icon": "data/icons/icon_html.svg"
                 },
                 {
                     "name": "CSS",
-                    "icon": "icons/icon_css.svg"
+                    "icon": "data/icons/icon_css.svg"
                 }
             ],
-            "link": "/p/layouts/PCAssembly"
+            "link": "/p/layouts/PCAssembly",
+            "bg": "pic/img/preview_layout_6.webp"
         }
     ]
 }
