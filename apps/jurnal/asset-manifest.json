@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/p/apps/jurnal/static/css/main.1e45c768.css",
-    "main.js": "/p/apps/jurnal/static/js/main.561643b7.js",
+    "main.css": "/p/apps/jurnal/static/css/main.955e10e4.css",
+    "main.js": "/p/apps/jurnal/static/js/main.d8860e17.js",
     "static/media/logo.svg": "/p/apps/jurnal/static/media/logo.6f47a1b32b87b5066ef31735ca3c93e8.svg",
     "static/media/edit_icon.svg": "/p/apps/jurnal/static/media/edit_icon.f3e5f696b7f64284863678e317252605.svg",
     "static/media/calendar_icon.svg": "/p/apps/jurnal/static/media/calendar_icon.0eaedc805c131b1bfefd890598144dce.svg",
@@ -13,11 +13,13 @@
     "index.html": "/p/apps/jurnal/index.html",
     "static/media/home_icon.svg": "/p/apps/jurnal/static/media/home_icon.1af1edc6b76649e307cff278d2f4c965.svg",
     "static/media/export_icon.svg": "/p/apps/jurnal/static/media/export_icon.b33e7109579f7c81d57ed5965ad1dce9.svg",
-    "main.1e45c768.css.map": "/p/apps/jurnal/static/css/main.1e45c768.css.map",
-    "main.561643b7.js.map": "/p/apps/jurnal/static/js/main.561643b7.js.map"
+    "static/media/bar_shart.svg": "/p/apps/jurnal/static/media/bar_shart.19db1aa01a9988728732eefd7029e477.svg",
+    "static/media/caret_right.svg": "/p/apps/jurnal/static/media/caret_right.b6c1e75636a6ef4435873d78a408cee9.svg",
+    "main.955e10e4.css.map": "/p/apps/jurnal/static/css/main.955e10e4.css.map",
+    "main.d8860e17.js.map": "/p/apps/jurnal/static/js/main.d8860e17.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e45c768.css",
-    "static/js/main.561643b7.js"
+    "static/css/main.955e10e4.css",
+    "static/js/main.d8860e17.js"
   ]
 }
