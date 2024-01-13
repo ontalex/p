@@ -1,25 +1,24 @@
 {
   "files": {
-    "main.css": "/p/apps/jurnal/static/css/main.c35a288b.css",
-    "main.js": "/p/apps/jurnal/static/js/main.6bb3425a.js",
+    "main.css": "/p/apps/jurnal/static/css/main.f4fc0c38.css",
+    "main.js": "/p/apps/jurnal/static/js/main.469395ba.js",
     "static/media/logo.svg": "/p/apps/jurnal/static/media/logo.6f47a1b32b87b5066ef31735ca3c93e8.svg",
     "static/media/edit_icon.svg": "/p/apps/jurnal/static/media/edit_icon.f3e5f696b7f64284863678e317252605.svg",
     "static/media/calendar_icon.svg": "/p/apps/jurnal/static/media/calendar_icon.0eaedc805c131b1bfefd890598144dce.svg",
     "static/media/notebook_icon.svg": "/p/apps/jurnal/static/media/notebook_icon.09163f0dfb493859aa6cf8712392fcfc.svg",
     "static/media/logout_icon.svg": "/p/apps/jurnal/static/media/logout_icon.8f32b27a1bbb99d41258d95daeff29d5.svg",
     "static/media/pluse_icon.svg": "/p/apps/jurnal/static/media/pluse_icon.27c42062ba1ac606fb02538656b5eb7a.svg",
-    "static/media/profile_icon.svg": "/p/apps/jurnal/static/media/profile_icon.611f2b12da9fd1372ada6470c4c052c2.svg",
     "static/media/delete_icon.svg": "/p/apps/jurnal/static/media/delete_icon.10b335f283ee80bbfc6ee8ed2b014a14.svg",
     "index.html": "/p/apps/jurnal/index.html",
     "static/media/home_icon.svg": "/p/apps/jurnal/static/media/home_icon.1af1edc6b76649e307cff278d2f4c965.svg",
-    "static/media/export_icon.svg": "/p/apps/jurnal/static/media/export_icon.b33e7109579f7c81d57ed5965ad1dce9.svg",
+    "static/media/menu_icon.svg": "/p/apps/jurnal/static/media/menu_icon.dfc2bd2cfc43f131c897a26ccc786e9a.svg",
     "static/media/bar_shart.svg": "/p/apps/jurnal/static/media/bar_shart.19db1aa01a9988728732eefd7029e477.svg",
     "static/media/caret_right.svg": "/p/apps/jurnal/static/media/caret_right.b6c1e75636a6ef4435873d78a408cee9.svg",
-    "main.c35a288b.css.map": "/p/apps/jurnal/static/css/main.c35a288b.css.map",
-    "main.6bb3425a.js.map": "/p/apps/jurnal/static/js/main.6bb3425a.js.map"
+    "main.f4fc0c38.css.map": "/p/apps/jurnal/static/css/main.f4fc0c38.css.map",
+    "main.469395ba.js.map": "/p/apps/jurnal/static/js/main.469395ba.js.map"
   },
   "entrypoints": [
-    "static/css/main.c35a288b.css",
-    "static/js/main.6bb3425a.js"
+    "static/css/main.f4fc0c38.css",
+    "static/js/main.469395ba.js"
   ]
 }
