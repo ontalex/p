@@ -73,7 +73,11 @@
                 {
                     "name": "CSS",
                     "icon": "data/icons/icon_css.svg"
-                }
+                },
+                {
+                    "name": "JavaScript",
+                    "icon": "data/icons/icon_js.svg"
+                },
             ],
             "link": "/p/layouts/travelToDream",
             "bg": "pic/img/preview_layout_14.webp"
