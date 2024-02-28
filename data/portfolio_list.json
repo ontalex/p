@@ -1,102 +1,104 @@
-{
-    "skills": [
-        {
-            "name": "HTML",
-            "icon": "data/icons/icon_html.svg"
-        },
-        {
-            "name": "CSS",
-            "icon": "data/icons/icon_css.svg"
-        },
-        {
-            "name": "JavaScript",
-            "icon": "data/icons/icon_js.svg"
-        },
-        {
-            "name": "SCSS",
-            "icon": "data/icons/icon_scss.svg"
-        },
-        {
-            "name": "GIT",
-            "icon": "data/icons/icon_git.svg"
-        },
-        {
-            "name": "TailwindCSS",
-            "icon": "data/icons/icon_tailwindcss.svg"
-        },
-        {
-            "name": "React JS",
-            "icon": "data/icons/icon_react.svg"
-        }
-    ],
-    "projects": [
-        {
-            "name": "News Blog",
-            "description": "Макет нововостной страницы. Использует свуетую тему и тёмную как в системе.",
-            "skills": [
-                {
-                    "name": "HTML",
-                    "icon": "data/icons/icon_html.svg"
-                },
-                {
-                    "name": "CSS",
-                    "icon": "data/icons/icon_css.svg"
-                }
-            ],
-            "link": "/p/layouts/newsBlog",
-            "bg": "pic/img/preview_layout_6.webp"
-        },
-        {
-            "name": "Porten",
-            "description": "Макет интернет-магазина премиальной одежды.",
-            "skills": [
-                {
-                    "name": "HTML",
-                    "icon": "data/icons/icon_html.svg"
-                },
-                {
-                    "name": "CSS",
-                    "icon": "data/icons/icon_css.svg"
-                }
-            ],
-            "link": "/p/layouts/porten",
-            "bg": "pic/img/preview_layout_5.webp"
-        },
-        {
-            "name": "Travel to dream",
-            "description": "Макет сайта туристичекого агентсва.",
-            "skills": [
-                {
-                    "name": "HTML",
-                    "icon": "data/icons/icon_html.svg"
-                },
-                {
-                    "name": "CSS",
-                    "icon": "data/icons/icon_css.svg"
-                },
-                {
-                    "name": "JavaScript",
-                    "icon": "data/icons/icon_js.svg"
-                },
-            ],
-            "link": "/p/layouts/travelToDream",
-            "bg": "pic/img/preview_layout_14.webp"
-        },
-        {
-            "name": "PC Assembly",
-            "description": "Макет сайта курсов по сборке ПК.",
-            "skills": [
-                {
-                    "name": "HTML",
-                    "icon": "data/icons/icon_html.svg"
-                },
-                {
-                    "name": "CSS",
-                    "icon": "data/icons/icon_css.svg"
-                }
-            ],
-            "link": "/p/layouts/PCAssembly",
-            "bg": "pic/img/Templates18.webp"
-        }
-    ]
-}
+[
+    {
+        "skills": [
+            {
+                "name": "HTML",
+                "icon": "data/icons/icon_html.svg"
+            },
+            {
+                "name": "CSS",
+                "icon": "data/icons/icon_css.svg"
+            },
+            {
+                "name": "JavaScript",
+                "icon": "data/icons/icon_js.svg"
+            },
+            {
+                "name": "SCSS",
+                "icon": "data/icons/icon_scss.svg"
+            },
+            {
+                "name": "GIT",
+                "icon": "data/icons/icon_git.svg"
+            },
+            {
+                "name": "TailwindCSS",
+                "icon": "data/icons/icon_tailwindcss.svg"
+            },
+            {
+                "name": "React JS",
+                "icon": "data/icons/icon_react.svg"
+            }
+        ],
+        "projects": [
+            {
+                "name": "News Blog",
+                "description": "Макет нововостной страницы. Использует свуетую тему и тёмную как в системе.",
+                "skills": [
+                    {
+                        "name": "HTML",
+                        "icon": "data/icons/icon_html.svg"
+                    },
+                    {
+                        "name": "CSS",
+                        "icon": "data/icons/icon_css.svg"
+                    }
+                ],
+                "link": "layouts/newsBlog",
+                "bg": "pic/img/preview_layout_6.webp"
+            },
+            {
+                "name": "Porten",
+                "description": "Макет интернет-магазина премиальной одежды.",
+                "skills": [
+                    {
+                        "name": "HTML",
+                        "icon": "data/icons/icon_html.svg"
+                    },
+                    {
+                        "name": "CSS",
+                        "icon": "data/icons/icon_css.svg"
+                    }
+                ],
+                "link": "layouts/porten",
+                "bg": "pic/img/preview_layout_5.webp"
+            },
+            {
+                "name": "Travel to dream",
+                "description": "Макет сайта туристичекого агентсва.",
+                "skills": [
+                    {
+                        "name": "HTML",
+                        "icon": "data/icons/icon_html.svg"
+                    },
+                    {
+                        "name": "CSS",
+                        "icon": "data/icons/icon_css.svg"
+                    },
+                    {
+                        "name": "JavaScript",
+                        "icon": "data/icons/icon_js.svg"
+                    }
+                ],
+                "link": "layouts/travelToDream",
+                "bg": "pic/img/preview_layout_14.webp"
+            },
+            {
+                "name": "PC Assembly",
+                "description": "Макет сайта курсов по сборке ПК.",
+                "skills": [
+                    {
+                        "name": "HTML",
+                        "icon": "data/icons/icon_html.svg"
+                    },
+                    {
+                        "name": "CSS",
+                        "icon": "data/icons/icon_css.svg"
+                    }
+                ],
+                "link": "layouts/PCAssembly",
+                "bg": "pic/img/Templates18.webp"
+            }
+        ]
+    }
+]
