@@ -4,7 +4,7 @@ let menu_box = document.querySelector(".menu_box");
 
 button_menu.isSelected = false;
 
-function addEffectWriting(element, time) {
+function addEffectWriting(element) {
     let element_array = element.innerText.split("");
 
     element.count = 0;
@@ -15,9 +15,7 @@ function addEffectWriting(element, time) {
         element.count++;
 
         if (element.count <= element_array.length) {
-            setTimeout(() => {
-                writeSymbols();
-            }, time);
+            requestAnimationFrame(writeSymbols)
         } else if (element.count >= element_array.length) {
             element.count = 0;
             element.innerText = "";
@@ -45,7 +43,7 @@ function fixing_floatMenu() {
 button_menu.addEventListener("click", close_openMenu);
 window.addEventListener("scroll", fixing_floatMenu);
 
-addEffectWriting(document.querySelector(".hello_code"), 4);
+addEffectWriting(document.querySelector(".hello_code"));
 
 // Anime JS
 let skills_anim = anime({
