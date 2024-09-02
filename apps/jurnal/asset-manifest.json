@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/p/apps/jurnal/static/css/main.021af97b.css",
-    "main.js": "/p/apps/jurnal/static/js/main.e140fed4.js",
+    "main.js": "/p/apps/jurnal/static/js/main.7519101d.js",
     "static/media/logo.svg": "/p/apps/jurnal/static/media/logo.6f47a1b32b87b5066ef31735ca3c93e8.svg",
     "static/media/edit_icon.svg": "/p/apps/jurnal/static/media/edit_icon.f3e5f696b7f64284863678e317252605.svg",
     "static/media/calendar_icon.svg": "/p/apps/jurnal/static/media/calendar_icon.0eaedc805c131b1bfefd890598144dce.svg",
@@ -15,10 +15,10 @@
     "static/media/bar_shart.svg": "/p/apps/jurnal/static/media/bar_shart.19db1aa01a9988728732eefd7029e477.svg",
     "static/media/caret_right.svg": "/p/apps/jurnal/static/media/caret_right.b6c1e75636a6ef4435873d78a408cee9.svg",
     "main.021af97b.css.map": "/p/apps/jurnal/static/css/main.021af97b.css.map",
-    "main.e140fed4.js.map": "/p/apps/jurnal/static/js/main.e140fed4.js.map"
+    "main.7519101d.js.map": "/p/apps/jurnal/static/js/main.7519101d.js.map"
   },
   "entrypoints": [
     "static/css/main.021af97b.css",
-    "static/js/main.e140fed4.js"
+    "static/js/main.7519101d.js"
   ]
 }
