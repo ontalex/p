@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/p/apps/jurnal/static/css/main.0058adc4.css",
-    "main.js": "/p/apps/jurnal/static/js/main.882472f7.js",
+    "main.js": "/p/apps/jurnal/static/js/main.68fa9253.js",
     "static/css/675.45ae240b.chunk.css": "/p/apps/jurnal/static/css/675.45ae240b.chunk.css",
     "static/js/675.101bc7d1.chunk.js": "/p/apps/jurnal/static/js/675.101bc7d1.chunk.js",
     "static/css/987.7b8fa1e5.chunk.css": "/p/apps/jurnal/static/css/987.7b8fa1e5.chunk.css",
@@ -11,7 +11,7 @@
     "static/css/132.68785a46.chunk.css": "/p/apps/jurnal/static/css/132.68785a46.chunk.css",
     "static/js/132.0eda6169.chunk.js": "/p/apps/jurnal/static/js/132.0eda6169.chunk.js",
     "static/css/790.37843ca0.chunk.css": "/p/apps/jurnal/static/css/790.37843ca0.chunk.css",
-    "static/js/790.01bfc7f0.chunk.js": "/p/apps/jurnal/static/js/790.01bfc7f0.chunk.js",
+    "static/js/790.5324c814.chunk.js": "/p/apps/jurnal/static/js/790.5324c814.chunk.js",
     "static/css/819.6f8fc8b5.chunk.css": "/p/apps/jurnal/static/css/819.6f8fc8b5.chunk.css",
     "static/js/819.92cbb38d.chunk.js": "/p/apps/jurnal/static/js/819.92cbb38d.chunk.js",
     "static/css/709.02ccff44.chunk.css": "/p/apps/jurnal/static/css/709.02ccff44.chunk.css",
@@ -40,7 +40,7 @@
     "static/media/bar_shart.svg": "/p/apps/jurnal/static/media/bar_shart.19db1aa01a9988728732eefd7029e477.svg",
     "static/media/caret_right.svg": "/p/apps/jurnal/static/media/caret_right.b6c1e75636a6ef4435873d78a408cee9.svg",
     "main.0058adc4.css.map": "/p/apps/jurnal/static/css/main.0058adc4.css.map",
-    "main.882472f7.js.map": "/p/apps/jurnal/static/js/main.882472f7.js.map",
+    "main.68fa9253.js.map": "/p/apps/jurnal/static/js/main.68fa9253.js.map",
     "675.45ae240b.chunk.css.map": "/p/apps/jurnal/static/css/675.45ae240b.chunk.css.map",
     "675.101bc7d1.chunk.js.map": "/p/apps/jurnal/static/js/675.101bc7d1.chunk.js.map",
     "987.7b8fa1e5.chunk.css.map": "/p/apps/jurnal/static/css/987.7b8fa1e5.chunk.css.map",
@@ -49,7 +49,7 @@
     "132.68785a46.chunk.css.map": "/p/apps/jurnal/static/css/132.68785a46.chunk.css.map",
     "132.0eda6169.chunk.js.map": "/p/apps/jurnal/static/js/132.0eda6169.chunk.js.map",
     "790.37843ca0.chunk.css.map": "/p/apps/jurnal/static/css/790.37843ca0.chunk.css.map",
-    "790.01bfc7f0.chunk.js.map": "/p/apps/jurnal/static/js/790.01bfc7f0.chunk.js.map",
+    "790.5324c814.chunk.js.map": "/p/apps/jurnal/static/js/790.5324c814.chunk.js.map",
     "819.6f8fc8b5.chunk.css.map": "/p/apps/jurnal/static/css/819.6f8fc8b5.chunk.css.map",
     "819.92cbb38d.chunk.js.map": "/p/apps/jurnal/static/js/819.92cbb38d.chunk.js.map",
     "709.02ccff44.chunk.css.map": "/p/apps/jurnal/static/css/709.02ccff44.chunk.css.map",
@@ -68,6 +68,6 @@
   },
   "entrypoints": [
     "static/css/main.0058adc4.css",
-    "static/js/main.882472f7.js"
+    "static/js/main.68fa9253.js"
   ]
 }
